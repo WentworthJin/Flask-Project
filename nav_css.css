@@ -1,0 +1,160 @@
+/* Top logo area */
+
+.logoarea {
+  width: 100%;
+  padding: 0 0 0 1%;
+}
+
+.logo{
+  height:20%;
+  width:15%;
+}
+
+p.title{
+  display: inline-block;
+  padding-left:55%;
+}
+
+.container{
+  position: relative;
+}
+
+/* Navgation section Style sheet */
+nav ul.ul_mainstyle{
+  margin: 1% 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(241, 112, 25);
+  list-style-type: none;
+}
+
+nav ul li{
+  float: left;
+  border-right: solid 5px white;
+}
+
+li:first-of-type{
+  border-right: solid 15px white;
+}
+
+nav ul li a{
+  display: block;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px 10px;
+  font-size: 140%;
+}
+
+
+nav ul li img{
+  height: 20px;
+  width: auto;
+  
+}
+
+
+.sticky{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+/** Utilities **/
+nav:hover{
+  opacity: 1;
+}
+
+nav ul li a:hover{
+  background-color: rgb(248, 248, 248);
+  color: rgb(5, 5, 5);
+}
+
+
+.clearfloat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div ul li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+/* side bar style */
+
+.sideul{
+  list-style-type: none;
+  margin: 5% 0 0 1%;
+  padding: 0;
+  width: 10%;
+  background-color:rgb(185, 216, 224);
+  height: 100%;
+  overflow: auto;
+}
+
+div ul li a{
+  text-align: center;
+  display: block;
+  color: rgb(241, 112, 25);
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.sidesticky{
+  position: sticky;
+  top: 20%;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.ul1{
+  background-color: white;
+  color: white;
+}
+
+/* Main section area*/
+
+.mainsection{
+  border: solid red 3px;
+  margin-left: 15%;
+  width: 70%;
+}
+
+/* Search bar*/
+.searchbar{
+  position: relative;
+  padding-left: 70%;
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  margin-bottom: 5px;
+}
+
+#searchicon:after {
+  content: "\f002";
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 24px;
+  color: #cccccc;
+  top: 10px;
+  left: 12px;
+}
+
+.searchicon{
+  position: relative;
+  margin-left: 70%;
+  margin-top: 1%;
+  z-index: 999;
+}
