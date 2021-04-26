@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="nav_css.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
+  <link rel="stylesheet" href="./nav_css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-  <div class="container">
-    <img src="Image/sample_logo.png" alt="Logo" class="logo">
-    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
-    <div class="searchicon">
-      <div id="searchicon"></div>
-    </div>
+  <div id="rightdiv" >
+    <p class="title"><strong> CITS 5505 Agile Web Development Project 2 </strong></p>
+    <h2 class="welcome"> Welcome User</h2>
+    <div id="searchicon" class="searchicon"></div>
     <span class="searchbar"><input id="searchstring" type="text"
-      style="width:20%; border:2px solid #b200ff; background-color:white;"
+      style="width:auto; border:2px solid rgb(241, 112, 25); background-color:white;" 
       placeholder="Search..." oninput="filterSearch()">
     </span>
+    <button type="button" class="login_button">Login</button>
+    <button type="button" class="login_button">Register</button>
+  </div>
+  <div id="leftdiv">
+    <img src="./Image/sample_logo.png" alt="Logo" class="logo">
   </div>
 
   <nav class="sticky">
@@ -32,57 +34,57 @@
     </ul>
   </nav>
 
-
-
-  <div class="sidesticky">
-    <ul class="sideul">
-      <li class="ul1">Side</li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+  <div id="rightmain">
+    <section class="mainsection">
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+      <p>Tutorial</p>
+    </section>
   </div>
-
-  <section class="mainsection">
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-    <p>Tutorial</p>
-  </section>
-
+  <div id="leftnav">
+    <div class="sidesticky">
+      <ul class="sideul">
+        <li class="ul1">Side</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
