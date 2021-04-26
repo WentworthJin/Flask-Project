@@ -1,24 +1,24 @@
 
 /* Logo area */
-.logo{
-  height:8em;
-  width:auto;
+.logoarea {
+  width: 100%;
+  padding: 0 0 0 1%;
 }
 
-.welcometitle{
-  position: relative;
-  left:20%;
+.logo{
+  height:20%;
+  width:15%;
 }
 
 p.title{
   display: inline-block;
-  margin-top: 7%;
+  padding-left:55%;
 }
 
-.welcome{
-  margin-left: 20%;
-  display: inline-block;
+.container{
+  position: relative;
 }
+
 /* Navgation section Style sheet */
 nav ul.ul_mainstyle{
   margin: 1% 0 0 0;
@@ -50,7 +50,7 @@ nav ul li a{
 nav ul li img{
   height: 20px;
   width: auto;
-  
+
 }
 
 
@@ -62,8 +62,75 @@ nav ul li img{
   opacity: 0.9;
 }
 
+/** Utilities **/
+nav:hover{
+  opacity: 1;
+}
+
+nav ul li a:hover{
+  background-color: rgb(248, 248, 248);
+  color: rgb(5, 5, 5);
+}
+
+
+.clearfloat::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div ul li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+/* side bar style */
+
+.sideul{
+  list-style-type: none;
+  margin: 5% 0 0 1%;
+  padding: 0;
+  width: 10%;
+  background-color:rgb(185, 216, 224);
+  height: 100%;
+  overflow: auto;
+}
+
+div ul li a{
+  text-align: center;
+  display: block;
+  color: rgb(241, 112, 25);
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.sidesticky{
+  position: sticky;
+  top: 20%;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.ul1{
+  background-color: white;
+  color: white;
+}
+
+/* Main section area*/
+
+.mainsection{
+  border: solid red 3px;
+  margin-left: 15%;
+  width: 70%;
+}
 
 /* Search bar*/
+.searchbar{
+  position: relative;
+  padding-left: 70%;
+}
 
 input[type=text] {
   width: 100%;
@@ -86,101 +153,8 @@ input[type=text] {
 }
 
 .searchicon{
-  left: 50%;
+  position: relative;
+  margin-left: 70%;
+  margin-top: 1%;
   z-index: 999;
-}
-
-
-/* Login button */
-
-.login_button{
-  margin-left: 2%;
-  display: inline-block;
-  border-radius: 4px;
-  background-color:white;
-  border: solid 5px rgb(241, 112, 25);
-  color: rgb(241, 112, 25);
-  text-align: center;
-  padding: 10 15 10 15;
-  font-size: 14px;
-}
-/* side bar style */
-
-.sideul{
-  list-style-type: none;
-  background-color:rgb(185, 216, 224);
-  width: 50%;
-  height: 100%;
-}
-
-div ul li a{
-  text-align: center;
-  display: block;
-  color: rgb(241, 112, 25);
-  padding: 15px 16px;
-  text-decoration: none;
-}
-
-.sidesticky{
-  position: sticky;
-}
-
-.ul1{
-  background-color: white;
-  color: white;
-}
-
-/* Main section area*/
-
-.mainsection{
-  width: 100%;
-}
-
-
-/* Utilities */
-nav:hover{
-  opacity: 1;
-}
-
-nav ul li a:hover{
-  background-color: rgb(248, 248, 248);
-  color: rgb(5, 5, 5);
-}
-
-
-div ul li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-#leftdiv {
-  width: 60%;
-}
-
-#rightdiv {
-  width: 40%;
-  float: right;
-}
-
-#leftnav{
-  margin-top: 3%;
-  border: 2px solid red;
-  width: 30%;
-}
-
-#rightmain{
-  margin-top: 3%;
-  border: 2px solid blue;
-  width: 70%;
-  float: right;
-}
-
-.login_button:hover {
-  background-color: rgb(241, 112, 25);
-  color: white;
-}
-
-.login_button:active {
-  background-color: rgb(230, 230, 230);
-  color: rgb(0, 0, 0);
 }
