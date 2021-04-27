@@ -51,16 +51,50 @@
             color: paleturquoise;
         }
 
-        .last{
+        .last {
             float: left;
         }
+
         #arrow {
             font-size: 16px;
             aria-hidden: "true"
         }
-        .next{
+
+        .next {
             float: right;
         }
+
+        table.reference {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 4px;
+            margin-top: 4px;
+        }
+
+        table.reference tr:nth-child(2n) {
+            background-color: white;
+        }
+
+        table.reference tr:nth-child(2n+1) {
+            background-color: lightgreen;
+        }
+
+        table.reference th {
+            border: 2px solid #bdbdbd;
+            border-bottom: none;
+            font-size: 14px;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.reference td {
+            border: 1px solid #DDD;
+            padding: 7px 5px;
+            vertical-align: top;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
@@ -103,6 +137,297 @@
     </ul>
 </div>
 <section class="mainsection">
+
+    <div class="articleContent">
+
+        <div class="articleIntro" id="content">
+            <h1>Swift inheritance</h1>
+            <br/>
+            <h2>Swift inheritance</h2>
+            <p>Inheritance can be understood as one class acquires the methods and properties of another class.</p>
+            <p>When a class inherits other classes, the inherited class is called the subclass, and the inherited class
+                is called the superclass (or parent class)</p>
+            <p>In Swift, classes can call and access superclass methods, properties, and subscript scripts, and can
+                override them.
+                We can also add property observers to the inherited properties of the class.</p>
+            <hr/>
+            <h2>Base class</h2>
+            <p>Classes that do not inherit from other classes are called Base Classes.</p>
+            <p>In the following example, we define the base class StudDetails, which describes the student (stname) and
+                the scores of each subject (mark1, mark2, mark3):</p>
+            <pre>
+class StudDetails {
+    var stname: String!
+    var mark1: Int!
+    var mark2: Int!
+    var mark3: Int!
+    init(stname: String, mark1: Int, mark2: Int, mark3: Int) {
+        self.stname = stname
+        self.mark1 = mark1
+        self.mark2 = mark2
+        self.mark3 = mark3
+    }
+}
+let stname = "swift"
+let mark1 = 98
+let mark2 = 89
+let mark3 = 76
+
+print(stname)
+print(mark1)
+print(mark2)
+print(mark3)
+</pre>
+
+            <p>The output of the above program execution is:</p>
+            <pre>
+swift
+98
+89
+76
+</pre>
+            <hr/>
+            <h2>Subclass</h2>
+            <p>Subclass refers to the creation of a new class on the basis of an existing class.</p>
+            <p>In order to indicate the superclass of a certain class, write the superclass name after the subclass
+                name, separated by a colon (:), the syntax format is as follows:</p>
+            <pre>
+class SomeClass: SomeSuperclass {
+    //Class Definition
+}
+</pre>
+            <h3>Instance</h3>
+            <p>In the following example, we define the superclass StudDetails, and then use the subclass Tom to inherit
+                it:</p>
+            <pre>
+class StudDetails
+{
+    var mark1: Int;
+    var mark2: Int;
+
+    init(stm1:Int, results stm2:Int)
+    {
+        mark1 = stm1;
+        mark2 = stm2;
+    }
+
+    func show()
+    {
+        print("Mark1:\(self.mark1), Mark2:\(self.mark2)")
+    }
+}
+
+class Tom : StudDetails
+{
+    init()
+    {
+        super.init(stm1: 93, results: 89)
+    }
+}
+
+let tom = Tom()
+tom.show()
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>
+Mark1:93, Mark2:89
+</pre>
+            <hr/>
+            <h2>Overriding</h2>
+            <p>Subclasses can implement their own custom functions through inherited instance methods, class methods,
+                instance attributes, or subscript scripts. We call this behavior overriding.</p>
+            <p>We can use the override keyword to achieve rewriting.</p>
+
+            <table class="reference">
+                <tbody>
+                <tr>
+                    <th>Rewrite</th>
+                    <th>Access methods, attributes, subscript scripts</th>
+                </tr>
+                <tr>
+                    <td>Method</td>
+                    <td>super.Method()</td>
+                </tr>
+                <tr>
+                    <td>Attribute</td>
+                    <td>super.property()</td>
+                </tr>
+                <tr>
+                    <td>Subscript script</td>
+                    <td>super[Index]</td>
+                </tr>
+
+                </tbody>
+            </table>
+            <hr/>
+            <h2>Override methods and properties</h2>
+            <h3>Rewrite method</h3>
+            <p>In our subclass, we can use the override keyword to override the superclass method.</p>
+            <p>In the following example, we rewrite the show() method:</p>
+            <pre>
+class SuperClass {
+    func show() {
+        print("SuperClass")
+    }
+}
+
+class SubClass: SuperClass  {
+    override func show() {
+        print("SubClass")
+    }
+}
+
+let superClass = SuperClass()
+superClass.show()
+
+let subClass = SubClass()
+subClass.show()
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>
+SuperClass
+SubClass
+</pre>
+            <h3>Override Attributes</h3>
+            <p>You can provide custom getters (or setters) to override any inherited properties, regardless of whether
+                the inherited properties are stored or calculated properties.</p>
+            <p>The subclass does not know whether the inherited attribute is stored or calculated, it only knows that the inherited attribute will have a name and type. So when you rewrite an attribute, you must write out its name and type.</p>
+            <p>Note:</p>
+            <ul>
+                <li>If you provide a setter in the overridden attribute, then you must also provide a getter.</li>
+                <li>If you don't want to modify the inherited property value in the getter in the rewritten version, you can directly return the inherited value through super.someProperty, where someProperty is the name of the property you want to override.</li>
+            </ul>
+                <p>In the following example, we define the superclass Circle and the subclass Rectangle. In the Rectangle class, we override the attribute area:</p>
+            <pre>
+class Circle {
+    var radius = 12.5
+    var area: String {
+        return "Rectangle radius \(radius) "
+    }
+}
+
+// Inherit the superclass Circle
+class Rectangle: Circle {
+    var print = 7
+    override var area: String {
+        return super.area + ", but now it is rewritten as \(print)"
+    }
+}
+
+let rect = Rectangle()
+rect.radius = 25.0
+rect.print = 3
+print("Radius \(rect.area)")
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>Radius The radius of the rectangle is 25.0, but it is now rewritten to 3.</pre>
+            <hr/>
+            <h2>Override the attribute observer</h2>
+            <p>You can add a property observer for an inherited property in property rewriting. In this way, you will detect when the inherited property value changes.</p>
+            <p><b>Note:</b> You cannot add property observers for inherited constant storage properties or inherited read-only calculated properties.</p>
+<pre>
+class Circle {
+    var radius = 12.5
+    var area: String {
+        return "Rectangle radius is \(radius) "
+    }
+}
+
+class Rectangle: Circle {
+    var print = 7
+    override var area: String {
+        return super.area + ", but now it is rewritten as \(print)"
+    }
+}
+
+
+let rect = Rectangle()
+rect.radius = 25.0
+rect.print = 3
+print("Radius: \(rect.area)")
+
+class Square: Rectangle {
+    override var radius: Double {
+        didSet {
+            print = Int(radius/5.0)+1
+        }
+    }
+}
+
+
+let sq = Square()
+sq.radius = 100.0
+print("Radius: \(sq.area)")
+</pre>
+            <pre>Radius: The radius of the rectangle is 25.0, but it is now rewritten to 3
+Radius: The radius of the rectangle is 100.0, but it is now rewritten as 21</pre>
+            <hr/>
+            <h2>Prevent rewriting</h2>
+            <p>We can use the final keyword to prevent them from being rewritten.</p>
+            <p>If you rewrite the final method, attribute or subscript script, an error will be reported during compilation.</p>
+            <p>You can mark the entire class as final by adding the final feature (final class) before the keyword class. Such a class cannot be inherited, otherwise a compilation error will be reported.</p>
+            <pre>
+final class Circle {
+    final var radius = 12.5
+    var area: String {
+        return "Rectangle radius is \(radius) "
+    }
+}
+class Rectangle: Circle {
+    var print = 7
+    override var area: String {
+        return super.area + " , but now it is rewritten as \(print)"
+    }
+}
+
+let rect = Rectangle()
+rect.radius = 25.0
+rect.print = 3
+print("Radius: \(rect.area)")
+
+class Square: Rectangle {
+    override var radius: Double {
+        didSet {
+            print = Int(radius/5.0)+1
+        }
+    }
+}
+
+let sq = Square()
+sq.radius = 100.0
+print("Radius: \(sq.area)")
+</pre>
+            <p>Since the above example uses the final keyword to not allow rewriting, the execution will report an error:</p>
+            <pre>
+error: var overrides a &#39;final&#39; var
+    override var area: String {
+                 ^
+note: overridden declaration is here
+    var area: String {
+        ^
+error: var overrides a &#39;final&#39; var
+    override var radius: Double {
+                 ^
+note: overridden declaration is here
+    final var radius = 12.5
+              ^
+error: inheritance from a final class &#39;Circle&#39;
+class Rectangle: Circle {
+      ^
+</pre>
+            <hr/>
+            <div class="ending">
+                <p class="congrats">Congratulation!!!</p>
+                <p><b>You have finished this chapter!</b></p>
+                <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left"
+                                                                id="arrow"></i>  Last Chapter</a></span>
+                    <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+                </p>
+                <br/>
+            </div>
+
+        </div>
+    </div>
 
 </section>
 
