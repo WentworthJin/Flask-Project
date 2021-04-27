@@ -1,4 +1,20 @@
 
+/* Apply to all pages */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 2 ;
+}
+
+a {
+  text-decoration: none;
+}
+.inarticleline{
+  display: inline-block;
+}
+
 /* Logo area */
 .logoarea {
   width: 100%;
@@ -76,38 +92,6 @@ nav ul li img{
   font-size: 14px;
 }
 
-/** Utilities **/
-nav:hover{
-  opacity: 1;
-}
-
-nav ul li a:hover{
-  background-color: rgb(248, 248, 248);
-  color: rgb(5, 5, 5);
-}
-
-
-.clearfloat::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-div ul li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-.login_button:hover {
-  background-color: rgb(241, 112, 25);
-  color: white;
-}
-
-.login_button:active {
-  background-color: rgb(230, 230, 230);
-  color: rgb(0, 0, 0);
-}
-
 /* side bar style */
 
 .sideul{
@@ -144,9 +128,21 @@ div ul li a{
 /* Main section area*/
 
 .mainsection{
-  border: solid red 3px;
   margin-left: 15%;
   width: 70%;
+}
+
+.sectionimg{
+  height: 200px;
+  width: auto;
+}
+
+.redp{
+  color: red;
+}
+
+.bluep{
+  color: blue;
 }
 
 /* Search bar*/
@@ -180,4 +176,40 @@ input[type=text] {
   margin-left: 70%;
   margin-top: 1%;
   z-index: 999;
+}
+
+/** Utilities **/
+nav:hover{
+  opacity: 1;
+}
+
+nav ul li a:hover{
+  background-color: rgb(248, 248, 248);
+  color: rgb(5, 5, 5);
+}
+
+
+.headimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div ul li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.login_button:hover {
+  background-color: rgb(241, 112, 25);
+  color: white;
+}
+
+.login_button:active {
+  background-color: rgb(230, 230, 230);
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  text-decoration: underline;
 }
