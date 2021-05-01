@@ -15,6 +15,16 @@ a {
     display: inline-block;
 }
 
+body {
+    counter-reset: section;
+}
+
+p.firstupper::first-letter{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(241, 112, 25);
+}
+
 /* Logo area */
 .logoarea {
     width: 100%;
@@ -202,12 +212,6 @@ nav ul li a:hover {
 }
 
 
-.headimg::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .mainarticle:after {
     content: "";
     display: table;
@@ -306,4 +310,71 @@ blockquote {
 
 .quote {
     color: hotpink;
+}
+
+section ul li::before {
+    content: "\2022";
+    color:rgb(241, 112, 25);
+    font-weight: bold;
+    display: inline-block; 
+    width: 4em;
+    padding-top: 20px;
+    margin-left: 0px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 112, 25);
+    color: white;
+    opacity: 0.7;
+}
+
+h2::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+
+
+
+/* Math Operator Page */
+p.rightcontent{
+    text-indent: 0px;
+    text-align: justify;
+    line-height: 2.5;
+    padding-left: 5%;
+}
+
+.leftline{
+    border-left: solid 3px rgb(241, 112, 25);
+}
+
+.headimg{
+    height: 100px;
+    width: auto;
+}
+
+h1{
+    font-size: 200%;
+}
+
+.imgcontainer {
+    position: relative;
+    text-align: center;
+    color: Black;
+    padding-bottom: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 1%;
+}
+
+ul.mainul{
+    list-style: none;
+}
+
+input{
+    border: rgb(228, 220, 220) solid 3px;
+    border-radius: 10px;
 }
