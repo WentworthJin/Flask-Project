@@ -98,10 +98,9 @@ nav ul li img{
   list-style-type: none;
   margin: 5% 0 0 1%;
   padding: 0;
-  width: 10%;
+  width: 50%;
   background-color:rgb(185, 216, 224);
   height: 100%;
-  overflow: auto;
 }
 
 div ul li a{
@@ -212,4 +211,37 @@ div ul li a:hover:not(.active) {
 
 a:hover{
   text-decoration: underline;
+}
+
+
+
+
+/* Edited area */
+.miandivision {
+  margin-top: 3%;
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.miandivision.sidebar {
+  width: 25%;
+}
+
+/* Middle column */
+.miandivision.article_area {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.mainarticle:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.stickybar{
+  position:sticky;
+  top: 10%;
 }
