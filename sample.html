@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nav_css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+  <style>
+    .articleContent {
+        padding: 25px;
+    }
+
+    .articleIntro img {
+        width: 60%;
+    }
+
+    .try {
+        color: gold;
+    }
+
+    pre {
+        width: 60%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        word-wrap: break-word !important;
+        white-space: pre-wrap !important;
+        padding: 10px;
+        margin: 15px 0;
+        display: block;
+        line-height: 1.7;
+        background-color: #201e2f;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        white-space: pre;
+        word-wrap: normal;
+        overflow-x: auto;
+        border: 1px solid #201e2f;
+        color: #f8f8f2;
+    }
+
+    .ending {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .congrats {
+        font-size: 35px;
+        color: paleturquoise;
+    }
+
+    .last {
+        float: left;
+    }
+
+    #arrow {
+        font-size: 16px;
+        aria-hidden: "true"
+    }
+
+    .next {
+        float: right;
+    }
+
+    blockquote {
+        border-left: 5px solid #DDD;
+        padding: 10px 5px 10px 15px;
+        margin: 15px 0;
+        font-size: 15px;
+        color: #555;
+        background-color: #F5F5F5;
+    }
+
+    .quote {
+        color: hotpink;
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="Image/sample_logo.png" alt="Logo" class="logo">
+    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
+    <div class="searchicon">
+      <div id="searchicon"></div>
+    </div>
+    <span class="searchbar"><input id="searchstring" type="text"
+      style="width:20%; border:2px solid #b200ff; background-color:white;"
+      placeholder="Search..." oninput="filterSearch()">
+    </span>
+    <button type="button" class="login_button">Login</button>
+  </div>
+
+  <nav class="sticky">
+    <ul class="ul_mainstyle">
+      <li><a href="./nav.html"><img src="Image/swift_icon.png" alt="home icon"></a>
+      </li>
+      <li><a href="#h1"><b>Reference</b></a></li>
+      <li><a href="#c1"><b>Exercise</b></a></li>
+      <li><a href="#j1"><b>Examples</b></a></li>
+    </ul>
+  </nav>
+
+  <div class="mainarticle">
+    <div class="stickybar">
+      <div class="miandivision sidebar">
+        <ul class="sideul">
+          <li class="ul1">Side</li>
+          <li><a href="">Home</a></li>
+            <li><a href="./env_setup.html">Environment Setup</a></li>
+            <li><a href="">Basic Grammar</a></li>
+            <li><a href="./Math.html">Math Operator</a></li>
+            <li><a href="">Some Statements</a></li>
+            <li><a href="./func.html">Function</a></li>
+            <li><a href="">Class</a></li>
+            <li><a href="">Inheritance</a></li>
+            <li><a href="">Generics</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="miandivision article_area">
+      <div class="articleContent">
+
+        <div class="articleIntro" id="content">
+            <h1>Swift Function</h1>
+            <p>Swift function is an independent block of code used to complete a specific task.</p>
+            <p>Swift uses a unified syntax to represent simple C language style functions to complex Objective-C
+                language style methods.</p>
+            <ul>
+                <li>
+                    Function declaration: Tell the compiler the name of the function, return type and parameters.
+                </li>
+                <li>
+                    Function definition: Provides the entity of the function.
+                </li>
+            </ul>
+            <p>Swift functions include parameter types and return value types:</p>
+            <hr/>
+            <h2>Function definition</h2>
+            <p>Swift defines functions using the keyword func .</p>
+            <p>When defining a function, you can specify one or more input parameters and a return value type.</p>
+            <p>Every function has a function name to describe its function. This function is called by the function name
+                and the parameter value of the corresponding type. The order in which the parameters of the function are
+                passed must be the same as the parameter list.</p>
+            <p>The order in which the actual parameters of the function are passed must be the same as the formal
+                parameter list, and the return value type of the function is defined after -> .</p>
+            <h3>Grammar</h3>
+            <pre>func funcname(<i>parameter</i>) -&gt; returntype
+{
+   Statement1
+   Statement2
+   ……
+   Statement N
+   return parameters
+}
+</pre>
+            <h3>Instance</h3>
+            <p>Below we define a function named youj, the data type of the formal parameter is String, and the return
+                value is also String:</p>
+            <pre>import Cocoa
+
+func youj(site: String) -&gt; String {
+    return site
+}
+print(youj("google.com"))
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>google.com
+</pre>
+            <h2>Function call</h2>
+            <p>We can call the function by the function name and the parameter value of the corresponding type, and the
+                order of the parameter passing of the function must be the same as the parameter list.</p>
+            <p>Below we define a function named youj. The data type of the formal parameter site is String. After that,
+                the actual parameter passed by the function must also be of type String. After the actual parameter is
+                passed into the function body, it will return directly. Is String.
+
+                import Cocoa </p>
+            <pre>import Cocoa
+
+func youj(site: String) -&gt; String {
+    return site
+}
+print(youj("google.com"))
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>google.com
+</pre>
+            <h3>Function parameter</h3>
+            <p>Functions can accept one or more parameters, and we can also use tuples to pass one or more parameters to
+                the function:</p>
+            <pre>import Cocoa
+
+func mult(no1: Int, no2: Int) -&gt; Int {
+   return no1*no2
+}
+print(mult(2, no2:20))
+print(mult(3, no2:15))
+print(mult(4, no2:30))
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>40
+45
+120
+</pre>
+            <h2>Function without parameter</h2>
+            <p>We can create functions without parameters.</p>
+            <h3>grammar:</h3>
+            <pre>func funcname() -&gt; datatype {
+   return datatype
+}
+</pre>
+            <h3>instance</h3>
+            <pre>import Cocoa
+
+func sitename() -&gt; String {
+    return "google map"
+}
+print(sitename())
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>google map</pre>
+            <h2>Tuples as function return values</h2>
+            <p>The function return value type can be string, integer, floating point, etc.</p>
+            <p>Tuples are similar to arrays, except that the elements in a tuple can be of any type, using
+                parentheses.</p>
+            <p>You can use the tuple type to return multiple values from a function as a composite value.</p>
+            <p>In the following example, a function named minMax(_:) is defined, which is used to find the minimum and
+                maximum values in an Int array.</p>
+            <pre>import Cocoa
+
+func minMax(array: [Int]) -&gt; (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..&lt;array.count] {
+        if value &lt; currentMin {
+            currentMin = value
+        } else if value &gt; currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+
+let bounds = minMax([8, -6, 2, 109, 3, 71])
+print("The min: \(bounds.min), The max: \(bounds.max)")
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>The min: -6, The max: 109</pre>
+            <blockquote>
+                <h2><p class="quote">Caution:</p></h2>
+                <p>To safely handle the "empty array" problem, minMax(_:)rewrite the function to use an optional tuple
+                    return type, and return when the array is empty nil:</p>
+            </blockquote>
+            <pre>if array.isEmpty {return nil} </pre>
+            <h2>No return value function</h2>
+            <p>The following is another version of the youj(_:) function. This function accepts W3Cschool tutorial
+                website URL parameters without specifying the return value type, and directly outputs the String value
+                instead of returning it:</p>
+            <pre>import Cocoa
+
+func youj(site: String) {
+    print("google website:\(site)")
+}
+youj("http://google.com")
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>google website:http://google.com</pre>
+            <h2>Function parameter name</h2>
+            <p>Function parameters have an external parameter name and a local parameter name.</p>
+            <h3>Local parameter name</h3>
+            <p>Local parameter names are used internally in the implementation of the function.</p>
+            <pre>func sample(number: Int) {
+   println(number)
+}
+</pre>
+            <p>In the above example, number is a local parameter name, which can only be used in the function body.</p>
+            <h3>External parameter name</h3>
+            <p>You can specify the external parameter name before the local parameter name, separated by spaces. The
+                external parameter name is used for the parameters passed to the function when the function is
+                called.</p>
+            <pre>import Cocoa
+
+func pow(firstArg a: Int, secondArg b: Int) -&gt; Int {
+   var res = a
+   for _ in 1..&lt;b {
+      res = res * a
+   }
+   print(res)
+   return res
+}
+pow(firstArg:5, secondArg:3)
+</pre>
+            <p>The output of the above program execution is:</p>
+            <pre>125</pre>
+            <h2>Variable parameter</h2>
+            <p>Variable parameters can accept zero or more values. When calling a function, you can use variable
+                parameters to specify function parameters, the number of which is uncertain.</p>
+            <p>Variable parameters are defined by adding (...) after the variable type name.</p>
+
+            <pre>import Cocoa
+
+func vari&lt;N&gt;(members: N...){
+    for i in members {
+        print(i)
+    }
+}
+vari(4,3,5)
+vari(4.5, 3.1, 5.6)
+vari("Google", "Facebook", "Amazon")</pre>
+
+            <p>The output of the above program execution is:</p>
+            <pre>4
+3
+5
+4.5
+3.1
+5.6
+Google
+Facebook
+Amazon
+</pre>
+            <h2>Constants, variables and I/O parameters</h2>
+            <p>Generally, the parameters defined in the function are constant parameters by default, that is, you can
+                only query and use this parameter, and you cannot change its value.</p>
+            <p>If you want to declare a variable parameter, you can add the inout keyword before the parameter
+                definition, so that you can change the value of the parameter.</p>
+            <p>Generally, the default parameter passing is called by value, not by reference. Therefore, the incoming
+                parameters are changed within the function, and it does not affect the original parameter. What is
+                passed in is just a copy of this parameter.</p>
+            <p>When the incoming parameter is used as an input and output parameter, you need to add an ampersand before
+                the parameter name, which means that the value can be modified by the function.</p>
+            <pre><p>func&nbsp;swapTwoInts(_a:&nbsp;inout&nbsp;Int,&nbsp;_b:&nbsp;inout&nbsp;Int)&nbsp;{
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;temporaryA&nbsp;=&nbsp;a
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;b
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;temporaryA
+</p><p>}
+</p><p>var&nbsp;x&nbsp;=&nbsp;1
+</p><p>var&nbsp;y&nbsp;=&nbsp;5
+</p><p>swapTwoInts(&amp;X,&nbsp;&amp;y)
+</p><p>print("x&nbsp;The current value\(x), y&nbsp;The current value\(y)")</p>
+</pre>
+            <p>The swapTwoInts( : :) function simply swaps the values of a and b. This function first stores the value
+                of a in a temporary constant temporaryA, then assigns the value of b to a, and finally assigns
+                temporaryA to b.</p>
+            <pre lang="html"><code><p>The current value of x:&nbsp;5, The current value of y:&nbsp;1</p></code></pre>
+
+            <hr/>
+            <div class="ending">
+                <p class="congrats">Congratulation!!!</p>
+                <p><b>You have finished this chapter!</b></p>
+                <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left"
+                                                                id="arrow"></i>  Last Chapter</a></span>
+                    <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+                </p>
+                <br/>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
