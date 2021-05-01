@@ -94,6 +94,11 @@ nav ul li img {
 
 /* side bar style */
 
+.stickybar {
+    position: sticky;
+    top: 10%;
+}
+
 .sideul {
     list-style-type: none;
     margin: 5% 0 0 1%;
@@ -126,8 +131,17 @@ div ul li a {
 
 /* Main section area*/
 
-.mainsection {
-    margin-left: 15%;
+.miandivision {
+    margin-top: 3%;
+    float: left;
+    padding: 10px;
+}
+
+.miandivision.sidebar {
+    width: 23%;
+}
+
+.miandivision.article_area {
     width: 70%;
 }
 
@@ -194,6 +208,12 @@ nav ul li a:hover {
     display: table;
 }
 
+.mainarticle:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 div ul li a:hover:not(.active) {
     background-color: #555;
     color: white;
@@ -213,29 +233,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-.miandivision {
-    margin-top: 3%;
-    float: left;
-    padding: 10px;
-}
-
-/* Left and right column */
-.miandivision.sidebar {
-    width: 25%;
-}
-
-/* Middle column */
-.miandivision.article_area {
-    width: 70%;
-}
-
-/* Clear floats after the columns */
-.mainarticle:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .stickybar {
     position: sticky;
