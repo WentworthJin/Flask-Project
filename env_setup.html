@@ -6,144 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Environment</title>
-    <style>
 
-    </style>
+    <title>Document</title>
 </head>
 <body>
-
   <div class="container">
     <img src="Image/sample_logo.png" alt="Logo" class="logo">
     <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
     <div class="searchicon">
-      <div id="searchicon"></div>
+        <div id="searchicon"></div>
     </div>
     <span class="searchbar"><input id="searchstring" type="text"
-      style="width:20%; border:2px solid #b200ff; background-color:white;"
-      placeholder="Search..." oninput="filterSearch()">
+                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
+                                   placeholder="Search..." oninput="filterSearch()">
     </span>
+    <button type="button" class="login_button">Login</button>
   </div>
-
+  
   <nav class="sticky">
     <ul class="ul_mainstyle">
-      <li><a href="./nav.html"><img src="Image/swift_icon.png" alt="home icon"></a>
-      </li>
-      <li><a href="#h1"><b>Reference</b></a></li>
-      <li><a href="#c1"><b>Exercise</b></a></li>
-      <li><a href="#j1"><b>Examples</b></a></li>
+        <li><a href="./nav.html"><img src="Image/swift_icon.png" alt="home icon"></a>
+        </li>
+        <li><a href="#h1"><b>Reference</b></a></li>
+        <li><a href="#c1"><b>Exercise</b></a></li>
+        <li><a href="#j1"><b>Examples</b></a></li>
     </ul>
   </nav>
-
-  <div class="sidesticky">
-    <ul class="sideul">
-      <li class="ul1">Side</li>
-        <li><a href="./nav.html">Home</a></li>
-        <li><a href="./env_setup.html">Environment Setup</a></li>
-        <li><a href="">Basic Grammar</a></li>
-        <li><a href="./Math.html">Math Operator</a></li>
-        <li><a href="">Some Statements</a></li>
-        <li><a href="./func.html">Function</a></li>
-        <li><a href="">Class</a></li>
-        <li><a href="">Inheritance</a></li>
-        <li><a href="">Generics</a></li>
-    </ul>
-  </div>
-
-    <section class="mainsection">
-    <div class="articleContent">
-
-        <div class="articleIntro" id="content">
-            <h1>Swift environment setup</h1>
-            <hr/>
-            <p>Swift is an open source programming language used to develop OS X and iOS applications.</p>
-            <p>Before formally developing an application, we need to build a Swift development environment so that we
-                can use various development tools and languages for rapid application development in a better and
-                friendly
-                manner. Since the Swift development environment needs to run in the OS X system, the construction of its
-                environment will be different from the Windows environment. Let's learn how to build the swift
-                development environment.</p>
-            <p>Prerequisites for successfully setting up a swift development environment:</p>
-            <ol>
-                <li>Must have an Apple computer. Because the integrated development environment XCode can only run on OS
-                    X system.
-                </li>
-                <li>The computer system must be OS 10.9.3 and above.</li>
-                <li>The computer must install the Xcode integrated development environment.</li>
-            </ol>
-            <h3>Swift development tool Xcode download</h3>
-            <p>
-                <strong>Swift development tools? Official website address: </strong><a
-                    href="https://developer.apple.com/xcode/download/" rel="noopener noreferrer">https://developer.apple.com/xcode/download/</a>
-            </p>
-
-            <hr/>
-            <h2>The first Swift program <span class="try">(Try it now!!!)</span></h2>
-            <p>After Xcode is installed, we can start writing Swift code.</p>
-            <p>Next, we open Xcode in the application folder, and select File => New => Playground at the top of the
-                screen after opening.</p>
-            <img src="Image/swiftIntro.jpg" alt="SI">
-            <br/>
-            <p>Then set a name for the playground and select the iOS platform.</p>
-            <img src="Image/swiftIntro2.jpg" alt="SI2">
-
-            <p><b>UIKit</b> is a kind of basic package, applied in interactive IO streams with mobile devices.</p>
-            <pre>import UIKit
-
-var str = "Hello, playground"
-</pre>
-            <p>If you want to create an OS x program, you need to import the <b>Cocoa</b> package. The import Cocoa code
-                is as
-                follows:</p>
-            <pre>
-import Cocoa
-
-var str = "Hello, playground"
-</pre>
-            <p>Run it, then the output shows.</p>
-            <img src="Image/swiftIntro3.jpg" alt="SI3">
-            <hr/>
-            <h2>Create the first project</h2>
-            <p>1. Open the xcode tool, select File => New => Project</p>
-            <img src="Image/swiftIntro4.jpg" alt="SI4">
-            <p>2. We select a "Single View Application" and click "next" to create a simple sample app application.</p>
-            <img src="Image/swiftIntro5.jpg" alt="SI5">
-            <p>3. Then we enter the project name (ProductName), company name (Organization Name), company identifier
-                prefix name (Organization identifier), select the development language (Language).
-
-                Among them, Language has two options: Objective-c and swift, because we are learning swift, of course,
-                we choose swift. Click "Next" to the next step.</p>
-            <img src="Image/swiftIntro6.png" alt="SI6">
-            <p>4. Select the storage directory. If you want to use Git source code management, tick create git
-                repository on My Mac under Source Control. Click create to create the project.</p>
-            <img src="Image/swiftIntro7.jpg" alt="SI7">
-            <p>5. After the project is created, a sample file is generated by default. You can see that swift merges the
-                h and m files in oc into one file (that is, the swift suffix file). Main.storyboard is equivalent to the
-                xib file, which is more than xib Many functions.</p>
-            <img src="Image/swiftIntro8.jpg" alt="SI8">
-            <p>6. Open main.storyboard and you will see a simple blank application interface by default, the size of
-                which is the size of a tablet interface. If you only need to develop an iPhone compatible app, you can
-                uncheck the Use Auto Layout check box (the default is to check it).</p>
-            <img src="Image/swiftIntro9.jpg" alt="SI9">
-            <p>7. A dialog box pops up, let us choose the interface size, iPhone or iPad. We choose the size of the
-                iPhone.</p>
-            <img src="Image/swiftIntro10.jpg" alt="SI10">
-            <p>8. We add some content to the interface, find the Text control at the bottom right, drag it onto the
-                storyboard, and double-click to write the text "Hello World!".</p>
-            <img src="Image/swiftIntro11.jpg" alt="SI11">
-            <p>Run the simulator (command+R shortcut or select Product => Run in the menu bar).</p>
-            <img src="Image/swiftIntro12.jpg" alt="SI12">
-        </div>
-        <hr/>
-        <div class="ending">
-            <p class="congrats">Congratulation!!!</p>
-            <p><b>You have finished this chapter!</b></p>
-            <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left" id="arrow"></i>  Last Chapter</a></span>
-                <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span></p>
-            <br/>
+  
+  <div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="">Home</a></li>
+                <li><a href="./env_setup.html">Environment Setup</a></li>
+                <li><a href="">Basic Grammar</a></li>
+                <li><a href="./Math.html">Math Operator</a></li>
+                <li><a href="">Some Statements</a></li>
+                <li><a href="./func.html">Function</a></li>
+                <li><a href="">Class</a></li>
+                <li><a href="">Inheritance</a></li>
+                <li><a href="">Generics</a></li>
+            </ul>
         </div>
     </div>
-</section>
+
+    <div class="miandivision article_area">
+        <div class="articleContent">
+
+            <div class="articleIntro" id="content">
+                <h1>Swift environment setup</h1>
+                <hr/>
+                <p>Swift is an open source programming language used to develop OS X and iOS applications.</p>
+                <p>Before formally developing an application, we need to build a Swift development environment so that we
+                    can use various development tools and languages for rapid application development in a better and
+                    friendly
+                    manner. Since the Swift development environment needs to run in the OS X system, the construction of its
+                    environment will be different from the Windows environment. Let's learn how to build the swift
+                    development environment.</p>
+                <p>Prerequisites for successfully setting up a swift development environment:</p>
+                <ol>
+                    <li>Must have an Apple computer. Because the integrated development environment XCode can only run on OS
+                        X system.
+                    </li>
+                    <li>The computer system must be OS 10.9.3 and above.</li>
+                    <li>The computer must install the Xcode integrated development environment.</li>
+                </ol>
+                <h3>Swift development tool Xcode download</h3>
+                <p>
+                    <strong>Swift development tools? Official website address: </strong><a
+                        href="https://developer.apple.com/xcode/download/" rel="noopener noreferrer">https://developer.apple.com/xcode/download/</a>
+                </p>
+    
+                <hr/>
+                <h2>The first Swift program <span class="try">(Try it now!!!)</span></h2>
+                <p>After Xcode is installed, we can start writing Swift code.</p>
+                <p>Next, we open Xcode in the application folder, and select File => New => Playground at the top of the
+                    screen after opening.</p>
+                <img src="Image/swiftIntro.jpg" alt="SI">
+                <br/>
+                <p>Then set a name for the playground and select the iOS platform.</p>
+                <img src="Image/swiftIntro2.jpg" alt="SI2">
+    
+                <p><b>UIKit</b> is a kind of basic package, applied in interactive IO streams with mobile devices.</p>
+                <pre>import UIKit
+    
+    var str = "Hello, playground"
+    </pre>
+                <p>If you want to create an OS x program, you need to import the <b>Cocoa</b> package. The import Cocoa code
+                    is as
+                    follows:</p>
+                <pre>
+    import Cocoa
+    
+    var str = "Hello, playground"
+    </pre>
+                <p>Run it, then the output shows.</p>
+                <img src="Image/swiftIntro3.jpg" alt="SI3">
+                <hr/>
+                <h2>Create the first project</h2>
+                <p>1. Open the xcode tool, select File => New => Project</p>
+                <img src="Image/swiftIntro4.jpg" alt="SI4">
+                <p>2. We select a "Single View Application" and click "next" to create a simple sample app application.</p>
+                <img src="Image/swiftIntro5.jpg" alt="SI5">
+                <p>3. Then we enter the project name (ProductName), company name (Organization Name), company identifier
+                    prefix name (Organization identifier), select the development language (Language).
+    
+                    Among them, Language has two options: Objective-c and swift, because we are learning swift, of course,
+                    we choose swift. Click "Next" to the next step.</p>
+                <img src="Image/swiftIntro6.png" alt="SI6">
+                <p>4. Select the storage directory. If you want to use Git source code management, tick create git
+                    repository on My Mac under Source Control. Click create to create the project.</p>
+                <img src="Image/swiftIntro7.jpg" alt="SI7">
+                <p>5. After the project is created, a sample file is generated by default. You can see that swift merges the
+                    h and m files in oc into one file (that is, the swift suffix file). Main.storyboard is equivalent to the
+                    xib file, which is more than xib Many functions.</p>
+                <img src="Image/swiftIntro8.jpg" alt="SI8">
+                <p>6. Open main.storyboard and you will see a simple blank application interface by default, the size of
+                    which is the size of a tablet interface. If you only need to develop an iPhone compatible app, you can
+                    uncheck the Use Auto Layout check box (the default is to check it).</p>
+                <img src="Image/swiftIntro9.jpg" alt="SI9">
+                <p>7. A dialog box pops up, let us choose the interface size, iPhone or iPad. We choose the size of the
+                    iPhone.</p>
+                <img src="Image/swiftIntro10.jpg" alt="SI10">
+                <p>8. We add some content to the interface, find the Text control at the bottom right, drag it onto the
+                    storyboard, and double-click to write the text "Hello World!".</p>
+                <img src="Image/swiftIntro11.jpg" alt="SI11">
+                <p>Run the simulator (command+R shortcut or select Product => Run in the menu bar).</p>
+                <img src="Image/swiftIntro12.jpg" alt="SI12">
+            </div>
+            <hr/>
+            <div class="ending">
+                <p class="congrats">Congratulation!!!</p>
+                <p><b>You have finished this chapter!</b></p>
+                <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left" id="arrow"></i>  Last Chapter</a></span>
+                    <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span></p>
+                <br/>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
