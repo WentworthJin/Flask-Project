@@ -140,6 +140,15 @@ div ul li a {
     color: white;
 }
 
+/* Main_page */
+
+.mainarea{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    border: solid red 2px;
+}
+
 /* Main section area*/
 
 .miandivision {
@@ -202,7 +211,6 @@ input[type=text] {
     position: absolute;
     font-size: 24px;
     color: #cccccc;
-    top: 10px;
     left: 12px;
 }
 
