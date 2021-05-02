@@ -26,6 +26,15 @@ p.firstupper::first-letter{
     color: rgb(241, 112, 25);
 }
 
+hr.orange{
+    border: 3px solid rgb(241, 112, 25);
+    width: 60%;
+}
+
+.p_large{
+    font-size: larger;
+}
+
 /* Logo area */
 .logoarea {
     width: 100%;
@@ -176,6 +185,14 @@ div ul li a {
 
 .bluep {
     color: blue;
+}
+
+.yewp{
+    color: yellow;
+}
+
+.grenp{
+    color: green;
 }
 
 .article_button{

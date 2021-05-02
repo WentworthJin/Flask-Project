@@ -41,3 +41,27 @@ function clearclass(){
   document.getElementById('class_sample').style.display = "none";
   alert("You have cleared your class")
 }
+
+function show_int_array(){
+  document.getElementById('array_result').innerHTML = "<pre>var someInts:[Int] = [10, 20, 30]</pre>";
+}
+
+function show_str_array(){
+  document.getElementById('array_result').innerHTML = "<pre>var someStrings: [String] = [\"Eggs\", \"Milk\"]</pre>";
+}
+
+function accept_str(){
+  document.getElementById('second_example').innerHTML = "\
+  <pre>func swapTwoStrs(_ a: inout String, _ b: inout String) {\nlet temporaryA = a\na = b\nb = temporaryA\n}\n<b class=\"yewp\">! This function only accepts String values</b></pre>";
+}
+
+function accept_double(){
+  document.getElementById('second_example').innerHTML = "\
+  <pre>func swapTwoDoubles(_ a: inout Double, _ b: inout Double) {\nlet temporaryA = a\na = b\nb = temporaryA\n}\n<b class=\"yewp\">! This function only accepts Double values</b></pre>";
+}
+
+function accept_int(){
+  document.getElementById('second_example').innerHTML = "\
+  <pre>func swapTwoInts(_ a: inout Int, _ b: inout Int) {\nlet temporaryA = a\na = b\nb = temporaryA\n}\n<b class=\"yewp\">! This function only accepts Integer values</b></pre>";
+  document.getElementById('alert_1').innerHTML = "Not efficient, Time-consuming !"
+}
