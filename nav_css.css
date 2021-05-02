@@ -1,9 +1,6 @@
 /* Apply to all pages */
 html {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
     line-height: 2;
 }
 
@@ -12,6 +9,10 @@ a {
 }
 
 .inarticleline {
+    display: inline-block;
+}
+
+.inarticleline p{
     display: inline-block;
 }
 
@@ -168,6 +169,17 @@ div ul li a {
     color: blue;
 }
 
+.article_button{
+    background-color: rgb(241, 112, 25);
+    color: white;
+    border: 2px solid rgb(209,103,32);
+    font-size: 100%;
+    margin-right: 4%;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    width: 20%;
+}
+
 /* Search bar*/
 .searchbar {
     position: relative;
@@ -175,7 +187,7 @@ div ul li a {
 }
 
 input[type=text] {
-    width: 100%;
+    width: 20%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -333,6 +345,10 @@ h2::before {
     content: counter(section) ". ";
 }
 
+button:hover{
+    color: black;
+    background-color: white;
+  }
 
 
 
@@ -372,9 +388,4 @@ table {
 
 ul.mainul{
     list-style: none;
-}
-
-input{
-    border: rgb(228, 220, 220) solid 3px;
-    border-radius: 10px;
 }

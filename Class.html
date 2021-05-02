@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JavaScript_file.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <img src="Image/sample_logo.png" alt="Logo" class="logo">
+    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
+    <div class="searchicon">
+        <div id="searchicon"></div>
+    </div>
+    <span class="searchbar"><input id="searchstring" type="text"
+                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
+                                   placeholder="Search..." oninput="filterSearch()">
+    </span>
+    <button type="button" class="login_button">Login</button>
+  </div>
+  
+  <nav class="sticky">
+    <ul class="ul_mainstyle">
+        <li><a href="./nav.html"><img src="Image/swift_icon.png" alt="home icon"></a>
+        </li>
+        <li><a href="#h1"><b>Reference</b></a></li>
+        <li><a href="#c1"><b>Exercise</b></a></li>
+        <li><a href="#j1"><b>Examples</b></a></li>
+    </ul>
+  </nav>
+  
+  <div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="">Home</a></li>
+                <li><a href="./env_setup.html">Environment Setup</a></li>
+                <li><a href="">Basic Grammar</a></li>
+                <li><a href="./Math.html">Math Operator</a></li>
+                <li><a href="">Some Statements</a></li>
+                <li><a href="./func.html">Function</a></li>
+                <li><a href="">Class</a></li>
+                <li><a href="">Inheritance</a></li>
+                <li><a href="">Generics</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="miandivision article_area">
+      <div class="imgcontainer">
+        <img src="./Image/class_icon.png" alt="Class_icon" class="headimg">
+        <h1>Class and Object ( Instances )</h1>
+      </div>
+      <div class="leftline">
+        <p class="rightcontent firstupper">Just like many other 
+          <a href="https://www.educative.io/blog/object-oriented-programming" target="_blank"><b>object-orinted programming 
+            languages</b></a>, the Class is the building blocks of your program's code in Swift. In Swift, you can define 
+            properties and methods to add functionality to your classes, with the same syntax you use to define constants, 
+            variables, and functions. You can learn how the Class and object works in the following examples.
+        </p>
+      </div><br>
+      <h2>The relationship between Class and Object ( Instances )</h2>
+      <p>In general, the Object ( also called Instances in Swift ) are created from Class, and the Object represents individual 
+        instances of the Class. As for the Class, it represent a category of things, which includes the propertites and features 
+        it need.
+      </p>
+      <p>Overall, the Class classified the range of features and propertites, and the Object is created has different features 
+        within the given range. You can learn more details in the following sections.
+      </p>
+      <h2>What is Class</h2>
+      <p>Similar to other object-orinted programming languages, the Class describes the kind of properties and categories 
+        it has, for example, we have a <b class="bluep">class</b> <b class="redp">Student</b> <b>{ }</b>, and all the features 
+        and properties of a <b class="redp">Student</b> are stored in the <b class="bluep">class</b>, such as <b>Name</b>, 
+        <b>mark</b>, and more.
+      </p>
+      <p>In Swift, the <b class="bluep">Class</b> has three major components: Class name, declare the variable name, and declare 
+        the variable type. For example, as you can see the picture below, the Class has a name "<b>student</b>", three declared 
+        variable ( <b>var</b>) with name, and their vaule types ( <b>Int & String</b>). The value types decide the kind of 
+        <a href=""><b>Data types</b></a> it can be, for example, the <b>studname</b> variable can only be <b>string</b> types 
+        of data.
+      </p>
+      <pre>
+Class student {
+  var studentname: String
+  var mark: Int
+}
+                        </pre>
+      <p>You can try to create your own <b class="bluep">Class</b> below! ( Please enter your class name, and then click the 
+        button )</p> 
+      <div class="imgcontainer">
+        <div class="inarticleline">
+          <p><b class="redp">class</b></p> 
+          <input type="text" id="class1" placeholder="name">
+          <p> <b>{</b></p><br>
+          <p><b>var</b></p>
+          <input type="text" id="property1" placeholder="name">
+          <p><b>:</b></p>
+          <input type="text" id="property1-1" placeholder="Type"><br>
+          <p><b>var</b></p>
+          <input type="text" id="property2" placeholder="name">
+          <p><b>:</b></p>
+          <input type="text" id="property2-2" placeholder="Type"><br>
+          <p><b>var</b></p>
+          <input type="text" id="property3" placeholder="name">
+          <p><b>:</b></p>
+          <input type="text" id="property3-3" placeholder="Type"><br>
+          <p> <b>}</b></p><br>
+          <button type="button" class="article_button" onclick="create_class()">Generate Your class</button>
+          <button type="button" class="article_button" id="clear_class" onclick="clearclass()">Clear</button>
+        </div>
+      </div>
+      <div id="class_sample" style="display: none;">
+        <div class="inarticleline">
+          <p>Here is your own Class created !</p><br>
+          <p><b class="redp">class</b></p> 
+          <p class="bluep" id="class_output"></p>
+          <p> <b>{</b></p><br>
+          <p><b>var</b></p>
+          <p class="bluep" id="var1_value"></p>
+          <p><b>:</b></p>
+          <p class="bluep" id="property1_value"></p><br>
+          <p><b>var</b></p>
+          <p class="bluep" id="var2_value"></p>
+          <p><b>:</b></p>
+          <p class="bluep" id="property2_value"></p><br>
+          <p><b>var</b></p>
+          <p class="bluep" id="var3_value"></p>
+          <p><b>:</b></p>
+          <p class="bluep" id="property3_value"></p><br>
+          <p> <b>}</b></p><br>
+        </div>
+      </div><br>
+
+      <h2>What is a Object ( Instances )</h2>
+      <p>As mentioned previous, the Instace is an individual case that created from the Class. </p>
+      <p>Taking the previous Class "student" as an example, you can create an Instance of that Class by using: </p>
+      <pre>
+Class student {
+  var studentname: String = "mark"
+  var mark: Int = 0
+}
+                </pre>
+      <p>This Instance represent one student, who's name is <b>Mark</b>, and his mark is <b>90</b></p>
+      <p>In addition, you can assign a variable to this Instance, in order to access it's properties.</p>
+      <p>For example, <b class="redp">let</b> <b class="bluep">marks</b> <b>= student( )</b>. Then you can use this variable to 
+        access all the properties & functions inside that Instance.
+      </p>
+      <p>In addition, you can also use this variable to change some properties of that Instance. As the picture shows below, 
+        you can change the "<b>mark</b>" value to 100. Then if you use the print function, you can see the mark has been changed 
+        to 100 now.
+      </p>
+      <pre>
+
+let marks = student()
+marks.mark = 100
+marks.studname = "Mark"
+
+print(marks.amrk)
+        </pre>
+      <p>Try to create your own Instances below! ( Using your previous created Class )</p>
+      <div class="inarticleline">
+        <p><b class="redp">let</b></p> 
+        <input type="text" id="class1" placeholder="name">
+        <p> <b> = </b></p>
+        <p id="class_value"></p><br>
+        <p><b>var</b></p>
+        <input type="text" id="property1" placeholder="name">
+        <p><b>:</b></p>
+        <input type="text" id="property1-1" placeholder="Type"><br>
+        <p><b>var</b></p>
+        <input type="text" id="property2" placeholder="name">
+        <p><b>:</b></p>
+        <input type="text" id="property2-2" placeholder="Type"><br>
+        <p><b>var</b></p>
+        <input type="text" id="property3" placeholder="name">
+        <p><b>:</b></p>
+        <input type="text" id="property3-3" placeholder="Type"><br>
+        <p> <b>}</b></p><br>
+        <button type="button" class="article_button" onclick="create_class()">Generate Your class</button>
+        <button type="button" class="article_button" id="clear_class" onclick="clearclass()">Clear</button>
+      </div>
+    </div>
+</body>
+</html>
