@@ -397,3 +397,28 @@ table {
 ul.mainul{
     list-style: none;
 }
+
+
+
+/* Welcome_Page */
+
+.font_Welcome{
+    font-family: 'Coda Caption', sans-serif;
+}
+
+.Welcome_h1{
+    font-family: 'Coda Caption', sans-serif;
+    color: rgb(241, 112, 25);
+    margin-top: 5%;
+    font-size: 300%;
+}
+
+.Welcome_Content{
+    margin-top: 4%; 
+    font-size: 22px;
+}
+
+.Welcome_button{
+    font-family: 'Coda Caption', sans-serif;
+    margin-top: 5%;
+}
