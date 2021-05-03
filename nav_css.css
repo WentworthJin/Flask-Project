@@ -18,7 +18,7 @@ a {
 
 body {
     counter-reset: section;
-}
+} 
 
 p.firstupper::first-letter{
     font-weight: bold;
