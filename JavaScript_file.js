@@ -83,3 +83,35 @@ function array_pop(){
   existing_array.pop();
   document.getElementById('generic_type_array').innerHTML = existing_array;
 }
+
+
+/* For Condition page*/
+window.onload = function(){
+  document.getElementById('question_if').addEventListener("mouseover",add_question);
+}
+
+function add_question(){
+  document.getElementById('question_pop').innerHTML = "What if we failed to meet the condition ? Will we get any output?";
+}
+
+function loop_result() {
+  var string_value = document.getElementById('foin_string').value;
+  if (string_value == ""){
+    alert("Please enter a string")
+  }
+  else{
+    for (let i=0; i<string_value.length; i++){
+      var node = document.createElement("LI");
+      var textnode = document.createTextNode(string_value[i]);
+      node.appendChild(textnode);
+      document.getElementById("result_output").appendChild(node);
+    }
+    document.getElementById('list_display').style.display = "block";
+  }
+
+}
+
+function resetStr(){
+  document.getElementById('foin_string').value = "";
+  document.getElementById('result_output').innerHTML = "";
+}

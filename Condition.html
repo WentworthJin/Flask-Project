@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JavaScript_file.js"></script>
 
     <title>Document</title>
 </head>
@@ -87,7 +88,95 @@
         the <b>switch</b> is better suited to more complex conditions that comes with multiple possible premutations.
       </p>
       <h3>If-Else</h3>
+      <p>Similar to other programming languages, the If-Else conditional statements can be divided into two part: <b>If</b> and <b>Else</b>
+      </p>
+      <p>In the simplest form, the <b>if</b> statement has a single <b>if</b> condition, and it executes a set of statements if the 
+        specified condition is <b class="redp">True. </b>The basic grammar of <b>if</b> statement in Swift is described below.
+      </p>
+      <pre id="question_if">
+        if &lt; <i>something is <b class="yewp">True</b></i> &gt; {
+          <b class="grenp"> /* Execute the code */</b>
+        }
 
+
+        Example
+
+        var Temp = 30
+        if Temp &lt;= 32 {
+          print("It's very cold. Consider wearing a scarf.")
+        }
+        
+        <b class="grenp">// Prints "It's very cold. Consider wearing a scarf."</b>
+      </pre>
+      <p id="question_pop" class="redp"></p>
+      <p>The <b>if</b> statement provides an alternative set of statements: <b><i>else</i></b> clause, for situations when the <b>if</b> 
+        condition is  <b>false</b>. These statements are indicated by the <b>else</b> keyword.
+      </p>
+      <pre id="question_if">
+        if &lt; <i>something is <b class="yewp">True</b></i> &gt; {
+          <b class="grenp"> /* Execute the code */</b>
+        } <b class="yewp">else</b> {
+          <b class="grenp"> /* Execute the alternative code if condition is false */</b>
+        }
+
+
+        Example
+
+        var Temp = 20
+        if Temp &gt;= 28 {
+          print("It's very hot.")
+        } <b class="yewp">else</b> {
+          print("It's very cold. Consider wearing more clothes.")
+        }
+        
+        <b class="grenp">// Prints "It's very cold. Consider wearing more clothes."</b>
+      </pre><br>
+      <h3>Switch</h3>
+      <p>The <b>Switch</b> statement in Swift is similar to the <b>If-Else</b> statement. However, it condsiders a value and compares 
+        it with several possible matching patterns. In addition, if the value cannot match any patterns, it can provide a <b class="redp">default</b> 
+        result. The simplest grammar of <b>switch</b> is presented below.
+      </p>
+      <pre id="question_if">
+        <b class="yewp">switch</b> some value to consider {
+          <b class="yewp">case</b> value 1:
+              respond to value 1
+          <b class="yewp">case</b> value 2:
+              respond to value 2
+          <b class="yewp">default</b>:
+              otherwise, do something else
+          }
+      </pre>
+
+      <h2>Control Flow</h2>
+      <h3>For-In Loops</h3>
+      <p>You can use the <b>For-In loop</b> to iterate over a sequence, such as items in an array, range of numbers, or characters in a string.</p>
+      <p>You can enter your own word or Number, and click the button to see how this works! ( It will iterate each character in the string you 
+        provided, and print each character in the list below ).
+      </p>
+      <label for="">Please enter any string: </label>
+      <input type="text" id="foin_string" placeholder="Any character">
+      <button type="button" class="article_button" onclick="loop_result()">get the result after loop</button>
+      <button type="button" class="article_button" onclick="resetStr()">Clear String</button>
+      <section id="list_display" style="display: none;">
+        <h3>Here is the each character as a result after the loop</h3>
+        <ul class="mainul" id="result_output">
+        </ul>
+        <p>The basic grammar of For-In Loop is: </p>
+        <pre>
+          for <b class="yewp">index</b> in <b class="yewp">var</b> {
+            <b class="redp">Loop</b>
+          }
+        </pre>
+      </section>
+      <h3>While Loops</h3>
+      <p>In Swift, a <b>while loop</b> performs a set of statement until a condition becomes a false. Normally, the <b>while loop</b> is used when the 
+        number of iterations isn't known before the first iteration begins.
+      </p>
+      <pre>
+        <b class="yewp">while</b> <b>condition</b> {
+          <b class="redp">statements</b>
+        }
+      </pre>
     </div>
 
 </body>
