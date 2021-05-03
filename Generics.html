@@ -137,7 +137,88 @@
       <p>In addition to the Generic Function, Swift also allows you to define your own generic types. It can be <b>custom classes</b>, <b>structures</b>, <b>enumerations</b> 
         that can work with any type, which has similar approachs as <b>Array</b> and <b>Dictionary</b>.
       </p>
+      <p>There is a generic collection type called <b>Stack</b></p>
+      <p>Unlike the Swift's array, a <b>Stack</b> does not allow new items to be inserted and removed at any location, but can only appended to the end 
+        of the collection. 
+      </p>
+      <div class="imgcontainer">
+        <h3>Two major methods in Stack</h3>
+        <table>
+          <tr>
+            <th>Methods</th>
+            <th>Meanings</th>
+          </tr>
+          <tr>
+            <td><b>Push</b></td>
+            <td><b>Append a new value to the end of the collection</b></td>
+          </tr>
+          <tr>
+            <td><b>Pop</b></td>
+            <td><b>Remove the item from the end of the collection</b></td>
+          </tr>
+        </table>
+      </div>
+      <p>You can understand this concept easier with the illustration below</p>
+      <div class="imgcontainer">
+        <img src="./Image/Generic_type_sample.png" alt="illustration of generic type" class="sectionimg"> 
+      </div>
+      <p>Also, you can try yourself to see how this concept works! ( Tip: Only the <b>last</b> element in the 
+        Stack will change )
+      </p>
+      <div class="imgcontainer">
+        <button type="button" class="article_button" onclick="array_push()">Push ( )</button>
+        <button type="button" class="article_button" onclick="array_pop()">Pop ( )</button>
+        <p id="generic_type_array"></p>
+      </div>
+      <p>Above practice is just a illustration that helps you to understand. The real <b>Stack</b> code is represented 
+        below.
+      </p>
+      <pre>
+        struct Stack<b class="yewp">&lt;Element&gt;</b> {
+          var items = [Element]()
+          mutating func push(_ item: Element) {
+              items.append(item)
+          }
+          mutating func pop() -> Element {
+              return items.removeLast()
+          }
+        } 
+      </pre>
+      <p>Similar to the generic function, you need to create a type parameter called <b class="redp">Element</b>, and put it 
+        in the pair of angle brackets <b class="redp">&lt; Element &gt;</b>. Then the Swift will treate the <b class="redp">
+        Element</b> as a placeholder, which can represent any types of value in the future. 
+      </p>
+      <section>
+        <h3>In this case, <b class="redp">Element</b> is used as a placeholder in three places</h3>
+        <ul class="mainul">
+          <li>Create a property called <i>items</i>, which is initialized with an empty array of values of type <b class="redp">Element</b></li>
+          <li>Specify that the <i>push(_:)</i> method has a single parameter called item, which must be a type of <b class="redp">Element</b></li>
+          <li>Specify that the value returned by the <i>pop()</i> method will be a value of type <b class="redp">Element</b></li>
+        </ul>
+      </section>
+      <p>Therefore, with the generic collection type <b>Stack</b>, you will not need to created multiple collection to adopte different data types.</p>
+      <p>For example, we can easily decide the data types of <b>Stack</b> by manipulating the <b class="redp">&lt; Element &gt;</b></p>
+      <pre>
+        var stackOfStrings = Stack<b class="yewp">&lt;String&gt;</b>()
+          stackOfStrings.push("google")
+          stackOfStrings.push("runoob")
+          print(stackOfStrings.items);
+           
+          var stackOfInts = Stack<b class="yewp">&lt;Int&gt;</b>()
+          stackOfInts.push(1)
+          stackOfInts.push(2)
+          print(stackOfInts.items);
+      </pre>
+      <div class="ending">
+        <p class="congrats">Congratulation!!!</p>
+        <p><b>You have finished this chapter!</b></p>
+        <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left"
+                                                        id="arrow"></i>  Last Chapter</a></span>
+            <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+        </p>
+        <br/>
     </div>
+    </div> 
 
 </body>
 </html>

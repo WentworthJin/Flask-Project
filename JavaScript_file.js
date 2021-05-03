@@ -65,3 +65,21 @@ function accept_int(){
   <pre>func swapTwoInts(_ a: inout Int, _ b: inout Int) {\nlet temporaryA = a\na = b\nb = temporaryA\n}\n<b class=\"yewp\">! This function only accepts Integer values</b></pre>";
   document.getElementById('alert_1').innerHTML = "Not efficient, Time-consuming !"
 }
+
+/* For Generics.html array */
+var existing_array = ["Bluebarry","Sugar"];
+window.onload = function(){
+  document.getElementById('generic_type_array').innerHTML = existing_array;
+}
+
+function array_push(){
+  var random_set = ["Banana","Apple","Orange","Peach","Watermelon","Pear","Strawberry"];
+  var random_select = random_set[Math.floor(Math.random()*random_set.length)];
+  existing_array.push(random_select);
+  document.getElementById('generic_type_array').innerHTML = existing_array;
+}
+
+function array_pop(){
+  existing_array.pop();
+  document.getElementById('generic_type_array').innerHTML = existing_array;
+}
