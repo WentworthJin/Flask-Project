@@ -95,6 +95,7 @@ function add_question(){
 }
 
 function loop_result() {
+  document.getElementById('result_output').innerHTML = "";
   var string_value = document.getElementById('foin_string').value;
   if (string_value == ""){
     alert("Please enter a string")
