@@ -439,3 +439,19 @@ ul.mainul{
     font-family: 'Coda Caption', sans-serif;
     margin-top: 5%;
 }
+
+table.reference td {
+  border: 1px solid #f5d06c;
+}
+
+ table.reference tr:nth-child(2n+1) {
+    background-color: #fbeecb;
+}
+
+table.reference tr:nth-child(2n) {
+    background-color: #35394b;
+}
+
+code{
+  background: #fbeecb;
+  color: #505050;}
