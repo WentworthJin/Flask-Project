@@ -13,6 +13,40 @@ from app.forms import RegistrationForm
 @app.route('/')
 def homepage():
     return render_template('home_page_v-2.html')
+
+@app.route('/Setup')
+def setup():
+    return render_template('Set_Up.html')   
+
+@app.route('/Grammar')
+def grammar():
+    return render_template('grammar.html')  
+
+@app.route('/Math')
+def math():
+    return render_template('math.html')  
+
+@app.route('/Condition')
+def condition():
+    return render_template('condition.html')  
+
+@app.route('/Function')
+def function():
+    return render_template('function.html') 
+
+@app.route('/Class')
+def classhtml():
+    return render_template('class.html') 
+
+@app.route('/Gener')
+def genertic():
+    return render_template('generic.html') 
+
+@app.route('/Inher')
+def inhert():
+    return render_template('inher.html') 
+
+
 @app.route('/index')
 @login_required
 def index():
@@ -64,3 +98,6 @@ def register():
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+if __name__=='__main__':
+    app.run(debug=True)

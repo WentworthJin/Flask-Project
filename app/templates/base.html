@@ -1,31 +1,63 @@
-<html>
-    <head>
-        {% if title %}
-        <title>{{ title }} - microblog</title>
-        {% else %}
-        <title>microblog</title>
-        {% endif %}
-    </head>
-    <body>
-        <div>
-            Microblog:
-            <a href="{{ url_for('index') }}">Home</a>
-            {% if current_user.is_anonymous %}
-            <a href="{{ url_for('login') }}">Login</a>
-            {% else %}
-            <a href="{{ url_for('logout') }}">Logout</a>
-            {% endif %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav_css.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{{ url_for('static', filename='JavaScript_file.js')}}"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <img src="{{ url_for('static', filename='/Image/sample_logo.png')}}" alt="Logo" class="logo">
+    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
+    <div class="searchicon">
+        <div id="searchicon"></div>
+    </div>
+    <span class="searchbar"><input id="searchstring" type="text"
+                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
+                                   placeholder="Search..." oninput="filterSearch()">
+    </span>
+    <button type="button" class="login_button">Login</button>
+  </div>
+  
+  <nav class="sticky">
+    <ul class="ul_mainstyle">
+        <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon"></a>
+        </li>
+        <li><a href="/Setup"><b>Tutorial</b></a></li>
+        <li><a href="#c1"><b>Test</b></a></li>
+        <li><a href="#j1"><b>Account</b></a></li>
+    </ul>
+  </nav>
+  
+  <div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Setup">Environment Setup</a></li>
+                <li><a href="/Grammar">Basic Grammar</a></li>
+                <li><a href="/Math">Math Operator</a></li>
+                <li><a href="/Condition">Some Statements</a></li>
+                <li><a href="/Function">Function</a></li>
+                <li><a href="/Class">Class</a></li>
+                <li><a href="/Inher">Inheritance</a></li>
+                <li><a href="/Gener">Generics</a></li>
+            </ul>
         </div>
-        <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
-        {% block content %}{% endblock %}
-    </body>
+    </div>
+
+    <div class="miandivision article_area">
+        {% block articles %}{% endblock %}
+    </div>
+
+</body>
 </html>

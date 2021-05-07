@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block articles %}
+<div class="imgcontainer">
+  <h1>Generics</h1>
+</div>
+<div class="leftline">
+  <p class="rightcontent firstupper"> The <b>Generics</b> are one of the most powerful features of Swift, and most of the Swift 
+    library is built with the generic code. You already have been using generics before, for instance, Swift's <b>Array</b> and 
+    <b>Dictionary</b> types are both generic collections ( You can store any data types in a Array or Dictionary).
+    The <b><i>Generic code </i></b> in Swift allows you to write flexible, reusable types and 
+    functions that can work with any type, based on the requirements that you defined. In addition, it can help you to avoid 
+    duplication and make your code in a clear, abstracted manner.
+  </p>
+</div><br>
+<h2>What is "Generics" ?</h2>
+<p>In general, a function that can process different data types are considered as generics code. If you find this concept confussing, 
+  Let's look at some examples below.
+</p>
+<h3>An example of Generic code: Array</h3>
+<p>The Array in Swift stores values of the same type, and the data type can be various.</p>
+<pre>var someArray = [ <b class="redp">SomeType</b> ]()</pre>
+<p>You can click buttons below to see two data types of Array</p>
+<button type="button" class="article_button" onclick="show_int_array()">Int Type</button>
+<button type="button" class="article_button" onclick="show_str_array()">String Type</button>
+<div id="array_result"></div><br>
+<p>As you can see above, the Array can store different data type's value, which represents the key feature of the <b>Generics</b></p><br>
+<hr class="orange"><br>
+<h2>Generic Function</h2>
+<h3>Another example of Generic code: Swap values Function</h3>
+<p>The first standard, <b>nongeneric</b> function. As you can noticed below, this nongeneric function only takes Int values, other types 
+  will errors. And if you want to make this funtion accepts other data types, you may need to write a new function that accepts that type.
+</p>
+<button type="button" class="article_button" onclick="accept_str()">Accept String</button>
+<button type="button" class="article_button" onclick="accept_double()">Accept Double</button>
+<button type="button" class="article_button" onclick="accept_int()">Accept Int</button>
+<div id="second_example">
+  <pre>
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+      let temporaryA = a
+      a = b
+      b = temporaryA
+  }
+
+  <b class="yewp">! This function only accepts Int values</b>
+  </pre>
+</div>
+<p class="redp" id="alert_1"></p><br>
+<p>As you noticed, such processes are time-consuming. For nongeneric code, you have to write the same function multiple times in order to 
+  process different types of value. In comparison with Generic code below, the advantages and convenience of <b>Generic</b> is obvious, which 
+  is to write the function only onece, and can accepts all types of values
+</p>
+<p>The Generic verison is</p>
+<pre>
+  func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+
+<b class="yewp">! This function can accepts any types of values</b>
+</pre>
+<p>Instead of specifying the certain types of value ( Such as <b class="bluep">func swapTwoInts(_ a: inout Int, _ b: inout Int)</b> ), the Generic 
+  function uses a <b><i>placeholder</i></b> type name <b class="redp">T</b>. The placeholder <b class="redp">T</b> does not specify what <b>T</b> must be, 
+  but it requires both a and b must be of the same type <b>T</b>.
+</p>
+<p>Another reason that the placeholder <b>T</b> can represent different types, is because the placeholder type name is inside angle brackets ( <b> &lt;T&gt;
+  </b> ). The brackets tells Swift that <b>T</b> is a placeholder type name, and then Swift will not look for an actual type called <b>T</b>.
+</p>
+<p>Therefore, the actual type to use in place of <b>T</b> is determined each time the <b class="redp">swapTwoValues(_:_:)</b> function is called, and the 
+  actual type is determined by the user.
+</p>
+<p>Then we can insert various types inside the Generic function, for example</p>
+<pre>
+  var someInt = 3
+  var anotherInt = 107
+  swapTwoValues(&someInt, &anotherInt)
+  <b class="grenp">someInt is now 107, and anotherInt is now 3</b>
+  
+  var someString = "hello"
+  var anotherString = "world"
+  swapTwoValues(&someString, &anotherString)
+  <b class="grenp">someString is now "world", and anotherString is now "hello"</b>
+</pre><br>
+<h2>Generic Types</h2>
+<p>In addition to the Generic Function, Swift also allows you to define your own generic types. It can be <b>custom classes</b>, <b>structures</b>, <b>enumerations</b> 
+  that can work with any type, which has similar approachs as <b>Array</b> and <b>Dictionary</b>.
+</p>
+<p>There is a generic collection type called <b>Stack</b></p>
+<p>Unlike the Swift's array, a <b>Stack</b> does not allow new items to be inserted and removed at any location, but can only appended to the end 
+  of the collection. 
+</p>
+<div class="imgcontainer">
+  <h3>Two major methods in Stack</h3>
+  <table>
+    <tr>
+      <th>Methods</th>
+      <th>Meanings</th>
+    </tr>
+    <tr>
+      <td><b>Push</b></td>
+      <td><b>Append a new value to the end of the collection</b></td>
+    </tr>
+    <tr>
+      <td><b>Pop</b></td>
+      <td><b>Remove the item from the end of the collection</b></td>
+    </tr>
+  </table>
+</div>
+<p>You can understand this concept easier with the illustration below</p>
+<div class="imgcontainer">
+  <img src="{{ url_for('static', filename='/Generic_type_sample.png')}}" alt="illustration of generic type" class="sectionimg"> 
+</div>
+<p>Also, you can try yourself to see how this concept works! ( Tip: Only the <b>last</b> element in the 
+  Stack will change )
+</p>
+<div class="imgcontainer">
+  <button type="button" class="article_button" onclick="array_push()">Push ( )</button>
+  <button type="button" class="article_button" onclick="array_pop()">Pop ( )</button>
+  <p id="generic_type_array"></p>
+</div>
+<p>Above practice is just a illustration that helps you to understand. The real <b>Stack</b> code is represented 
+  below.
+</p>
+<pre>
+  struct Stack<b class="yewp">&lt;Element&gt;</b> {
+    var items = [Element]()
+    mutating func push(_ item: Element) {
+        items.append(item)
+    }
+    mutating func pop() -> Element {
+        return items.removeLast()
+    }
+  } 
+</pre>
+<p>Similar to the generic function, you need to create a type parameter called <b class="redp">Element</b>, and put it 
+  in the pair of angle brackets <b class="redp">&lt; Element &gt;</b>. Then the Swift will treate the <b class="redp">
+  Element</b> as a placeholder, which can represent any types of value in the future. 
+</p>
+<section>
+  <h3>In this case, <b class="redp">Element</b> is used as a placeholder in three places</h3>
+  <ul class="mainul">
+    <li>Create a property called <i>items</i>, which is initialized with an empty array of values of type <b class="redp">Element</b></li>
+    <li>Specify that the <i>push(_:)</i> method has a single parameter called item, which must be a type of <b class="redp">Element</b></li>
+    <li>Specify that the value returned by the <i>pop()</i> method will be a value of type <b class="redp">Element</b></li>
+  </ul>
+</section>
+<p>Therefore, with the generic collection type <b>Stack</b>, you will not need to created multiple collection to adopte different data types.</p>
+<p>For example, we can easily decide the data types of <b>Stack</b> by manipulating the <b class="redp">&lt; Element &gt;</b></p>
+<pre>
+  var stackOfStrings = Stack<b class="yewp">&lt;String&gt;</b>()
+    stackOfStrings.push("google")
+    stackOfStrings.push("runoob")
+    print(stackOfStrings.items);
+     
+    var stackOfInts = Stack<b class="yewp">&lt;Int&gt;</b>()
+    stackOfInts.push(1)
+    stackOfInts.push(2)
+    print(stackOfInts.items);
+</pre>
+<div class="ending">
+  <p class="congrats">Congratulation!!!</p>
+  <p><b>You have finished this chapter!</b></p>
+  <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left"
+                                                  id="arrow"></i>  Last Chapter</a></span>
+      <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+  </p>
+  <br/>
+</div>
+{% endblock %}
