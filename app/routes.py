@@ -11,6 +11,8 @@ from app import db
 from app.forms import RegistrationForm
 
 @app.route('/')
+def homepage():
+    return render_template('home_page_v-2.html')
 @app.route('/index')
 @login_required
 def index():
