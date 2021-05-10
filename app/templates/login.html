@@ -1,6 +1,5 @@
 {% extends "loginbase.html" %}
 {% block loginarea %}
-<div class="formcontainer">
 <form action="" method="post" novalidate>
     {{ form.hidden_tag() }}
     <div class="larger">
@@ -21,9 +20,12 @@
     </div>
     <div class="larger">
         <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
-        <p>{{ form.submit() }}</p>
+        <p>{{ form.submit() }}</p><br>
+        <div class="inarticleline">
+            <p>New User? Create a account</p>
+            <button class="button" style="vertical-align:middle"><span>Here </span></button>
+        </div>
     </div>
 </form>
-</div>
 
 {% endblock %}

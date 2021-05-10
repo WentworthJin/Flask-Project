@@ -38,6 +38,10 @@ def genertic():
 def inhert():
     return render_template('inher.html') 
 
+@app.route('/Test')
+def test():
+    return render_template('Testbase.html')
+
 
 
 @app.route('/login', methods=['GET', 'POST'])

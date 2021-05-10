@@ -85,7 +85,6 @@ nav ul li a {
 nav ul li img {
     height: 20px;
     width: auto;
-
 }
 
 
@@ -102,6 +101,7 @@ nav ul li img {
 .loginbutton{
     background-color: grey;
     color: white;
+    float: right;
 }
 
 /* side bar style */
@@ -494,25 +494,42 @@ code{
 
 
   /* Login page */
-  .logincontainer{
+  button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(241, 112, 25);
+    border: none;
+    color: white;
     text-align: center;
-    margin-top: 10%;
-    padding-bottom: 0px;
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
   }
 
-  .loginicon{
-      height: 50px;
-      width: 50px;
+  .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
   }
 
-  .container1 {
-    text-align: center;
-    width: 100%;
-    clear: both;
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
   }
-  
-  .container1 input {
-    width: 100%;
-    clear: both;
+
+  .button:hover span {
+    padding-right: 25px;
   }
-  
+
+  .button:hover span:after {
+   opacity: 1;
+   right: 0;
+  }
