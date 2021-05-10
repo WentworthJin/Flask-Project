@@ -46,6 +46,10 @@ hr.orange{
     width: 15%;
 }
 
+.logot{
+    height: 8%;
+    width: 8%;
+}
 p.title {
     display: inline-block;
     padding-left: 55%;
@@ -499,27 +503,3 @@ code{
     margin-top: 5%;
   }
 
-
-  /* Login page */
-  .logincontainer{
-    text-align: center;
-    margin-top: 10%;
-    padding-bottom: 0px;
-  }
-
-  .loginicon{
-      height: 50px;
-      width: 50px;
-  }
-
-  .container1 {
-    text-align: center;
-    width: 100%;
-    clear: both;
-  }
-  
-  .container1 input {
-    width: 100%;
-    clear: both;
-  }
-  

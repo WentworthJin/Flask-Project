@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="{{ url_for('static', filename='JavaScript_file.js')}}"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
   
   <nav class="sticky">
     <ul class="ul_mainstyle">
-        <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon"></a>
+        <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon" class="logot"></a>
         </li>
         <li><a href="/Setup"><b>Tutorial</b></a></li>
         <li><a href="#c1"><b>Test</b></a></li>
