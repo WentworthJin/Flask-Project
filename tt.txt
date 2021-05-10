@@ -1,0 +1,10 @@
+Origional_Web_files
+README.md
+__pycache__
+app
+config.py
+migrations
+requirements.txt
+start.py
+tt.txt
+venv
