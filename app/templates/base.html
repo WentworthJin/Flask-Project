@@ -12,29 +12,36 @@
     <title>Document</title>
     <style>
         .logo {
-            height: 10%;
+            height: 11%;
             width: 15%;
         }
 
         .formcontainer{
             text-align: center; 
         }
+
+        .loginbutton{
+            background-color: grey;
+            color: white;
+            float: right;
+        }
     </style>
 </head>
 <body>
   <div class="container">
     <img src="{{ url_for('static', filename='/Image/sample_logo.png')}}" alt="Logo" class="logo">
-    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
-    <button type="button" class="login_button" onclick="window.location.href='/login'">Login</button>
   </div>
   
   <nav class="sticky">
     <ul class="ul_mainstyle">
-        <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon" class="logot"></a>
+        <li><a href="/"><b>HOME</b></a>
         </li>
         <li><a href="/Setup"><b>Tutorial</b></a></li>
         <li><a href="#c1"><b>Test</b></a></li>
         <li><a href="#j1"><b>Account</b></a></li>
+        <li class="loginbutton">
+            <a href="/login"><b>Login</b></a>
+        </li>
     </ul>
   </nav>
   

@@ -99,16 +99,9 @@ nav ul li img {
 
 /* Login button */
 
-.login_button {
-    margin-left: 2%;
-    display: inline-block;
-    border-radius: 4px;
-    background-color: white;
-    border: solid 5px rgb(241, 112, 25);
-    color: rgb(241, 112, 25);
-    text-align: center;
-    padding: 10 15 10 15;
-    font-size: 14px;
+.loginbutton{
+    background-color: grey;
+    color: white;
 }
 
 /* side bar style */
