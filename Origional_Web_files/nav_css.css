@@ -52,6 +52,7 @@ p.title {
 }
 
 .container {
+    position: relative;
 }
 
 /* Navgation section Style sheet */

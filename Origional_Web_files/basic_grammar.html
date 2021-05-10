@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Basic Grammar and Data Type</title>
+</head>
+<body>
+<div class="container">
+    <img src="Image/sample_logo.png" alt="Logo" class="logo">
+    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
+    <div class="searchicon">
+        <div id="searchicon"></div>
+    </div>
+    <span class="searchbar"><input id="searchstring" type="text"
+                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
+                                   placeholder="Search..." oninput="filterSearch()">
+    </span>
+    <button type="button" class="login_button">Login</button>
+</div>
+
+<nav class="sticky">
+    <ul class="ul_mainstyle">
+        <li><a href="./Main_page.html"><img src="Image/swift_icon.png" alt="home icon"></a>
+        </li>
+        <li><a href="#h1"><b>Reference</b></a></li>
+        <li><a href="#c1"><b>Exercise</b></a></li>
+        <li><a href="#j1"><b>Examples</b></a></li>
+    </ul>
+</nav>
+
+<div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="">Home</a></li>
+                <li><a href="./env_setup.html">Environment Setup</a></li>
+                <li><a href="">Basic Grammar</a></li>
+                <li><a href="./Math.html">Math Operator</a></li>
+                <li><a href="">Some Statements</a></li>
+                <li><a href="./func.html">Function</a></li>
+                <li><a href="">Class</a></li>
+                <li><a href="">Inheritance</a></li>
+                <li><a href="">Generics</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="miandivision article_area">
+        <div class="articleContent">
+            <div class="articleIntro" id="content">
+                <h1>Swift basic syntax</h1>
+                <br/>
+                <h2>Basic Syntax</h2>
+                <p>In the previous chapter, we have talked about how to create a "Hello, World!" program in Swift
+                    language. Now let’s review it.</p>
+                <p>If you are creating an OS X playground, you need to introduce Cocoa:</p>
+                <pre>
+import Cocoa
+
+/* My first Swift program */
+var myString = "Hello, World!"
+
+print(myString)
+</pre>
+
+                <p>If we want to create an iOS playground, we need to introduce UIKit:</p>
+                <pre>
+import UIKit
+var myString = "Hello, World!"
+print(myString)
+</pre>
+                <p>The output:</p>
+                <pre>
+Hello, World!
+</pre>
+                <p>The above code is the basic structure of the Swift program. Next, we will explain the components of
+                    the structure in detail.
+
+                </p>
+                <hr/>
+                <h2>Swift Introduction</h2>
+                <p>We can use the <b>import</b> statement to import any Objective-C framework (or C library) into the
+                    Swift
+                    program. For example, the <b>import cocoa</b> statement imports and uses Cocoa libraries and APIs,
+                    and we
+                    can use them in Swift programs.</p>
+                <p>Cocoa itself is written in Objective-C language, and Objective-C is a strict superset of C language,
+                    so we can easily mix in C language code or even C++ code in Swift applications.</p>
+                <hr/>
+                <h2>Swift Markup</h2>
+                <p>Swift programs are composed of many kinds of marks, which can be words, identifiers, constants,
+                    strings or symbols. For example, the following Swift program consists of three types of tags:</p>
+                <pre>
+print("test!")
+/*Mark as words, symbols*/
+print
+("test!")
+</pre>
+                <hr/>
+                <h2>Annotation</h2>
+                <p>Swift comments are very similar to C language, single-line comments start with two backslashes:</p>
+                <pre>
+//This is a single-line comment.
+</pre>
+                <p>Multi-line comments start with /* and end with */:</p>
+                <pre>
+/* This is a comment,
+but crossing multiple lines. */
+</pre>
+                <p>Unlike C language multi-line comments, Swift multi-line comments can be nested inside other
+                    multi-line comments. The writing method is to insert another multi-line comment in a multi-line
+                    comment block. When the second comment block is closed, the first comment block still follows:</p>
+                <pre>
+/* This is a header of a multi-line comment,
+
+/* This is the second comment which is nested in the first comment. */
+
+This is the end of the comment. */
+</pre>
+                <p>The nesting of multi-line comments allows you to comment code blocks more quickly and conveniently,
+                    even if there are already comments in the code block.</p>
+                <hr/>
+                <h2>Identifier</h2>
+                <p>Identifiers are assigned names for variables, constants, methods, functions, enumerations,
+                    structures, classes, protocols, etc. The letters that make up an identifier have certain
+                    specifications. The naming rules for identifiers in the Swift language are as follows:
+                </p>
+                <ul>
+                    <li>Case sensitive, "Name" and "name" are two different identifiers;</li>
+                    <li>The fist character of the identifier can start with an underscore(_) or a letter, but it cannot
+                        be a number;
+                    </li>
+                    <li>Other characters in the identifier can be underscore(_), letters or numbers.</li>
+
+                </ul>
+                <p>For example: userName, User_Name, _sys_val, height, etc. are legal identifiers, while 2mail, room#
+                    and class are illegal identifiers.
+                </p>
+                <p><b>Note:</b> The letters in Swift are coded in Unicode. Unicode is called the unified encoding
+                    system, which contains Asian character encodings, such as Chinese, Japanese, Korean and other
+                    characters, and even the emoticons we use in chat.</p>
+                <p>If you must use keywords as identifiers, you can add accent marks (`) before and after the
+                    keywords.</p>
+                <hr/>
+                <h2>Keyword</h2>
+                <p>A keyword is a sequence of reserved characters similar to an identifier and cannot be used as an
+                    identifier unless it is enclosed in accent marks (`). Keywords are predefined reserved identifiers
+                    with special meaning to the compiler. There are the following 4 common keywords.</p>
+                <h3>Keywords related to the claim</h3>
+                <table class="reference">
+                    <tbody>
+                    <tr>
+                        <td>class</td>
+                        <td>deinit</td>
+                        <td>enum</td>
+                        <td>extension</td>
+                    </tr>
+                    <tr>
+                        <td>func</td>
+                        <td>import</td>
+                        <td>init</td>
+                        <td>internal</td>
+                    </tr>
+                    <tr>
+                        <td>let</td>
+                        <td>operator</td>
+                        <td>private</td>
+                        <td>protocol</td>
+                    </tr>
+                    <tr>
+                        <td>public</td>
+                        <td>static</td>
+                        <td>struct</td>
+                        <td>subscript</td>
+                    </tr>
+                    <tr>
+                        <td>typealias</td>
+                        <td>var</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>Keywords related to the sentence</h3>
+                <table class="reference">
+                    <tbody>
+                    <tr>
+                        <td>break</td>
+                        <td>case</td>
+                        <td>continue</td>
+                        <td>default</td>
+                    </tr>
+                    <tr>
+                        <td>do</td>
+                        <td>else</td>
+                        <td>fallthrough</td>
+                        <td>for</td>
+                    </tr>
+                    <tr>
+                        <td>if</td>
+                        <td>in</td>
+                        <td>return</td>
+                        <td>switch</td>
+                    </tr>
+                    <tr>
+                        <td>where</td>
+                        <td>while</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>Expression and type keywords</h3>
+                <table class="reference">
+                    <tbody>
+                    <tr>
+                        <td>as</td>
+                        <td>dynamicType</td>
+                        <td>false</td>
+                        <td>is</td>
+                    </tr>
+                    <tr>
+                        <td>nil</td>
+                        <td>self</td>
+                        <td>Self</td>
+                        <td>super</td>
+                    </tr>
+                    <tr>
+                        <td>true</td>
+                        <td>_COLUMN_</td>
+                        <td>_FILE_</td>
+                        <td>_FUNCTION_</td>
+                    </tr>
+                    <tr>
+                        <td>_LINE_</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>Keywords used in a specific context</h3>
+                <table class="reference">
+                    <tbody>
+                    <tr>
+                        <td>associativity</td>
+                        <td>convenience</td>
+                        <td>dynamic</td>
+                        <td>didSet</td>
+                    </tr>
+                    <tr>
+                        <td>final</td>
+                        <td>get</td>
+                        <td>infix</td>
+                        <td>inout</td>
+                    </tr>
+                    <tr>
+                        <td>lazy</td>
+                        <td>left</td>
+                        <td>mutating</td>
+                        <td>none</td>
+                    </tr>
+                    <tr>
+                        <td>nonmutating</td>
+                        <td>optional</td>
+                        <td>override</td>
+                        <td>postfix</td>
+                    </tr>
+                    <tr>
+                        <td>precedence</td>
+                        <td>prefix</td>
+                        <td>Protocol</td>
+                        <td>required</td>
+                    </tr>
+                    <tr>
+                        <td>right</td>
+                        <td>set</td>
+                        <td>Type</td>
+                        <td>unowned</td>
+                    </tr>
+                    <tr>
+                        <td>weak</td>
+                        <td>willSet</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr/>
+                <h2 style="color:red">Swift Spaces</h2>
+                <p><b>Caution: </b>Swift language does not completely ignore spaces like C/C++ and Java. Swift has
+                    certain requirements
+                    for the use of spaces, but it is not as strict as Python's requirements for indentation.</p>
+                <pre>
+let a= 1 + 2
+</pre>
+                <p>The error message is:</p>
+                <pre>error: prefix/postfix &#39;=&#39; is reserved</pre>
+                <p>It probably means that the usage of the equal sign directly before or after it is reserved.
+
+                    The following code will still report an error (continue to pay attention to spaces):</p>
+                <pre>
+let a = 1+ 2
+</pre>
+                <p>The error message is:</p>
+                <pre>error: consecutive statements on a line must be separated by &#39;;&#39;</pre>
+                <p>This is because Swift thinks that the statement 1+ is over, and 2 is the next statement.
+
+                    Only by writing in this way will it not report an error:</p>
+                <pre>
+let a = 1 + 2;
+let b = 3+4 // This is correct too.
+</pre>
+                <hr/>
+                <h1>Data Types</h1>
+                <h2>Built-in Data Types</h2>
+                <p>Swift provides a very rich data types, the following is a list of commonly used centralized data
+                    types:</p>
+                <hr/>
+                <h3>Int</h3>
+                <p>Generally speaking, you do not need to specify the length of the integer. Swift provides a special
+                    integer type <code>Int</code> with the same length as the native word length of the current
+                    platform:</p>
+                <ul>
+                    <li>On 32-bit platforms, <code>Int</code>and<code>Int32</code>are in the same length.</li>
+                    <li>On 64-bit platforms, <code>Int</code>and<code>Int64</code>are in the same length.</li>
+                </ul>
+                <p>
+                    Unless you need an integer of a specific length, it is generally<code>Int</code>sufficient to use
+                    it. This can improve code consistency and reusability. Even on a 32-bit platform, <code>Int</code>the
+                    range of integers that can be stored can reach
+                    <code>-2,147,483,648</code>~<code>2,147,483,647</code>, which is large enough most of the time.
+                </p>
+                <h3>UInt</h3>
+                <p>Swift also provides a special unsigned type <code>UInt</code> with the same length as the native word
+                    length of the current platform:</p>
+                <ul>
+                    <li>
+                        On 32-bit platforms, <code>UInt</code> and <code>UInt32</code> are in the same length.
+                    </li>
+                    <li>On 64-bit platforms, <code>UInt</code> and <code>UInt64</code> are in the same length.</li>
+                </ul>
+                <h3>Floating Point</h3>
+                <p>Is a floating point number with a decimal part, such as <code>3.14159</code>, <code>0.1</code>, and
+                    <code>-273.15</code>.</p>
+                <p>Floating point types represent a larger range than integer types, and can store <code>Int</code>
+                    numbers larger or smaller than the type. Swift provides two types of signed floating-point numbers:
+                </p>
+                <ul>
+                    <li><code>Double</code> Represents a 64-bit floating point number. Please use this type when you
+                        need to store large or very high-precision floating-point numbers.
+                    </li>
+                    <li><code>Float</code> Represents a 32-bit floating point number. This type can be used if the
+                        precision is not high.
+                    </li>
+                </ul>
+                <h3>Boolean Value</h3>
+                <p>Swift has a basic Boolean type called Bool. Boolean values refer to logical values because they can
+                    only be true or false. Swift has two Boolean constants, true and false.</p>
+                <h3>String</h3>
+                <p>A string is a sequence collection of characters, for example:</p>
+                <pre>"Hello, World!"</pre>
+                <h3>Character</h3>
+                <p>A character refers to a single letter, for example:</p>
+                <pre>"C" //The letter C is a character here.</pre>
+                <h3>Optional Type</h3>
+                <p>Use optionals to handle situations where values ​​may be missing. Optional types indicate value or no
+                    value.</p>
+                <hr/>
+                <h2>Numerical Range</h2>
+                <p>The following table shows the storage space of the memory of different variable types, and the
+                    maximum and minimum values​of variable types:</p>
+                <table class="reference">
+                    <tbody>
+                    <tr>
+                        <th>Type</th>
+                        <th>Size (Byte)</th>
+                        <th>Interval value</th>
+                    </tr>
+                    <tr>
+                        <td>Int8</td>
+                        <td>1 Byte</td>
+                        <td>-127 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>UInt8</td>
+                        <td>1 Byte</td>
+                        <td>0 to 255</td>
+                    </tr>
+                    <tr>
+                        <td>Int32</td>
+                        <td>4 Bytes</td>
+                        <td>-2147483648 to 2147483647</td>
+                    </tr>
+                    <tr>
+                        <td>UInt32</td>
+                        <td>4 Bytes</td>
+                        <td>0 to 4294967295</td>
+                    </tr>
+                    <tr>
+                        <td>Int64</td>
+                        <td>8 Bytes</td>
+                        <td>-9223372036854775808 to 9223372036854775807</td>
+                    </tr>
+                    <tr>
+                        <td>UInt64</td>
+                        <td>8 Bytes</td>
+                        <td>0 to 18446744073709551615</td>
+                    </tr>
+                    <tr>
+                        <td>Float</td>
+                        <td>4 Bytes</td>
+                        <td>1.2E-38 to 3.4E+38 (~6 digits)</td>
+                    </tr>
+                    <tr>
+                        <td>Double</td>
+                        <td>8 Bytes</td>
+                        <td>2.3E-308 to 1.7E+308 (~15 digits)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr/>
+                <h2>Type Alias</h2>
+                <p>Type aliases define another name for the current type. Type aliases are defined by using the
+                    typealias keyword. The syntax format is as follows:</p>
+                <pre>typealias newname = type</pre>
+                <p>For example, the following defines the type alias of Int as Feet:</p>
+                <pre>typealias Feet = Int</pre>
+                <p>Now, we can define variables through aliases:</p>
+                <pre>import Cocoa
+
+typealias Feet = Int
+var distance: Feet = 100
+print(distance)</pre>
+                <p>the output result is:</p>
+                <pre>100</pre>
+                <hr/>
+                <h2>Type Safety</h2>
+                <p>Swift is a type safe language.</p>
+                <p>Since Swift is type-safe, it will perform type checks when compiling your code and mark mismatched
+                    types as errors. This allows you to find and fix bugs as early as possible during development.</p>
+                <pre>import Cocoa
+
+var varA = 42
+varA = "This is hello"
+print(varA)</pre>
+                <p>The above program will report an error in Xcode:</p>
+                <pre>error: cannot assign value of type 'String' to type 'Int'
+varA = "This is hello"</pre>
+                <p>It means that you cannot assign the string'String' to the variable'Int'.</p>
+                <hr/>
+                <h2>Type Inference</h2>
+                <p>When you have to deal with different types of values, type checking can help you avoid errors.
+                    However, this does not mean that you need to explicitly specify the type every time you declare
+                    constants and variables.</p>
+                <p>If you don't specify the type explicitly, Swift will use type inference to select the appropriate
+                    type.</p>
+                <p>For example, if you assign 42 to a new constant without specifying the type, Swift can infer that the
+                    constant type is Int, because the initial value you assign to it looks like an integer:</p>
+                <pre>let meaningOfLife = 42
+// meaningOfLife will be inferred as Int</pre>
+                <p>In the same way, if you don't specify a type for a floating-point literal, Swift will infer that you
+                    want Double:</p>
+                <pre>let pi = 3.14159
+// pi will be inferred as Double</pre>
+                <hr/>
+                <div class="ending">
+                    <p class="congrats">Congratulation!!!</p>
+                    <p><b>You have finished this chapter!</b></p>
+                    <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left" id="arrow"></i>  Last Chapter</a></span>
+                        <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right"
+                                                                                  id="arrow"></i></a></span></p>
+                    <br/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

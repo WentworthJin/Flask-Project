@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <img src="Image/sample_logo.png" alt="Logo" class="logo">
+    <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
+    <div class="searchicon">
+        <div id="searchicon"></div>
+    </div>
+    <span class="searchbar"><input id="searchstring" type="text"
+                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
+                                   placeholder="Search..." oninput="filterSearch()">
+    </span>
+    <button type="button" class="login_button">Login</button>
+  </div>
+  
+  <nav class="sticky">
+    <ul class="ul_mainstyle">
+        <li><a href="./Main_page.html"><img src="Image/swift_icon.png" alt="home icon"></a>
+        </li>
+        <li><a href="#h1"><b>Reference</b></a></li>
+        <li><a href="#c1"><b>Exercise</b></a></li>
+        <li><a href="#j1"><b>Examples</b></a></li>
+    </ul>
+  </nav>
+  
+  <div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="">Home</a></li>
+                <li><a href="./env_setup.html">Environment Setup</a></li>
+                <li><a href="">Basic Grammar</a></li>
+                <li><a href="./Math.html">Math Operator</a></li>
+                <li><a href="">Some Statements</a></li>
+                <li><a href="./func.html">Function</a></li>
+                <li><a href="">Class</a></li>
+                <li><a href="">Inheritance</a></li>
+                <li><a href="">Generics</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="miandivision article_area p_large">
+      <div class="imgcontainer">
+        <img src="./Image/math_icon.png" alt="Math_icon" class="headimg">
+        <h1>Math Operators</h1>
+      </div>
+      <div class="leftline">
+        <p class="rightcontent firstupper">Like the math operators in may other programming languages, the operators in the 
+          Swift programming langue have the similar meanings and usage. In general, an operator is a special symbol or phrase 
+          that can be used to check, change or combine values. We already learned most of the math operators, for instance, 
+          we have the addition operator ( <strong>+</strong> ) that can simplly add two numbers, such as 1 + 2. In addition, 
+          Swift also has comparison operators, logical operators, and more. Below is the basic summary of all operators in 
+          Swift  
+        </p>
+      </div><br>
+      <section>
+        <h3>Some basic Operators</h3>
+        <ul class="mainul">
+          <li>Arithmetic Operators</li>
+          <li>Comparison Operators</li>
+          <li>Logical Operators</li>
+          <li>Compund Assignment Operators</li>
+          <li>Ternary Conditional Operator</li>
+          <li>Range Operators</li>
+        </ul>
+      </section>
+      <br>
+      <h2>Arithmetic Operator</h2>
+      <p>Swift supports the four standard <b><i>arithmetic operators</i></b> for all numberic types, and the definition is 
+        straightforward.
+      </p>
+      <div class="imgcontainer">
+        <table>
+          <tr>
+            <th>Types</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Addition ( <b>+</b> )</td>
+            <td><b>1 + 3</b></td>
+          </tr>
+          <tr>
+            <td>Subtraction ( <b>-</b> )</td>
+            <td><b>5 - 3</b></td>
+          </tr>
+          <tr>
+            <td>Multiplication ( <b>*</b> )</td>
+            <td><b>2 * 4</b></td>
+          </tr>
+          <tr>
+            <td>Division ( <b>/</b> )</td>
+            <td><b>8.0 / 2.5</b></td>
+          </tr>
+        </table>
+      </div><br>
+      <h2>Comparison Operators</h2>
+      <p>The Comparison Operators basically compare two values and reutrn a <strong>Bool</strong> value ( True or False ). 
+        Therefore, the comparison operator will indicate whether or not the comparison statement is true ( Return True) or 
+        false ( Return False ). There are 6 comparison operators current used in Swift, and the usage is similar to the 
+        languages you learned before. In addition to the value comparison, this operator can also be used in conditional 
+        statements, such as the <strong>if</strong> statement.
+      </p>
+      <ul class="mainul">
+        <li>Equal ( <b>==</b> )</li>
+        <li>Not equal to ( <b>!=</b> )</li>
+        <li>Greater than ( <b>></b> )</li>
+        <li>Less than ( <b>&lt;</b> )</li>
+        <li>Greater than or equal to ( <b>>=</b> )</li>
+        <li>Less than or equal to ( <b>&lt;=</b> )</li>
+      </ul><br>
+      <p>In addition, Swift provides two <b><i>identity operators: </i></b>  <strong>===</strong> & <strong>!==</strong> 
+        Which is used to test whether two object references both refer to the same object instance. For example
+      </p>
+      <div class="imgcontainer">
+        <img src="./Image/Identity_operator.png" alt="Math_icon" class="sectionimg">
+        <p><cite>Example use of Identity Operator</cite></p>
+        <p><b>Source: </b><a href="https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html#ID90" target="_blank">
+          Swift.org</a></p>
+      </div><br>
+      <h2>Logical Operator</h2>
+      <p>The Logical Operator combine or modify the Boolean logic values <b>true</b> and <b>false</b>. The Swift supprots three 
+        standard logcial operators that origional found in C-based languages.
+      </p>
+      <div class="imgcontainer">
+        <table>
+          <tr>
+            <th>Types</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Logical NOT ( <b>!</b> )</td>
+            <td><b>!a</b> Means not a</td>
+          </tr>
+          <tr>
+            <td>Logical AND ( <b>&&</b> )</td>
+            <td><b>a && b</b> Means a and b</td>
+          </tr>
+          <tr>
+            <td>Logical OR ( <b>||</b> )</td>
+            <td><b>2 || 4</b> Means it is 2 or 4</td>
+          </tr>
+        </table>
+      </div><br>
+      <h2>Compund Assignment Operators</h2>
+      <p>The definition is straightforward, which is to add one operator with ( <b>=</b> ), for example: <b>+=</b>, <b>-=</b>, 
+        <b>*=</b>, and more. It's looks like abbreviation. For example
+      </p>
+      <div class="imgcontainer">
+        <p><b>a = 1</b></p>
+        <p><b>( a += 1 )</b> == <b>( a = a + 1 )</b> </p>
+        <br>
+        <p><b>b=1</b></p>
+        <p><b>( b *= 1 )</b> == <b>( b = b * 1 )</b></p>
+      </div><br>
+      <h2>Ternary Conditional Operator</h2>
+      <p>The <b><i>ternary conditional operator</i></b> is a special operator with three parts, which includes <b>question</b> 
+        <b>? answer1 : answer2</b>. 
+      </p>
+      <p>For example </p>
+      <div class="imgcontainer">
+        <p><b class="bluep">let </b> <b class="redp">Num = </b> <b>( 3 > 1 ? 10 : 20 )</b></p>
+        <p>In this example, the value of <b class="bluep">Num</b> is either <b>10 or 20</b>, and the final values is determined 
+          by the question: <b class="redp"> 3 > 1 ?</b>
+        </p>
+        <p>If the question returns <b>true</b>, then <b  class="bluep">Num</b> will be the first answer ( <b>answer1</b>), 
+          otherwise it will be the second answer ( <b>answer2</b>)
+        </p>
+      </div><br>
+      <p>What's more, the ternary conditional operator can also be presented in this way for better understand.</p>
+      <img src="./Image/ternary_sample.png" alt="Ternary operator sample" class="sectionimg"><br>
+      <h2>Range Operators</h2>
+      <p>The <i><b>Range Operators</b></i> are shortcuts for expressing a range of values in Swift, and it is useful when iterating 
+        ( <b>Loop</b>), for intance, it can be used in <b>for-in loop</b>. It can be represented as <b>(a...b)</b>
+      </p>
+      <div class="imgcontainer">
+        <img src="./Image/Range_Operator.png" alt="Range Operator example" class="sectionimg">
+        <p><cite>Example use of Range Operator</cite></p>
+        <p><b>Source: </b><a href="https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html" target="_blank">
+          Swift.org</a></p>
+      </div>
+      <p>In addition, the Range can be <b>One-Sided</b>. It means that there can be only one value in the <b>Range Operator</b>, 
+        for instance, it can be <b>(2.....)</b> or <b>(....2)</b>
+      </p>
+      <div class="imgcontainer">
+        <img src="./Image/Oneside_range.png" alt="One-side range example" class="sectionimg">
+        <p><cite>Example use of One-side Range Operator</cite></p>
+        <p><b>Source: </b><a href="https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html" target="_blank">
+          Swift.org</a></p>
+      </div>
+      <div class="ending">
+        <p class="congrats">Congratulation!!!</p>
+        <p><b>You have finished this chapter!</b></p>
+        <p><span class="last"><a href=" " rel="prev"><i class="fa fa-arrow-left"
+                                                        id="arrow"></i>  Last Chapter</a></span>
+            <span class="next"><a href="" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+        </p>
+        <br/>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
