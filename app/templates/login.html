@@ -1,8 +1,9 @@
-{% extends "base.html" %}
-{% block articles %}
-<h1>Sign In</h1>
+{% extends "loginbase.html" %}
+{% block loginarea %}
+<div class="formcontainer">
 <form action="" method="post" novalidate>
     {{ form.hidden_tag() }}
+    <div class="larger">
     <p>
         {{ form.username.label }}<br>
         {{ form.username }}<br>
@@ -12,13 +13,15 @@
     </p>
     <p>
         {{ form.password.label }}<br>
-        {{ form.password(size=32) }}<br>
+        {{ form.password }}<br>
         {% for error in form.password.errors %}
         <span style="color: red;">[{{ error }}]</span>
         {% endfor %}
     </p>
+</div>
     <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
     <p>{{ form.submit() }}</p>
 </form>
+</div>
 
 {% endblock %}

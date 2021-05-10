@@ -4,26 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='nav_css.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     
     <title>Document</title>
+    <style>
+        .logo {
+            height: 10%;
+            width: 15%;
+        }
+
+        .formcontainer{
+            text-align: center; 
+        }
+    </style>
 </head>
 <body>
   <div class="container">
     <img src="{{ url_for('static', filename='/Image/sample_logo.png')}}" alt="Logo" class="logo">
     <p class="title"><strong> CITS 5505 Agile Web Development<br> Project 2 </strong></p>
-    <div class="searchicon">
-        <div id="searchicon"></div>
-    </div>
-    <span class="searchbar"><input id="searchstring" type="text"
-                                   style="width:20%; border:2px solid #b200ff; background-color:white;"
-                                   placeholder="Search..." oninput="filterSearch()">
-    </span>
     <button type="button" class="login_button" onclick="window.location.href='/login'">Login</button>
   </div>
   

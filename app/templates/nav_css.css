@@ -42,7 +42,7 @@ hr.orange{
 }
 
 .logo {
-    height: 20%;
+    height: 10%;
     width: 15%;
 }
 
@@ -503,3 +503,13 @@ code{
     margin-top: 5%;
   }
 
+
+  /* Login Area */
+  .logo {
+    height: 10%;
+    width: 15%;
+}
+
+  .formcontainer{
+    text-align: center; 
+}
