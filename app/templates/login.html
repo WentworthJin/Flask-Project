@@ -1,18 +1,18 @@
 {% extends "loginbase.html" %}
 {% block loginarea %}
 <form action="" method="post" novalidate>
-    {{ form.hidden_tag() }}
+    {{ form.hidden_tag() }} <!--Prevent CSRF attack--> 
     <div class="larger">
         <p>
             {{ form.username.label }}<br>
-            {{ form.username }}<br>
+            {{ form.username (size=32) }}<br>
             {% for error in form.username.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
         <p>
             {{ form.password.label }}<br>
-            {{ form.password }}<br>
+            {{ form.password (size=32) }}<br>
             {% for error in form.password.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
@@ -23,7 +23,7 @@
         <p>{{ form.submit() }}</p><br>
         <div class="inarticleline">
             <p>New User? Create an account</p>
-            <button class="button" style="vertical-align:middle"><span>Here </span></button>
+            <button class="button" type="button" style="vertical-align:middle" onclick="window.location.href='/register'"><span>Here </span></button>
         </div>
     </div>
 </form>

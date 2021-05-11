@@ -76,6 +76,9 @@
     </style>
 </head>
 <body>
+  {% if current_user.is_authenticated %}
+  <h3 class="redp">Welcome, {{ current_user.username }}!</h3>
+  {% endif %}
     <nav class="sticky">
         <ul class="ul_mainstyle">
             <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon"></a>
@@ -84,7 +87,11 @@
             <li><a href="/Test"><b>Test</b></a></li>
             <li><a href="#j1"><b>Account</b></a></li>
             <li class="loginbutton">
-                <a href="/login"><b>Login</b></a>
+              {% if current_user.is_anonymous %}
+              <a href="{{ url_for('login') }}"><b>Login</b></a>
+              {% else %}
+              <a href="{{ url_for('logout') }}">Logout</a>
+              {% endif %}
             </li>
         </ul>
       </nav>
