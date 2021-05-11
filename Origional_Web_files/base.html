@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav_css.css')}}">
+    <script src="{{ url_for('static', filename='JavaScript_file.js')}}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        .logo {
+            height: 11%;
+            width: 15%;
+        }
+
+        .formcontainer{
+            text-align: center; 
+        }
+
+        .loginbutton{
+            background-color: grey;
+            color: white;
+            float: right;
+        }
+
+        nav ul.ul_mainstyle {
+            margin: 1% 0 0 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(241, 112, 25);
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <img src="{{ url_for('static', filename='/Image/sample_logo.png')}}" alt="Logo" class="logo">
+  </div>
+  
+  <nav class="sticky">
+    <ul class="ul_mainstyle">
+        <li><a href="/"><b>HOME</b></a>
+        </li>
+        <li><a href="/Setup"><b>Tutorial</b></a></li>
+        <li><a href="/Test"><b>Test</b></a></li>
+        <li><a href="#j1"><b>Account</b></a></li>
+        <li class="loginbutton">
+            <a href="/login"><b>Login</b></a>
+        </li>
+    </ul>
+  </nav>
+  
+  <div class="mainarticle">
+    <div class="stickybar">
+        <div class="miandivision sidebar">
+            <ul class="sideul">
+                <li class="ul1">Side</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Setup">Environment Setup</a></li>
+                <li><a href="/Grammar">Basic Grammar</a></li>
+                <li><a href="/Math">Math Operator</a></li>
+                <li><a href="/Condition">Some Statements</a></li>
+                <li><a href="/Function">Function</a></li>
+                <li><a href="/Class">Class</a></li>
+                <li><a href="/Inher">Inheritance</a></li>
+                <li><a href="/Gener">Generics</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="miandivision article_area">
+        {% block articles %}{% endblock %}
+    </div>
+
+</body>
+</html>
