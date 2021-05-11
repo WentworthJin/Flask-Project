@@ -1,8 +1,10 @@
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin # Apply login manager #
-from app import db
+from app import db,app
 from app import login
+from flask_admin import Admin
+from flask_admin.contrib.sqla import ModelView
 
 
 class User(UserMixin, db.Model):
@@ -38,3 +40,7 @@ class Post(db.Model):
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+admin=Admin(app)
+admin.add_view(ModelView(User, db.session))
+admin.add_view(ModelView(Post, db.session))
