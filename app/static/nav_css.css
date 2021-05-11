@@ -42,8 +42,18 @@ hr.orange{
 }
 
 .logo {
-    height: 20%;
+    height: 11%;
     width: 15%;
+}
+
+.formcontainer{
+    text-align: center; 
+}
+
+.loginbutton{
+    background-color: grey;
+    color: white;
+    float: right;
 }
 
 p.title {
@@ -367,7 +377,9 @@ button:hover{
     background-color: white;
   }
 
-
+.pageimg:hover{
+    opacity: 1;
+}
 
 /* Math Operator Page */
 p.rightcontent{
@@ -415,12 +427,13 @@ ul.mainul{
     font-family: 'Coda Caption', sans-serif;
 }
 
-.Welcome_h1{
+.Welcome_h1 {
     font-family: 'Coda Caption', sans-serif;
     color: rgb(241, 112, 25);
     margin-top: 5%;
     font-size: 300%;
-}
+    animation: myanimation-head 5s infinite;
+  }
 
 .Welcome_Content{
     margin-top: 4%; 
@@ -467,7 +480,7 @@ code{
     opacity: 0.7;
     filter: blur(2px);
     -webkit-filter: blur(2px);
-}
+  }
 
 .centere_word {
     position: absolute;
@@ -493,43 +506,82 @@ code{
   }
 
 
-  /* Login page */
-  button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: rgb(241, 112, 25);
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 5px;
-    width: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
+/* Login page */
+  .logo {
+    height: 10%;
+    width: 15%;
+}
 
-  .button span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.5s;
-  }
+.formcontainer{
+  margin: auto;
+  margin-top: 6%;
+  width: 60%;
+  border: 1px solid grey;
+  padding: 70 50 50 50;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
+.larger{
+  font-size: 250%;
+}
 
-  .button:hover span {
-    padding-right: 25px;
-  }
+.large{
+  font-size: 70%;
+}
 
-  .button:hover span:after {
-   opacity: 1;
-   right: 0;
+.inarticleline {
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(241, 112, 25);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+
+/* Animation */
+
+
+@keyframes myanimation-head {
+    0% {color: red;}
+    25%{color:rgb(255, 196, 0);}
+    50%{color:rgb(151, 60, 7);}
+    75%{color:brown;}
+    100% {color: rgb(241, 112, 25);}
   }

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block articles %}
+<div class="mainarticle">
+  <section class="imgcontainer ">
+    <h1 class="Welcome_h1">
+      Welcome to Our Swift Mini Tutorial </h1>
+  </section>
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Setup"><img src="{{ url_for('static', filename='/Image/sp-11.webp')}}" alt="Italy" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Environment</b></h1>
+      </div>
+    </div>
+  </div>
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Grammar"><img src="{{ url_for('static', filename='/Image/sp-22.jpeg')}}" alt="Forest" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Grammar</b></h1>
+      </div>
+    </div>
+  </div>
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Math"><img src="{{ url_for('static', filename='/Image/sp-33.jpg')}}" alt="Mountains" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Operator</b></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Condition"><img src="{{ url_for('static', filename='/Image/sp-44.png')}}" alt="Italy" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Condition</b></h1>
+      </div>
+    </div>
+  </div>
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Function"><img src="{{ url_for('static', filename='/Image/sp-55.png')}}" alt="Forest" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Function</b></h1>
+      </div>
+    </div>
+  </div>
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Class"><img src="{{ url_for('static', filename='/Image/sp-66.jpg')}}" alt="Mountains" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Class</b></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Gener"><img src="{{ url_for('static', filename='/Image/sp-77.png')}}" alt="Italy" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Generic</b></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-container">
+    <div class="pagecontainer ">
+      <a href="/Inher"><img src="{{ url_for('static', filename='/Image/sp--99.webp')}}" alt="Italy" class="pageimg"></a>
+      <div class="centere_word">
+        <h1><b>Inheritance</b></h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p><b>Student : </b>Kebing Zhao |  22863702</p>
+  <p><b>Student : </b>Liangbo Jin  |  23078811</p>
+  <p><b><i>CITS 5505 Agile Web Development -- Proejct 2</i></b></p>
+</footer>
+{% endblock %}
