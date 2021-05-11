@@ -12,6 +12,6 @@ migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = 'login'
 app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
-admin = Admin(app, name='microblog', template_mode='bootstrap3')
+
 
 from app import routes, models
