@@ -576,6 +576,23 @@ code{
  right: 0;
 }
 
+input[type="text"]{
+    border-radius: 5px;
+    color: red;
+    border: black solid 2px;
+    width: 30%;
+    padding: 10px;
+    line-height: 10px;
+  }
+input[type="password"]{
+    border-radius: 5px;
+    color:red;
+    border: black solid 2px;
+    padding: 3px;
+    line-height: 3px;
+    width: 30%;
+  }
+
 /* Test page */
 
 .ocean { 
@@ -618,6 +635,7 @@ code{
 .inlinep{
     display: inline-block;
   }
+  
 /* Animation */
 
 
