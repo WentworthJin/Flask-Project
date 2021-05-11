@@ -377,9 +377,6 @@ button:hover{
     background-color: white;
   }
 
-.pageimg:hover{
-    opacity: 1;
-}
 
 /* Math Operator Page */
 p.rightcontent{
@@ -459,13 +456,16 @@ table.reference tr:nth-child(2n) {
 
 code{
   background: #fbeecb;
-  color: #505050;}
+  color: #505050;
+}
 
-  .img-container {
+.img-container {
     float: left;
     width: 33.33%;
     padding: 5px;
-  }
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
 
 
   .pagecontainer {
@@ -480,6 +480,8 @@ code{
     opacity: 0.7;
     filter: blur(2px);
     -webkit-filter: blur(2px);
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
   }
 
 .centere_word {
@@ -585,3 +587,13 @@ code{
     75%{color:brown;}
     100% {color: rgb(241, 112, 25);}
   }
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  } 
