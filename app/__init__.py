@@ -5,6 +5,7 @@ from flask_migrate import Migrate
 from .admin import admin
 from flask_admin.contrib.sqla import ModelView
 from .models import User, Post
+from flask_login import LoginManager
 
 app = Flask(__name__)
 app.config.from_object(Config) # Tell Flask to read it and apply it #
