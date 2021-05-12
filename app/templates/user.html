@@ -39,9 +39,18 @@
   <p class="redp">{{average}}</p>
 
   <h3 class="redp">Summary of the received result from all users! Keep your hard work!</h3>
-  {% for i in all %}
-  <p class="redp">{{i.Mark}}</p>
-  {% endfor %}
+  <table>
+    <tr valign="top">
+      <td>User</td>
+      <td>Result</td>
+    </tr>
+    {% for i in all %}
+    <tr>
+      <td>{{i.user_id}}</td>
+      <td>{{i.Mark}}</td>
+    </tr>
+    {% endfor %}
+  </table>
 </div>
 
 {% endblock %}

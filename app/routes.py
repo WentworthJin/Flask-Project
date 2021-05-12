@@ -59,6 +59,7 @@ def test():
     Record = None
     today = datetime.now()
     CurrentResult = 0
+    feedbackl=""
     if request.method == 'POST':
         First = request.form.getlist('question-1-answers')
         Second = request.form.getlist('question-2-answers')
@@ -72,6 +73,9 @@ def test():
         Ten = request.form.getlist('question-0-answers')
         if 'A' in First:
            CurrentResult+=10
+        else:
+            feedbackl + "You should review the first chapter " 
+
         if 'C' in Second:
            CurrentResult+=10
         if 'A' in Third:
@@ -90,7 +94,7 @@ def test():
            CurrentResult+=10
         if 'C' in Ten:
            CurrentResult+=10
-        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback="Good", user_id=currentid)
+        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedbackl, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
         flash("Congraulations, You have finished the test. Check your result in your Profile!")
@@ -147,7 +151,6 @@ def user(username):
     all=Post.query.all()
     for i in allmark:
         list.append(i.Mark)
-        print(list)
     for i in list:
         average+=int(i)
     average=average/len(list)
