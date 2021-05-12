@@ -15,10 +15,12 @@
   {% if user == current_user %}
   <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
   {% endif %}
-  <hr>
-  {% for post in posts %}
-    {% include '_mark.html' %}
-  {% endfor %}
+  <br>
+  <table>
+    <tr valign="top">
+      <td>{{user.id}}</td>
+    </tr>
+  </table>
 </div>
 
 {% endblock %}

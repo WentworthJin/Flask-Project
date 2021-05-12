@@ -19,7 +19,9 @@
     </style>
 </head>
 <body>
-  <button class="button" style="vertical-align:middle" onclick="window.location.href='/home'"><span>Exit</span></button>
+  <div class="sticky">
+    <button class="button" style="vertical-align:middle" onclick="window.location.href='/home'"><span>Exit</span></button>
+  </div>
   <div class="centerp">
     {% with messages = get_flashed_messages() %}
     {% if messages %}
@@ -33,21 +35,135 @@
     <div class="center">
       <h3 class="inlinep">How do you define the function</h3>
       <form action="">
-        <input type="radio" id = "A1" name="question-1-answers" value="A">
-        <label for="A1">A) <b>This answer</b></label><br>
-        <input type="radio" id = "A2" name="question-1-answers" value="B">
-        <label for="A2">B) <b>This answer</b></label><br>
-        <input type="radio" id = "A3" name="question-1-answers" value="C">
-        <label for="A3">C) <b>This answer</b></label><br>
-        <input type="radio" id = "A4" name="question-1-answers" value="D">
-        <label for="A4">D) <b>This answer</b></label><br>
+        <input type="radio" id = "A11" name="question-1-answers" value="A">
+        <label for="A11">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A12" name="question-1-answers" value="B">
+        <label for="A12">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A13" name="question-1-answers" value="C">
+        <label for="A13">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A14" name="question-1-answers" value="D">
+        <label for="A14">D) <b>This answer</b></label><br>
       </form>
-    </div>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A21" name="question-2-answers" value="A">
+        <label for="A21">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A22" name="question-2-answers" value="B">
+        <label for="A22">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A23" name="question-2-answers" value="C">
+        <label for="A23">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A24" name="question-2-answers" value="D">
+        <label for="A24">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A31" name="question-3-answers" value="A">
+        <label for="A31">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A32" name="question-3-answers" value="B">
+        <label for="A32">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A33" name="question-3-answers" value="C">
+        <label for="A33">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A34" name="question-3-answers" value="D">
+        <label for="A34">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A41" name="question-4-answers" value="A">
+        <label for="A41">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A42" name="question-4-answers" value="B">
+        <label for="A42">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A43" name="question-4-answers" value="C">
+        <label for="A43">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A44" name="question-4-answers" value="D">
+        <label for="A44">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A51" name="question-5-answers" value="A">
+        <label for="A51">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A52" name="question-5-answers" value="B">
+        <label for="A52">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A53" name="question-5-answers" value="C">
+        <label for="A53">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A54" name="question-5-answers" value="D">
+        <label for="A54">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A61" name="question-6-answers" value="A">
+        <label for="A61">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A62" name="question-6-answers" value="B">
+        <label for="A62">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A63" name="question-6-answers" value="C">
+        <label for="A63">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A64" name="question-6-answers" value="D">
+        <label for="A64">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A71" name="question-7-answers" value="A">
+        <label for="A71">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A72" name="question-7-answers" value="B">
+        <label for="A72">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A73" name="question-7-answers" value="C">
+        <label for="A73">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A74" name="question-7-answers" value="D">
+        <label for="A74">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A81" name="question-8-answers" value="A">
+        <label for="A81">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A82" name="question-8-answers" value="B">
+        <label for="A82">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A83" name="question-8-answers" value="C">
+        <label for="A83">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A84" name="question-8-answers" value="D">
+        <label for="A84">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A91" name="question-9-answers" value="A">
+        <label for="A91">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A92" name="question-9-answers" value="B">
+        <label for="A92">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A93" name="question-9-answers" value="C">
+        <label for="A93">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A94" name="question-9-answers" value="D">
+        <label for="A94">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
+    <div class="center">
+      <h3 class="inlinep">How do you define the function</h3>
+      <form action="">
+        <input type="radio" id = "A01" name="question-0-answers" value="A">
+        <label for="A01">A) <b>This answer</b></label><br>
+        <input type="radio" id = "A02" name="question-0-answers" value="B">
+        <label for="A02">B) <b>This answer</b></label><br>
+        <input type="radio" id = "A03" name="question-0-answers" value="C">
+        <label for="A03">C) <b>This answer</b></label><br>
+        <input type="radio" id = "A04" name="question-0-answers" value="D">
+        <label for="A04">D) <b>This answer</b></label><br>
+      </form>
+    </div><br>
     <button class="button" style="vertical-align:middle"><span>Submit</span></button>
   </div>
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave"></div>
-  </div>
+  <hr><br>
 </body>
 </html>

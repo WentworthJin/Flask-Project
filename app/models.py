@@ -34,7 +34,7 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User {}>'.format(self.username) 
 
-class Post(db.Model):
+class Post(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
     Mark = db.Column(db.Integer)
     Finish_Time = db.Column(db.DateTime, index=True, default=datetime.utcnow)
