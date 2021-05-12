@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block articles %}
-<div class="formcontainer">
+<div class="formcontainer" style="border: none; margin-top: 5%;">
   <table>
     <tr valign="top">
         <td><img src="{{ user.avatar(128) }}"></td>
@@ -18,7 +18,14 @@
   <br>
   <table>
     <tr valign="top">
-      <td>{{mark}}</td>
+      <td><b>Result</b></td>
+      <td><b>Finish Time</b></td>
+      <td><b>Feedback</b></td>
+    </tr>
+    <tr>
+      <td>{{mark.Mark}}</td>
+      <td>{{mark.Finish_Time}}</td>
+      <td>{{mark.Feedback}}</td>
     </tr>
   </table>
 </div>
