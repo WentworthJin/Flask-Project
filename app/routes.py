@@ -59,7 +59,6 @@ def test():
     Record = None
     today = datetime.now()
     CurrentResult = 0
-    feedbackl=""
     if request.method == 'POST':
         First = request.form.getlist('question-1-answers')
         Second = request.form.getlist('question-2-answers')
@@ -71,10 +70,11 @@ def test():
         Eight = request.form.getlist('question-8-answers')
         Nine = request.form.getlist('question-9-answers')
         Ten = request.form.getlist('question-0-answers')
+        feedback=""
         if 'A' in First:
            CurrentResult+=10
         else:
-            feedbackl + "You should review the first chapter " 
+            feedback + "You should review the first chapter " 
 
         if 'C' in Second:
            CurrentResult+=10
@@ -94,7 +94,7 @@ def test():
            CurrentResult+=10
         if 'C' in Ten:
            CurrentResult+=10
-        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedbackl, user_id=currentid)
+        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
         flash("Congraulations, You have finished the test. Check your result in your Profile!")

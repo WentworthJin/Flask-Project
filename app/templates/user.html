@@ -24,12 +24,12 @@
     </tr>
     {% for j in allmark%}
     <tr>
-      <td>{{j.Mark}}</td>
-      <td>{{j.Finish_Time}}</td>
+      <td><b>{{j.Mark}}</b></td>
+      <td><b>{{j.Finish_Time}}</b></td>
       <td>
         <details>
-          <summary>Feedback</summary>
-          <p>{{j.Feedback}}</p>
+          <summary><b>Feedback</b></summary>
+          <p><b>{{j.Feedback}}</b></p>
         </details>
       </td>
     </tr>
@@ -41,13 +41,13 @@
   <h3 class="redp">Summary of the received result from all users! Keep your hard work!</h3>
   <table>
     <tr valign="top">
-      <td>User</td>
-      <td>Result</td>
+      <td><b>User</b></td>
+      <td><b>Result</b></td>
     </tr>
     {% for i in all %}
     <tr>
-      <td>{{i.user_id}}</td>
-      <td>{{i.Mark}}</td>
+      <td><b>{{i.user_id}}</b></td>
+      <td><b>{{i.Mark}}</b></td>
     </tr>
     {% endfor %}
   </table>
