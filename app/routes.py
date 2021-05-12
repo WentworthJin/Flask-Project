@@ -99,7 +99,8 @@ def register():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    return render_template('user.html', user=user)
+    mark=Post.query.filter_by(user_id=user.id).first()
+    return render_template('user.html', user=user, mark=mark)
 
 @app.before_request
 def before_request():
