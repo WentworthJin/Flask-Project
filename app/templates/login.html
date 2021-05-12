@@ -1,5 +1,12 @@
 {% extends "loginbase.html" %}
 {% block loginarea %}
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <p class="redp inarticleline larger">{{msg}}</p>
+    {% endfor %}
+    {% endif %}
+{% endwith %}
 <form action="" method="post" novalidate>
     {{ form.hidden_tag() }} <!--Prevent CSRF attack--> 
     <div class="larger">

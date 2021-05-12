@@ -11,11 +11,23 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
-
     <title>Document</title>
+    <style>
+      .largep{
+      font-size: large;
+  }
+    </style>
 </head>
 <body>
+  <button class="button" style="vertical-align:middle" onclick="window.location.href='/home'"><span>Exit</span></button>
   <div class="centerp">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <p class="redp inarticleline largep">{{msg}} {{ current_user.username }} !</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
     <h1>Exercise</h1>
     <h3><b>Add some thing here</b></h3> 
     <div class="center">

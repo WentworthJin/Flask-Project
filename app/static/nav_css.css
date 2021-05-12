@@ -513,7 +513,7 @@ code{
 
 .formcontainer{
   margin: auto;
-  margin-top: 6%;
+  margin-top: 1%;
   width: 60%;
   border: 1px solid grey;
   padding: 70 50 50 50;
@@ -588,6 +588,10 @@ input[type="password"]{
     padding: 3px;
     line-height: 3px;
     width: 30%;
+  }
+
+  .largep{
+      font-size: large;
   }
 
 /* Test page */

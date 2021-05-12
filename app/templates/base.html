@@ -12,11 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+      .largep{
+      font-size: large;
+  }
+    </style>
 </head>
 <body>
   {% if current_user.is_authenticated %}
   <h3 class="redp">Welcome, {{ current_user.username }}!</h3>
   {% endif %}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <p class="redp inarticleline largep">{{msg}}</p>
+    {% endfor %}
+    {% endif %}
+  {% endwith %}
     <nav class="sticky">
         <ul class="ul_mainstyle">
             <li><a href="/"><img src="{{ url_for('static', filename='/Image/swift_icon.png')}}" alt="home icon"></a>
