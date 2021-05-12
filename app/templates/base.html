@@ -12,68 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <title>Document</title>
-    <style>
-        .logo {
-            height: 11%;
-            width: 15%;
-        }
-
-        .formcontainer{
-            text-align: center; 
-        }
-
-        .loginbutton{
-            background-color: grey;
-            color: white;
-            float: right;
-        }
-
-        nav ul.ul_mainstyle {
-            margin: 1% 0 0 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgb(241, 112, 25);
-            list-style-type: none;
-        }
-
-        .Welcome_h1 {
-        font-family: 'Coda Caption', sans-serif;
-        color: rgb(241, 112, 25);
-        margin-top: 5%;
-        font-size: 300%;
-        animation: myanimation-head 5s infinite;
-      }
-
-      .img-container {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-        -webkit-animation: mover 2s infinite  alternate;
-        animation: mover 2s infinite  alternate;
-      }
-
-      @-webkit-keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
-      }
-      @keyframes mover {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-20px); }
-      } 
-
-      .pageimg:hover{
-        opacity: 1;
-      }
-
-      @keyframes myanimation-head {
-        0% {color: red;}
-        25%{color:rgb(255, 196, 0);}
-        50%{color:rgb(151, 60, 7);}
-        75%{color:brown;}
-        100% {color: rgb(241, 112, 25);}
-      }
-
-    </style>
 </head>
 <body>
   {% if current_user.is_authenticated %}
