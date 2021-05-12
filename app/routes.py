@@ -49,12 +49,53 @@ def genertic():
 def inhert():
     return render_template('inher.html') 
 
-@app.route('/Test')
+@app.route('/Test', methods=['GET','POST'])
 @login_required
 def test():
-    if current_user.is_authenticated:
-        flash('Let\' start the mini test, ')
-        return render_template('Testbase.html')
+    name = current_user.username
+    currentid = current_user.id
+    mark = Post.query.filter_by(user_id=current_user.id).first()
+    result = mark.Mark
+    Record = None
+    today = datetime.now()
+    CurrentResult = 0
+    if request.method == 'POST':
+        First = request.form.getlist('question-1-answers')
+        Second = request.form.getlist('question-2-answers')
+        Third = request.form.getlist('question-3-answers')
+        Fourth = request.form.getlist('question-4-answers')
+        Fifth = request.form.getlist('question-5-answers')
+        Six = request.form.getlist('question-6-answers')
+        Seven = request.form.getlist('question-7-answers')
+        Eight = request.form.getlist('question-8-answers')
+        Nine = request.form.getlist('question-9-answers')
+        Ten = request.form.getlist('question-0-answers')
+        if 'A' in First:
+           CurrentResult+=10
+        if 'C' in Second:
+           CurrentResult+=10
+        if 'A' in Third:
+           CurrentResult+=10
+        if 'D' in Fourth:
+           CurrentResult+=10
+        if 'B' in Fifth:
+           CurrentResult+=10
+        if 'B' in Six:
+           CurrentResult+=10
+        if 'D' in Seven:
+           CurrentResult+=10
+        if 'A' in Eight:
+           CurrentResult+=10
+        if 'C' in Nine:
+           CurrentResult+=10
+        if 'C' in Ten:
+           CurrentResult+=10
+        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback="Good", user_id=currentid)
+        db.session.add(Record)
+        db.session.commit()
+        flash("Congraulations, You have finished the test. Check your result in your Profile!")
+        return render_template('home.html')
+    return render_template('Testbase.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -98,9 +139,20 @@ def register():
 @app.route('/user/<username>')
 @login_required
 def user(username):
+    list=[]
+    average = 0
     user = User.query.filter_by(username=username).first_or_404()
-    mark=Post.query.filter_by(user_id=user.id).first()
-    return render_template('user.html', user=user, mark=mark)
+    mark=Post.query.filter_by(user_id=user.id)[-1]
+    allmark=Post.query.filter_by(user_id=user.id).all()
+    all=Post.query.all()
+    for i in allmark:
+        list.append(i.Mark)
+        print(list)
+    for i in list:
+        average+=int(i)
+    average=average/len(list)
+    average=int(average)
+    return render_template('user.html', user=user, mark=mark, all=all,average=average, allmark=allmark)
 
 @app.before_request
 def before_request():
