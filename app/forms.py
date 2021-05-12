@@ -1,9 +1,12 @@
 from flask_wtf import FlaskForm
 # Import four classes that represent the field type #
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextAreaField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, Length
 from app.models import User
 
+class EditProfileForm(FlaskForm):
+    about_me = TextAreaField('About me', validators=[Length(min=0, max=140)])
+    submit = SubmitField('Submit')
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])

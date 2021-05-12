@@ -35,14 +35,20 @@
             </li>
             <li><a href="/Setup"><b>Tutorial</b></a></li>
             <li><a href="/Test"><b>Test</b></a></li>
-            <li><a href="#j1"><b>Account</b></a></li>
-            <li class="loginbutton">
-              {% if current_user.is_anonymous %}
-              <a href="{{ url_for('login') }}"><b>Login</b></a>
-              {% else %}
-              <a href="{{ url_for('logout') }}">Logout</a>
-              {% endif %}
+            {% if not current_user.is_anonymous %}
+            <li>
+              <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
             </li>
+            {% endif %}
+            {% if current_user.is_anonymous %}
+            <li class="loginbutton">
+              <a href="{{ url_for('login') }}"><b>Login</b></a>
+            </li>
+            {% else %}
+            <li class="loginbutton">
+              <a href="{{ url_for('logout') }}">Logout</a>
+            </li>
+            {% endif %}
         </ul>
       </nav>
     

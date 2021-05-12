@@ -5,6 +5,7 @@ from app import db,app
 from app import login
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
+from hashlib import md5
 
 
 class User(UserMixin, db.Model):
@@ -13,7 +14,14 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
+    about_me = db.Column(db.String(140))
+    last_seen = db.Column(db.DateTime, default=datetime.utcnow)
     posts = db.relationship('Post', backref='author', lazy='dynamic')
+
+    def avatar(self, size): # Add avatar to one user #
+        digest = md5(self.email.lower().encode('utf-8')).hexdigest()
+        return 'https://www.gravatar.com/avatar/{}?d=identicon&s={}'.format(
+            digest, size)
 
     # New user set the password #
     def set_password(self, password):
