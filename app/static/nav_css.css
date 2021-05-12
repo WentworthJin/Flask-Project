@@ -675,3 +675,12 @@ input[type="password"]{
       transform: translate3d(0,5px,0);
     }
   }
+
+/* Profile page */
+.resultflow {
+    background-color: rgb(253, 249, 10);
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    color: black;
+  }

@@ -70,30 +70,57 @@ def test():
         Eight = request.form.getlist('question-8-answers')
         Nine = request.form.getlist('question-9-answers')
         Ten = request.form.getlist('question-0-answers')
-        feedback=""
+        feedback="Need to review: "
         if 'A' in First:
            CurrentResult+=10
         else:
-            feedback + "You should review the first chapter " 
+            feedback += "Wrong Question1: We suggest you to review the Swift introduction section;  "
 
         if 'C' in Second:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question2: Maybe have a look at the Grammar tutorial?;  " 
+
         if 'A' in Third:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question3: Please have a look at the Structure; "
+
         if 'D' in Fourth:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question4: Please refer the Math Operator; "
+
         if 'B' in Fifth:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question5: You need to checkout the For-In loop again; "
+
         if 'B' in Six:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question6: Confused on function?; "
+
         if 'D' in Seven:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question7: Hint: Revied the Class section; "
+
         if 'A' in Eight:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question8: Please refer the Object section "
+
         if 'C' in Nine:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question9: Read one more time on the Swift inheritance; "
+
         if 'C' in Ten:
            CurrentResult+=10
+        else:
+            feedback += "Wrong Question10: Please refer the Swift Generics; "
+
         Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
