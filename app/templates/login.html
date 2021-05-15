@@ -1,4 +1,9 @@
 {% extends "loginbase.html" %}
+
+{% block titles %}
+Login-Tutorial
+{% endblock %}
+
 {% block loginarea %}
 {% with messages = get_flashed_messages() %}
     {% if messages %}

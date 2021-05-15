@@ -4,7 +4,7 @@ from flask_login import UserMixin # Apply login manager #
 from app import db,app
 from app import login
 from hashlib import md5
-from flask_admin import Admin
+from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_login import current_user
 
@@ -60,7 +60,13 @@ class MyV1(ModelView):
         return False
     can_create = False
 
+    def inaccessible_callbakc(self, name, **kwargs):
+        return redirect(url_for('home'))
 
-admin=Admin(app)
+class MyAdminIndexView(AdminIndexView):
+    def is_accessible(self):
+        return current_user.is_authenticated
+
+admin=Admin(app, index_view=MyAdminIndexView())
 admin.add_view(MyV1(User, db.session))
 admin.add_view(MyV1(Post, db.session))
