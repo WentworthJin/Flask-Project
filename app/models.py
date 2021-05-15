@@ -3,9 +3,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin # Apply login manager #
 from app import db,app
 from app import login
+from hashlib import md5
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
-from hashlib import md5
+from flask_login import current_user
+
+
 
 
 class User(UserMixin, db.Model):
@@ -49,6 +52,15 @@ class Post(UserMixin,db.Model):
 def load_user(id):
     return User.query.get(int(id))
 
+
+class MyV1(ModelView):
+    def is_accessible(self):
+        if current_user.is_authenticated and current_user.username == "admin":
+            return True
+        return False
+    can_create = False
+
+
 admin=Admin(app)
-admin.add_view(ModelView(User, db.session))
-admin.add_view(ModelView(Post, db.session))
+admin.add_view(MyV1(User, db.session))
+admin.add_view(MyV1(Post, db.session))
