@@ -57,7 +57,8 @@ def test():
     mark = Post.query.filter_by(user_id=current_user.id).first()
     result = mark.Mark
     Record = None
-    today = datetime.now()
+    tiems=datetime.now()
+    x=tiems.strftime("%c")
     CurrentResult = 0
     if request.method == 'POST':
         First = request.form.getlist('question-1-answers')
@@ -121,7 +122,7 @@ def test():
         else:
             feedback += "Wrong Question10: Please refer the Swift Generics; "
 
-        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
+        Record = Post(Mark=CurrentResult, Finish_Time=x, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
         flash("Congraulations, You have finished the test. Check your result in your Profile!")
@@ -186,8 +187,9 @@ def user(username):
 
 @app.before_request
 def before_request():
+    tiems=datetime.now()
     if current_user.is_authenticated:
-        current_user.last_seen = datetime.utcnow()
+        current_user.last_seen = tiems.strftime("%c")
         db.session.commit()
 
 @app.route('/edit_profile', methods=['GET', 'POST'])
