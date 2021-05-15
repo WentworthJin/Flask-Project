@@ -17,6 +17,7 @@
             </ul>
         </div>
     </div>
+
     <div class="miandivision article_area">
         <div class="articleContent">
 
@@ -24,7 +25,8 @@
                 <h1>Swift Function</h1>
                 <p>Swift function is an independent block of code used to complete a specific task.</p>
                 <p>Swift uses a unified syntax to represent simple C language style functions to complex Objective-C
-                    language style methods.</p>
+                    language style methods.
+                </p>
                 <ul>
                     <li>
                         Function declaration: Tell the compiler the name of the function, return type and parameters.
@@ -146,7 +148,7 @@
                 <p>The output of the above program execution is:</p>
                 <pre>The min: -6, The max: 109</pre>
                 <blockquote>
-                    <h2><p class="quote">Caution:</p></h2>
+                    <h2 class="quote">Caution: </h2>
                     <p>To safely handle the "empty array" problem, minMax(_:)rewrite the function to use an optional tuple
                         return type, and return when the array is empty nil:</p>
                 </blockquote>
@@ -208,16 +210,17 @@
           vari("Google", "Facebook", "Amazon")</pre>
           
                 <p>The output of the above program execution is:</p>
-                <pre>4
-          3
-          5
-          4.5
-          3.1
-          5.6
-          Google
-          Facebook
-          Amazon
-          </pre>
+                <pre>
+                4
+                3
+                5
+                4.5
+                3.1
+                5.6
+                Google
+                Facebook
+                Amazon
+                </pre>
                 <h2>Constants, variables and I/O parameters</h2>
                 <p>Generally, the parameters defined in the function are constant parameters by default, that is, you can
                     only query and use this parameter, and you cannot change its value.</p>
@@ -228,33 +231,37 @@
                     passed in is just a copy of this parameter.</p>
                 <p>When the incoming parameter is used as an input and output parameter, you need to add an ampersand before
                     the parameter name, which means that the value can be modified by the function.</p>
-                <pre><p>func&nbsp;swapTwoInts(_a:&nbsp;inout&nbsp;Int,&nbsp;_b:&nbsp;inout&nbsp;Int)&nbsp;{
-          </p><p>&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;temporaryA&nbsp;=&nbsp;a
-          </p><p>&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;b
-          </p><p>&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;temporaryA
-          </p><p>}
-          </p><p>var&nbsp;x&nbsp;=&nbsp;1
-          </p><p>var&nbsp;y&nbsp;=&nbsp;5
-          </p><p>swapTwoInts(&amp;X,&nbsp;&amp;y)
-          </p><p>print("x&nbsp;The current value\(x), y&nbsp;The current value\(y)")</p>
-          </pre>
+                <pre>
+                func&nbsp;swapTwoInts(_a:&nbsp;inout&nbsp;Int,&nbsp;_b:&nbsp;inout&nbsp;Int)&nbsp;{
+                &nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;temporaryA&nbsp;=&nbsp;a
+                &nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;b
+                &nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;=&nbsp;temporaryA
+                }
+                var&nbsp;x&nbsp;=&nbsp;1
+                var&nbsp;y&nbsp;=&nbsp;5
+                swapTwoInts(&amp;X,&nbsp;&amp;y)
+                print("x&nbsp;The current value\(x), y&nbsp;The current value\(y)")
+                </pre>
                 <p>The swapTwoInts( : :) function simply swaps the values of a and b. This function first stores the value
                     of a in a temporary constant temporaryA, then assigns the value of b to a, and finally assigns
                     temporaryA to b.</p>
-                <pre lang="html"><code><p>The current value of x:&nbsp;5, The current value of y:&nbsp;1</p></code></pre>
+                <pre><code>The current value of x:&nbsp;5, The current value of y:&nbsp;1</code></pre>
           
                 <hr/>
                 <div class="ending">
                     <p class="congrats">Congratulation!!!</p>
                     <p><b>You have finished this chapter!</b></p>
                     <p><span class="last"><a href="/Condition" rel="prev"><i class="fa fa-arrow-left"
-                                                                    id="arrow"></i>  Last Chapter</a></span>
-                        <span class="next"><a href="/Class" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span>
+                        id="arrow"></i>  Last Chapter</a></span>
+                        <span class="next"><a href="/Class" rel="next"> Next Chapter <i class="fa fa-arrow-right" 
+                            id="arrow1"></i></a>
+                        </span>
                     </p>
                     <br/>
                 </div>
             </div>
           </div>
     </div>
+</div>
 
 {% endblock %}

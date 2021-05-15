@@ -17,6 +17,7 @@
           </ul>
       </div>
   </div>
+
   <div class="miandivision article_area">
     <div class="articleContent">
         <div class="articleIntro" id="content">
@@ -27,24 +28,24 @@
                 language. Now let’s review it.</p>
             <p>If you are creating an OS X playground, you need to introduce Cocoa:</p>
             <pre>
-      import Cocoa
-      
-      /* My first Swift program */
-      var myString = "Hello, World!"
-      
-      print(myString)
-      </pre>
+            import Cocoa
+            
+            /* My first Swift program */
+            var myString = "Hello, World!"
+            
+            print(myString)
+            </pre>
       
             <p>If we want to create an iOS playground, we need to introduce UIKit:</p>
             <pre>
-      import UIKit
-      var myString = "Hello, World!"
-      print(myString)
-      </pre>
+            import UIKit
+            var myString = "Hello, World!"
+            print(myString)
+            </pre>
             <p>The output:</p>
             <pre>
-      Hello, World!
-      </pre>
+            Hello, World!
+            </pre>
             <p>The above code is the basic structure of the Swift program. Next, we will explain the components of
                 the structure in detail.
       
@@ -52,43 +53,45 @@
             <hr/>
             <h2>Swift Introduction</h2>
             <p>We can use the <b>import</b> statement to import any Objective-C framework (or C library) into the
-                Swift
-                program. For example, the <b>import cocoa</b> statement imports and uses Cocoa libraries and APIs,
-                and we
-                can use them in Swift programs.</p>
+                Swift program. For example, the <b>import cocoa</b> statement imports and uses Cocoa libraries and 
+                APIs, and we can use them in Swift programs.
+            </p>
             <p>Cocoa itself is written in Objective-C language, and Objective-C is a strict superset of C language,
-                so we can easily mix in C language code or even C++ code in Swift applications.</p>
+                so we can easily mix in C language code or even C++ code in Swift applications.
+            </p>
             <hr/>
             <h2>Swift Markup</h2>
             <p>Swift programs are composed of many kinds of marks, which can be words, identifiers, constants,
-                strings or symbols. For example, the following Swift program consists of three types of tags:</p>
+                strings or symbols. For example, the following Swift program consists of three types of tags:
+            </p>
             <pre>
-      print("test!")
-      /*Mark as words, symbols*/
-      print
-      ("test!")
-      </pre>
+            print("test!")
+            /*Mark as words, symbols*/
+            print
+            ("test!")
+            </pre>
             <hr/>
             <h2>Annotation</h2>
             <p>Swift comments are very similar to C language, single-line comments start with two backslashes:</p>
             <pre>
-      //This is a single-line comment.
-      </pre>
+            //This is a single-line comment.
+            </pre>
             <p>Multi-line comments start with /* and end with */:</p>
             <pre>
-      /* This is a comment,
-      but crossing multiple lines. */
-      </pre>
+            /* This is a comment,
+            but crossing multiple lines. */
+            </pre>
             <p>Unlike C language multi-line comments, Swift multi-line comments can be nested inside other
                 multi-line comments. The writing method is to insert another multi-line comment in a multi-line
-                comment block. When the second comment block is closed, the first comment block still follows:</p>
+                comment block. When the second comment block is closed, the first comment block still follows:
+            </p>
             <pre>
-      /* This is a header of a multi-line comment,
+            /* This is a header of a multi-line comment,
       
-      /* This is the second comment which is nested in the first comment. */
+            /* This is the second comment which is nested in the first comment. */
       
-      This is the end of the comment. */
-      </pre>
+            This is the end of the comment. */
+            </pre>
             <p>The nesting of multi-line comments allows you to comment code blocks more quickly and conveniently,
                 even if there are already comments in the code block.</p>
             <hr/>
@@ -110,9 +113,11 @@
             </p>
             <p><b>Note:</b> The letters in Swift are coded in Unicode. Unicode is called the unified encoding
                 system, which contains Asian character encodings, such as Chinese, Japanese, Korean and other
-                characters, and even the emoticons we use in chat.</p>
+                characters, and even the emoticons we use in chat.
+            </p>
             <p>If you must use keywords as identifiers, you can add accent marks (`) before and after the
-                keywords.</p>
+                keywords.
+            </p>
             <hr/>
             <h2>Keyword</h2>
             <p>A keyword is a sequence of reserved characters similar to an identifier and cannot be used as an
@@ -263,36 +268,34 @@
             <p><b>Caution: </b>Swift language does not completely ignore spaces like C/C++ and Java. Swift has
                 certain requirements
                 for the use of spaces, but it is not as strict as Python's requirements for indentation.</p>
-            <pre>
-      let a= 1 + 2
-      </pre>
+            <pre>let a= 1 + 2</pre>
             <p>The error message is:</p>
             <pre>error: prefix/postfix &#39;=&#39; is reserved</pre>
             <p>It probably means that the usage of the equal sign directly before or after it is reserved.
-      
-                The following code will still report an error (continue to pay attention to spaces):</p>
-            <pre>
-      let a = 1+ 2
-      </pre>
+                The following code will still report an error (continue to pay attention to spaces): 
+            </p>
+            <pre>let a = 1+ 2</pre>
             <p>The error message is:</p>
             <pre>error: consecutive statements on a line must be separated by &#39;;&#39;</pre>
-            <p>This is because Swift thinks that the statement 1+ is over, and 2 is the next statement.
-      
-                Only by writing in this way will it not report an error:</p>
+            <p>This is because Swift thinks that the statement 1+ is over, and 2 is the next statement. 
+                Only by writing in this way will it not report an error:
+            </p>
             <pre>
-      let a = 1 + 2;
-      let b = 3+4 // This is correct too.
-      </pre>
+            let a = 1 + 2;
+            let b = 3+4 // This is correct too.
+            </pre>
             <hr/>
             <h1>Data Types</h1>
             <h2>Built-in Data Types</h2>
             <p>Swift provides a very rich data types, the following is a list of commonly used centralized data
-                types:</p>
+                types:
+            </p>
             <hr/>
             <h3>Int</h3>
             <p>Generally speaking, you do not need to specify the length of the integer. Swift provides a special
                 integer type <code>Int</code> with the same length as the native word length of the current
-                platform:</p>
+                platform:
+            </p>
             <ul>
                 <li>On 32-bit platforms, <code>Int</code>and<code>Int32</code>are in the same length.</li>
                 <li>On 64-bit platforms, <code>Int</code>and<code>Int64</code>are in the same length.</li>
@@ -305,7 +308,8 @@
             </p>
             <h3>UInt</h3>
             <p>Swift also provides a special unsigned type <code>UInt</code> with the same length as the native word
-                length of the current platform:</p>
+                length of the current platform:
+            </p>
             <ul>
                 <li>
                     On 32-bit platforms, <code>UInt</code> and <code>UInt32</code> are in the same length.
@@ -314,7 +318,8 @@
             </ul>
             <h3>Floating Point</h3>
             <p>Is a floating point number with a decimal part, such as <code>3.14159</code>, <code>0.1</code>, and
-                <code>-273.15</code>.</p>
+                <code>-273.15</code>.
+            </p>
             <p>Floating point types represent a larger range than integer types, and can store <code>Int</code>
                 numbers larger or smaller than the type. Swift provides two types of signed floating-point numbers:
             </p>
@@ -328,7 +333,8 @@
             </ul>
             <h3>Boolean Value</h3>
             <p>Swift has a basic Boolean type called Bool. Boolean values refer to logical values because they can
-                only be true or false. Swift has two Boolean constants, true and false.</p>
+                only be true or false. Swift has two Boolean constants, true and false.
+            </p>
             <h3>String</h3>
             <p>A string is a sequence collection of characters, for example:</p>
             <pre>"Hello, World!"</pre>
@@ -337,11 +343,13 @@
             <pre>"C" //The letter C is a character here.</pre>
             <h3>Optional Type</h3>
             <p>Use optionals to handle situations where values ​​may be missing. Optional types indicate value or no
-                value.</p>
+                value.
+            </p>
             <hr/>
             <h2>Numerical Range</h2>
             <p>The following table shows the storage space of the memory of different variable types, and the
-                maximum and minimum values​of variable types:</p>
+                maximum and minimum values​of variable types:
+            </p>
             <table class="reference">
                 <tbody>
                 <tr>
@@ -394,60 +402,71 @@
             <hr/>
             <h2>Type Alias</h2>
             <p>Type aliases define another name for the current type. Type aliases are defined by using the
-                typealias keyword. The syntax format is as follows:</p>
+                typealias keyword. The syntax format is as follows:
+            </p>
             <pre>typealias newname = type</pre>
             <p>For example, the following defines the type alias of Int as Feet:</p>
             <pre>typealias Feet = Int</pre>
             <p>Now, we can define variables through aliases:</p>
             <pre>import Cocoa
-      
-      typealias Feet = Int
-      var distance: Feet = 100
-      print(distance)</pre>
+            typealias Feet = Int
+            var distance: Feet = 100
+            print(distance)
+            </pre>
             <p>the output result is:</p>
             <pre>100</pre>
             <hr/>
             <h2>Type Safety</h2>
             <p>Swift is a type safe language.</p>
             <p>Since Swift is type-safe, it will perform type checks when compiling your code and mark mismatched
-                types as errors. This allows you to find and fix bugs as early as possible during development.</p>
+                types as errors. This allows you to find and fix bugs as early as possible during development.
+            </p>
             <pre>import Cocoa
-      
-      var varA = 42
-      varA = "This is hello"
-      print(varA)</pre>
+            
+            var varA = 42
+            varA = "This is hello"
+            print(varA)
+            </pre>
             <p>The above program will report an error in Xcode:</p>
             <pre>error: cannot assign value of type 'String' to type 'Int'
-      varA = "This is hello"</pre>
+            varA = "This is hello"
+            </pre>
             <p>It means that you cannot assign the string'String' to the variable'Int'.</p>
             <hr/>
             <h2>Type Inference</h2>
             <p>When you have to deal with different types of values, type checking can help you avoid errors.
                 However, this does not mean that you need to explicitly specify the type every time you declare
-                constants and variables.</p>
+                constants and variables.
+            </p>
             <p>If you don't specify the type explicitly, Swift will use type inference to select the appropriate
-                type.</p>
+                type.
+            </p>
             <p>For example, if you assign 42 to a new constant without specifying the type, Swift can infer that the
                 constant type is Int, because the initial value you assign to it looks like an integer:</p>
             <pre>let meaningOfLife = 42
-      // meaningOfLife will be inferred as Int</pre>
+            // meaningOfLife will be inferred as Int
+            </pre>
             <p>In the same way, if you don't specify a type for a floating-point literal, Swift will infer that you
                 want Double:</p>
             <pre>let pi = 3.14159
-      // pi will be inferred as Double</pre>
+            // pi will be inferred as Double
+            </pre>
             <hr/>
             <div class="ending">
                 <p class="congrats">Congratulation!!!</p>
                 <p><b>You have finished this chapter!</b></p>
-                <p><span class="last"><a href="/Setup" rel="prev"><i class="fa fa-arrow-left" id="arrow"></i>  Last Chapter</a></span>
+                <p><span class="last"><a href="/Setup" rel="prev"><i class="fa fa-arrow-left" id="arrow"></i> 
+                    Last Chapter</a></span>
                     <span class="next"><a href="/Math" rel="next"> Next Chapter <i class="fa fa-arrow-right"
-                                                                              id="arrow"></i></a></span></p>
+                        id="arrow1"></i></a>
+                    </span>
+                </p>
                 <br/>
             </div>
       
         </div>
-      </div>
     </div>
+</div>
 </div>
 
 {% endblock %}
