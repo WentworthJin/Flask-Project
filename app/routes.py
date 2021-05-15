@@ -6,11 +6,13 @@ from app.models import User, Post
 from flask_login import logout_user
 from flask_login import login_required
 from flask import request
-from werkzeug.urls import url_parse
+from .models import current_user as current_user2
 from app import db
 from app.forms import RegistrationForm
 from datetime import datetime
 from app.forms import EditProfileForm
+
+
 
 @app.route('/')
 @app.route('/home')
@@ -19,40 +21,42 @@ def homepage():
 
 @app.route('/Setup')
 def setup():
-    return render_template('Set_Up.html')   
+    return render_template('Set_Up.html')
 
 @app.route('/Grammar')
 def grammar():
-    return render_template('grammar.html')  
+    return render_template('grammar.html')
 
 @app.route('/Math')
 def math():
-    return render_template('math.html')  
+    return render_template('math.html')
 
 @app.route('/Condition')
 def condition():
-    return render_template('condition.html')  
+    return render_template('condition.html')
 
 @app.route('/Function')
 def function():
-    return render_template('function.html') 
+    return render_template('function.html')
 
 @app.route('/Class')
 def classhtml():
-    return render_template('class.html') 
+    return render_template('class.html')
 
 @app.route('/Gener')
 def genertic():
-    return render_template('generic.html') 
+    return render_template('generic.html')
 
 @app.route('/Inher')
 def inhert():
-    return render_template('inher.html') 
+    return render_template('inher.html')
 
 @app.route('/Test', methods=['GET','POST'])
 @login_required
 def test():
     name = current_user.username
+    if name=="admin":
+        return redirect("/admin")
     currentid = current_user.id
     mark = Post.query.filter_by(user_id=current_user.id).first()
     result = mark.Mark
@@ -80,7 +84,7 @@ def test():
         if 'C' in Second:
            CurrentResult+=10
         else:
-            feedback += "Wrong Question2: Maybe have a look at the Grammar tutorial?;  " 
+            feedback += "Wrong Question2: Maybe have a look at the Grammar tutorial?;  "
 
         if 'A' in Third:
            CurrentResult+=10
@@ -131,6 +135,7 @@ def test():
 
 
 @app.route('/login', methods=['GET', 'POST'])
+
 def login():
     if current_user.is_authenticated:
         flash('You have successfully login!')
@@ -145,7 +150,8 @@ def login():
         flash('You have successfully login!')
         return homepage()
     return render_template('login.html', title='Sign In', form=form)
-    
+
+
 @app.route('/logout')
 def logout():
     logout_user()
@@ -214,7 +220,14 @@ def adminpage():
         return redirect('/admin')
     flash('Warning, You dont have the premission to visit the adminpage')
     return render_template('home.html')
-    
+
+@app.route('/user/admin/')
+@login_required
+def adminProfile():
+    if current_user.username=="admin":
+        return redirect('/admin')
+    flash('Warning, You dont have the premission to visit the adminpage')
+    return render_template('home.html')
 
 if __name__=='__main__':
     app.run(debug=True)
