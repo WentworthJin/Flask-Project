@@ -55,12 +55,9 @@ def inhert():
 @login_required
 def test():
     name = current_user.username
-    if name=="admin":
-        return redirect("/admin")
+
     currentid = current_user.id
     mark = Post.query.filter_by(user_id=current_user.id).first()
-    result = mark.Mark
-    Record = None
     today = datetime.now()
     CurrentResult = 0
     if request.method == 'POST':
@@ -128,6 +125,8 @@ def test():
         Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
+        if name == "admin":
+            return redirect("/admin")
         flash("Congraulations, You have finished the test. Check your result in your Profile!")
         return render_template('home.html')
     return render_template('Testbase.html')
@@ -179,16 +178,20 @@ def user(username):
     list=[]
     average = 0
     user = User.query.filter_by(username=username).first_or_404()
-    mark=Post.query.filter_by(user_id=user.id)[-1]
-    allmark=Post.query.filter_by(user_id=user.id).all()
-    all=Post.query.all()
-    for i in allmark:
-        list.append(i.Mark)
-    for i in list:
-        average+=int(i)
-    average=average/len(list)
-    average=int(average)
-    return render_template('user.html', user=user, mark=mark, all=all,average=average, allmark=allmark)
+    try:
+        mark=Post.query.filter_by(user_id=user.id)[-1]
+        allmark=Post.query.filter_by(user_id=user.id).all()
+        all=Post.query.all()
+        for i in allmark:
+            list.append(i.Mark)
+        for i in list:
+            average+=int(i)
+        average=average/len(list)
+        average=int(average)
+        return render_template('user.html', user=user, mark=mark, all=all,average=average, allmark=allmark)
+    except IndexError as e:
+        flash("No profile shown, please do the test firstly!")
+        return render_template("home.html")
 
 @app.before_request
 def before_request():
