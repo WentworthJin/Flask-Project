@@ -125,8 +125,7 @@ def test():
         Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
-        if name == "admin":
-            return redirect("/admin")
+
         flash("Congraulations, You have finished the test. Check your result in your Profile!")
         return render_template('home.html')
     return render_template('Testbase.html')
