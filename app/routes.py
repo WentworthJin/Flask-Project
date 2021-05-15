@@ -204,5 +204,15 @@ def edit_profile():
     return render_template('edit_profile.html', title='Edit Profile',
                            form=form)
 
+@app.route('/adminpage', methods=['GET','POST'])
+@login_required
+def adminpage():
+    name=current_user.username
+    if name == 'admin':
+        return redirect('/admin')
+    flash('Warning, You dont have the premission to visit the adminpage')
+    return render_template('home.html')
+    
+
 if __name__=='__main__':
     app.run(debug=True)
