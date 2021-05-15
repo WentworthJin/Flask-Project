@@ -14,4 +14,4 @@ login.login_view = 'login'
 app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
 
 
-from app import routes, models
+from app import routes, models, errors

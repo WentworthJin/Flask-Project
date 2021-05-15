@@ -17,6 +17,7 @@
           </ul>
       </div>
   </div>
+
   <div class="miandivision article_area">
     <div class="imgcontainer">
       <h1>Generics</h1>
@@ -69,7 +70,7 @@
     </p>
     <p>The Generic verison is</p>
     <pre>
-      func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
+      func swapTwoValues&lt;T&gt;(_ a: inout T, _ b: inout T) {
         let temporaryA = a
         a = b
         b = temporaryA
@@ -178,10 +179,10 @@
     <div class="ending">
       <p class="congrats">Congratulation!!!</p>
       <p><b>You have finished All chapters!</b></p>
-      <p><span class="last"><a href="/Inher" rel="prev"><i class="fa fa-arrow-left"
-                                                      id="arrow"></i>  Last Chapter</a></span>
+      <p><span class="last"><a href="/Inher" rel="prev"><i class="fa fa-arrow-left" id="arrow"></i>  Last Chapter</a></span>
       </p>
       <br/>
     </div>
   </div>
+</div>
 {% endblock %}

@@ -17,6 +17,7 @@
             </ul>
         </div>
     </div>
+
     <div class="miandivision article_area">
         <div class="articleContent">
             <div class="articleIntro" id="content">
@@ -30,13 +31,17 @@
                     environment will be different from the Windows environment. Let's learn how to build the swift
                     development environment.</p>
                 <p>Prerequisites for successfully setting up a swift development environment:</p>
-                <ol>
-                    <li>Must have an Apple computer. Because the integrated development environment XCode can only run on OS
-                        X system.
-                    </li>
-                    <li>The computer system must be OS 10.9.3 and above.</li>
-                    <li>The computer must install the Xcode integrated development environment.</li>
-                </ol>
+                <section>
+                    <h3>What you need</h3>
+                    <ul class="mainul">
+                        <li>
+                            <b>Must have an Apple computer. Because the integrated development environment XCode 
+                                can only run on OSX system.</b>
+                        </li>
+                        <li><b>The computer system must be OS 10.9.3 and above.</b></li>
+                        <li><b>The computer must install the Xcode integrated development environment.</b></li>
+                    </ul>
+                </section>
                 <h3>Swift development tool Xcode download</h3>
                 <p>
                     <strong>Swift development tools? Official website address: </strong><a
@@ -54,18 +59,17 @@
                 <img src="{{ url_for('static', filename='Image/swiftIntro2.jpg')}}" alt="SI2">
           
                 <p><b>UIKit</b> is a kind of basic package, applied in interactive IO streams with mobile devices.</p>
-                <pre>import UIKit
-          
-          var str = "Hello, playground"
-          </pre>
-                <p>If you want to create an OS x program, you need to import the <b>Cocoa</b> package. The import Cocoa code
-                    is as
-                    follows:</p>
                 <pre>
-          import Cocoa
-          
-          var str = "Hello, playground"
-          </pre>
+                import UIKit
+                var str = "Hello, playground"
+                </pre>
+                <p>If you want to create an OS x program, you need to import the <b>Cocoa</b> package. The import Cocoa code
+                    is asfollows: 
+                </p>
+                <pre>
+                import Cocoa
+                var str = "Hello, playground"
+                </pre>
                 <p>Run it, then the output shows.</p>
                 <img src="{{ url_for('static', filename='Image/swiftIntro3.jpg')}}" alt="SI3">
                 <hr/>
@@ -75,8 +79,7 @@
                 <p>2. We select a "Single View Application" and click "next" to create a simple sample app application.</p>
                 <img src="{{ url_for('static', filename='Image/swiftIntro5.jpg')}}" alt="SI5">
                 <p>3. Then we enter the project name (ProductName), company name (Organization Name), company identifier
-                    prefix name (Organization identifier), select the development language (Language).
-          
+                    prefix name (Organization identifier), select the development language (Language).   
                     Among them, Language has two options: Objective-c and swift, because we are learning swift, of course,
                     we choose swift. Click "Next" to the next step.</p>
                 <img src="{{ url_for('static', filename='Image/swiftIntro6.png')}}" alt="SI6">
@@ -108,7 +111,7 @@
                     <span class="next"><a href="/Grammar" rel="next"> Next Chapter <i class="fa fa-arrow-right" id="arrow"></i></a></span></p>
                 <br/>
             </div>
-          </div>
+        </div>
     </div>
 </div>
 

@@ -326,11 +326,6 @@ pre {
     float: left;
 }
 
-#arrow {
-    font-size: 16px;
-    aria-hidden: "true"
-}
-
 .next {
     float: right;
 }

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block articles %}
+    <h1>File Not Found</h1>
+    <p>The path you looking for is invalid</p>
+    <p>Please use the link below and go back to the main page</p>
+    <p><b><a href="{{ url_for('/') }}">Back</a></b></p>
+{% endblock %}
