@@ -7,6 +7,8 @@ from hashlib import md5
 from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
 from flask_login import current_user
+from flask import url_for, render_template
+from flask_admin.menu import MenuLink
 
 
 
@@ -61,12 +63,17 @@ class MyV1(ModelView):
     can_create = False
 
     def inaccessible_callbakc(self, name, **kwargs):
-        return redirect(url_for('home'))
+        return redirect(url_for('homepage'))
 
 class MyAdminIndexView(AdminIndexView):
     def is_accessible(self):
         return current_user.is_authenticated
 
+class MainIndexLink(MenuLink):
+    def get_url(self):
+        return url_for("homepage")
+
 admin=Admin(app, index_view=MyAdminIndexView())
 admin.add_view(MyV1(User, db.session))
 admin.add_view(MyV1(Post, db.session))
+admin.add_link(MainIndexLink(name="Back to Home"))
