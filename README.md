@@ -71,8 +71,8 @@ AgileWeb Project 2
 <pre> flask run </pre>
 
 ## 4.How to run Unit Test
-1. Run the command  <pre>flask run</pre>, and keep the local server on.
-2. Run the python file  '<pre>testBot.py</pre>', and wait for the test finish.
+1. Run the command <pre>flask run</pre>, and keep the local server on.
+2. Run the python file '<pre>testBot.py</pre>', and wait for the test finish.
 3. Once you see the test's status: Test # finished, the tests are finished. ( As show below)
 <pre>
 Process finished with exit code 0
