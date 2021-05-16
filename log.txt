@@ -1,0 +1,1021 @@
+commit 16ec18d3840b2a6eba7a1a2e0d5b1fd9e18a6859
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 16 11:27:05 2021 +0800
+
+    Add redme
+
+commit 76ec1112e574575f3b3cdfdd09e4108df8cc0d83
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 16 11:13:25 2021 +0800
+
+    Add redme
+
+commit 18a673b1f5ff6ce0ca52cc2840935acd60226c62
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 16 11:06:52 2021 +0800
+
+    Add redme
+
+commit def87bd603b1a7175400b9d9a5317cb88536a9a9
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 16 10:58:28 2021 +0800
+
+    Add redme
+
+commit 3a328f49b212beef196f0b9a1a47e3d7fd74e710
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 16 10:54:32 2021 +0800
+
+    Change time
+
+commit 114cb4a188862e185ff6707e7507bf033cbbaab7
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 15 20:04:33 2021 +0800
+
+    ...
+
+commit f9c949bbaf55dec460852f2ce3287aa1dd8c249b
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:45:38 2021 +0800
+
+    ...
+
+commit 1b71ebd89bdaec598ff2323a9dbc30705ec1d258
+Merge: fd4ff5e 6e4f3f1
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:30:42 2021 +0800
+
+    Merge remote-tracking branch 'origin/master' into master
+
+commit 6e4f3f1c0302ecb6df8111123bb41013b5cd26e4
+Author: Steven Z <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:28:31 2021 +0800
+
+    Update routes.py
+
+commit fd4ff5ec04a1a8ce6a5ad787a983bb5c174e9911
+Merge: fd142d2 b0fe1e2
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:26:24 2021 +0800
+
+    Merge remote-tracking branch 'origin/master' into master
+    
+    # Conflicts:
+    #       app/routes.py
+
+commit fd142d26bc263b4ea4f7b5156a9c51b22b5931e4
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:24:32 2021 +0800
+
+    ...
+
+commit b0fe1e2d4db8dc3210f71750e21076fd1a915f7e
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 17:21:16 2021 +0800
+
+    Remove html
+
+commit dc801146a8b82bed63422b23ee4824ecd528906e
+Merge: ada180b 4e6b515
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 17:08:19 2021 +0800
+
+    Merge branch 'master' of https://github.com/KebingZ/Project-2
+
+commit ada180b65d3f585b5ae699e15c54e232c6977761
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 17:08:15 2021 +0800
+
+    Change time
+
+commit 4e6b5159433b29ccd70953a8112a219b05ab6409
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 17:02:39 2021 +0800
+
+    ...
+
+commit d77990b59d79f1c318a560ece6fe891475b43109
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 16:46:27 2021 +0800
+
+    Edit admin
+
+commit 511dbe96a816c1cca8134da2f29002a074a784f9
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 16:35:47 2021 +0800
+
+    Edit admin
+
+commit 82d0685d6522532b0145f3086840faf071a5e69a
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 16:23:57 2021 +0800
+
+    Edit admin
+
+commit fa979a2e17ff58cd1c2c29cc3fbee6cc31001980
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 14:13:22 2021 +0800
+
+    ...
+
+commit 4eac926e2c23e21527443d5c5e2be448a9c73b59
+Merge: 41c101b 1bb0736
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 14:12:43 2021 +0800
+
+    Merge remote-tracking branch 'origin/master' into master
+
+commit 41c101b3078f64a6b35d206873f00124b69bc63b
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 15 14:11:44 2021 +0800
+
+    ...
+
+commit 1bb0736712f377533cfa373b5a5fa79306770d15
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 15 12:33:38 2021 +0800
+
+    Edit html code
+
+commit 60d1e030d1aa1ea1ac3f5e3f2922f22bf37fdddf
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Wed May 12 23:08:52 2021 +0800
+
+    testbot
+
+commit 866c08607c57c774791fbc88141be95f52405556
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Wed May 12 22:56:24 2021 +0800
+
+    testbot
+
+commit 6bb3b86d231c2ea76e2df135e80010e6ddd7e7c8
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Wed May 12 21:13:40 2021 +0800
+
+    small change about register button
+
+commit 0391ef6d8ae986d53fb3b6b6fe1f51d7f6f19f91
+Merge: cd698f9 ecf6328
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 19:18:31 2021 +0800
+
+    Merge branch 'master' of https://github.com/KebingZ/Project-2
+
+commit cd698f964d4279a4552fb9b069d57e784b1b990b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 19:18:23 2021 +0800
+
+    Edit comment
+
+commit ecf63289289125c2d7b0846059535443bb67ad8e
+Merge: 261070c dbef438
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Wed May 12 18:12:49 2021 +0800
+
+    Merge remote-tracking branch 'origin/master' into master
+
+commit 261070ce575d2bfed3e413dade2df2c8f85c3a91
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Wed May 12 18:12:24 2021 +0800
+
+    ...
+
+commit dbef438e566e83e772be11ce5e23bc4ba32c15aa
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 17:11:34 2021 +0800
+
+    Small change
+
+commit 96fd7119b0067681bce8f6362198c8a76fddcb51
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 16:50:28 2021 +0800
+
+    Add test content
+
+commit ae9f021616babfefe2f053e334a10bbbe13a76fa
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 16:06:56 2021 +0800
+
+    Small error
+
+commit c6409bece350adbade2ac65ce657c1c5f16f3287
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 15:49:12 2021 +0800
+
+    Small change
+
+commit 3af85e78ac1b93daab21535ff5a703ab3e171897
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 15:41:58 2021 +0800
+
+    Add Mark system
+
+commit 6e09a6b71b4c01e980b29999b2b3c2d4ab3040a4
+Merge: fbdd1d9 1ab279d
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 13:46:35 2021 +0800
+
+    edit
+
+commit fbdd1d9a8f99e127578e84e4f3f36066aae30cae
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 13:45:23 2021 +0800
+
+    Improve Profile
+
+commit 1ab279d937f42aa1b5a11d96571e501eaf84a8b0
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Wed May 12 13:37:18 2021 +0800
+
+    ...
+
+commit 695ca903589b50d0ebc88ae243586479072cfa6c
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Wed May 12 13:32:59 2021 +0800
+
+    ...
+
+commit b1f27672ca3f1130ed983a13274e5d6460ab587b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 13:08:10 2021 +0800
+
+    Edit profile
+
+commit 3f9ca22982f23c025fb1b3d9786bb9796292c075
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 11:38:26 2021 +0800
+
+    Add profile page
+
+commit 10fb2186e55cce2b5cffba0e4fe3b508bb7cc3ea
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 10:03:23 2021 +0800
+
+    Edit flash
+
+commit cb3a13d72d36e259304ec574918bc48b3ee8ed75
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 08:43:23 2021 +0800
+
+    Small error
+
+commit 06461dc392f4825e28d4560cff4546580f2e76c2
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Wed May 12 08:21:37 2021 +0800
+
+    Small change
+
+commit 8ac4c44187f20eda76d75b719969a2c3d73f61de
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 21:09:23 2021 +0800
+
+    ...
+
+commit 9feb27cc28e8f7c54bda91c980203812fe7ed2dd
+Merge: d8ab20b 2ccaed0
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 21:01:11 2021 +0800
+
+    Merge remote-tracking branch 'origin/master' into master
+
+commit d8ab20bdabbdfff0a6f64dcac8cf21f38c024742
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 21:00:33 2021 +0800
+
+    ...
+
+commit 2ccaed09b68c5a087d8152186fa808d62cf1f8ce
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 20:51:47 2021 +0800
+
+    Add init admin
+
+commit cc389f0911cdaf92e4c0e27c51d1a85cd58fc32f
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 20:42:19 2021 +0800
+
+    Add link
+
+commit 73fa1298bf468fbeeb4ed013ddb40fe10c5cf3b7
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 20:11:31 2021 +0800
+
+    Edit init
+
+commit f4bf155053f07e18f4fc3743652a8e5f392cf45e
+Merge: ebbfa8b 28e5ad8
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 20:01:41 2021 +0800
+
+    Edit login
+
+commit ebbfa8b0da3ceb74680ccfa48bd21ac098b45d7c
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 19:59:49 2021 +0800
+
+    Change login
+
+commit 28e5ad827df0c8a63673e98a2695770b27501959
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 18:51:06 2021 +0800
+
+    ...
+
+commit 7b941ba12dec38122516ae52b1f121d12b775519
+Author: Steven Z <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 18:41:40 2021 +0800
+
+    Add files via upload
+
+commit 6a4424770bbc45686681000fca16519931490c1b
+Author: Steven Z <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue May 11 18:40:34 2021 +0800
+
+    Update __init__.py
+
+commit 889c34864ac2d07551adca3940b7afa277c8ece7
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 18:27:39 2021 +0800
+
+    Fix Login
+
+commit 4e9dc155efd85219c35c42c31633ebe208a6490d
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 17:57:56 2021 +0800
+
+    Login
+
+commit 61f7a7ba84f22695c93c27405d61fb2942379f4c
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 15:51:29 2021 +0800
+
+    Small change
+
+commit bfa05deed415c116d74bcc20fcad69c137a7af1f
+Merge: c9abd8b f2f97a6
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 15:48:28 2021 +0800
+
+    Merge branch 'Mytest'
+
+commit f2f97a640422e7e09744eef8d139bb30e28dddf8
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 15:47:59 2021 +0800
+
+    FInish test page v-1
+
+commit 3eb73b93fcd83b737fc6837c60d3831357d31d9e
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 14:52:43 2021 +0800
+
+    Delete some files
+
+commit 47b9c9ebb5b1f7c331d9d968000764157987ff2c
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 14:50:22 2021 +0800
+
+    Add animation
+
+commit ebcaeb0360aeea987ff1c786f15970311f6314e1
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 14:36:39 2021 +0800
+
+    delete nav
+
+commit 77948797183e77cfce91f6fe9e50c128423f227a
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue May 11 14:34:20 2021 +0800
+
+    Try new style
+
+commit c9abd8bb5091c980ba244d8c14ee6678a25d73ca
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Mon May 10 22:18:34 2021 +0800
+
+    Delete sample.txt
+
+commit 95177abc9cfeca3cbee07f4d38edbfe5a85fa832
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 22:12:40 2021 +0800
+
+    Edit login page
+
+commit 9809810c092384e1586f334174a57f001da44dd6
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 20:55:12 2021 +0800
+
+    Edit error
+
+commit 7160904f2fa52a5beb24bfecb88bf20ec52cc5c9
+Merge: 9fa8656 d816bca
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 16:21:36 2021 +0800
+
+    Merge branch 'master' of https://github.com/KebingZ/Project-2
+
+commit 9fa8656c1ec3fa47ac90b72e663f464c23614d2d
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 16:21:14 2021 +0800
+
+    Relocation
+
+commit d816bca9756842570651119aee2c2c611bcde082
+Author: Steven Z <71420444+KebingZ@users.noreply.github.com>
+Date:   Mon May 10 16:17:25 2021 +0800
+
+    Add files via upload
+
+commit a64a57177f972c8fd9b9ad19ee488c49ec3b9358
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Mon May 10 16:14:52 2021 +0800
+
+    Delete app.db
+
+commit 0c3cfbbec48397b021479608f8f0c0b3573c42f6
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Mon May 10 16:14:41 2021 +0800
+
+    Delete app.py
+
+commit b801810e6ecfa111a9f18a27d428fc0d31a7d7d7
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 16:13:36 2021 +0800
+
+    Edit env
+
+commit cdaaa9a3116b72e03d8620ec5fbc0b937e0888b3
+Merge: ed914f1 d92d1d4
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 16:12:35 2021 +0800
+
+    Merge branch 'Mytest'
+    .
+
+commit d92d1d41e92afd2dff0a2a77c31ba07723dc0de9
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 16:12:16 2021 +0800
+
+    Edit db
+
+commit ed914f19c2c32dc25d6b95b20ddc191a3332e2a8
+Merge: c115bb3 d62fd6b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 15:56:19 2021 +0800
+
+    Merge branch 'Mytest'
+
+commit d62fd6b0156f5144af20fe366e0fd6996c5fe9a8
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 15:55:51 2021 +0800
+
+    Add database
+
+commit c115bb3d07e80c469e4c74a227116ff4cfed9c7f
+Merge: fccf982 9437c52
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 15:23:59 2021 +0800
+
+    Merge branch 'master' of https://github.com/KebingZ/Project-2
+
+commit fccf9820347b6702ad2fd5fa54744185e06764f1
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 15:21:59 2021 +0800
+
+    Edit login page
+
+commit 4809b134896fac71991ef9d9c2e18a30821b74a5
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 14:48:00 2021 +0800
+
+    Add new mig
+
+commit 99cfd2705d6c949f7ce4f5e72f64a62ec40da27d
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 14:46:43 2021 +0800
+
+    Delete old mig
+
+commit 9437c526f16d3d295e9db506fd9578057067ca21
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Mon May 10 14:30:42 2021 +0800
+
+    Delete tt.txt
+
+commit e60e398a804223fc4c2cee0e294e934dc793bc66
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 14:25:06 2021 +0800
+
+    aa
+
+commit 3839332e3a6745983ad9866e8cd13d3f84f358c0
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 14:23:36 2021 +0800
+
+    My branch
+
+commit 2d5f3a8143b666229e2639820e75af9ce37ebab7
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 10 11:27:31 2021 +0800
+
+    new directory for web files
+
+commit f302c2c9bcb0a1405bfee0d75eefe5463ee493e2
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 22:08:12 2021 +0800
+
+    Fix error image
+
+commit c0371b332c25e4a1b8b7ba0da241c0d0d3c68127
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 22:00:06 2021 +0800
+
+    Add login page
+
+commit 4d80e4d942c8aac632b68c382e9320ea318a1a9a
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 21:36:43 2021 +0800
+
+    Add links to pages
+
+commit 59d3035fb3bae5d618f9ab47f1dd2c46f4f880f7
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 18:19:08 2021 +0800
+
+     Edit home page html
+
+commit a865e0a3991d93e561d32a370442805894e224dd
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 18:14:48 2021 +0800
+
+    Edit image location
+
+commit 8a3ff7007df9933e34317bdc96a47ef8121e7586
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 17:34:58 2021 +0800
+
+    Add new requirement
+
+commit 7978120f427fbe9d39c2ca37746f9dbb4f0fc925
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 17:32:08 2021 +0800
+
+    Delete templates directory
+
+commit 05693c51e49032819929b0196af8711a71350ac1
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 17:31:55 2021 +0800
+
+    Delete static directory
+
+commit 86ed4bf540e06c67f104a1fd4ab22035179e901b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 15:28:55 2021 +0800
+
+    Add email validator
+
+commit afe34057cfad0d2682b2a4c91e005507b7e03c4b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 15:22:33 2021 +0800
+
+    Add files
+
+commit b3fbe77d78d5d041f0abba8492eb9306aebd7337
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 15:17:25 2021 +0800
+
+    Add migretion
+
+commit c9bc751e45165e6b26a0420b728dc666bb737e3a
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 15:11:53 2021 +0800
+
+    Add Sample
+
+commit 113436f8d55a419b60fc3ade93f4e25de13b6aba
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 15:07:42 2021 +0800
+
+    Add SQL
+
+commit 875631da026cd77c97ac4947b3348aabb981ac20
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 15:04:45 2021 +0800
+
+    Update .env
+
+commit f70f33ddd1dadf89406f5283e1b9b25130d75686
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 14:53:43 2021 +0800
+
+    Init
+
+commit 3f0933ea78e616ecf3ed1f7fda88a4395a1d1fa4
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:58:45 2021 +0800
+
+    Delete venv directory
+
+commit 270feb6dcd739e12e52e3108f06c70cda0e79612
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:52:38 2021 +0800
+
+    Add files via upload
+
+commit 78a11a7941df4db668c7d385d7a10fc3e732da5b
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:51:17 2021 +0800
+
+    Add files via upload
+
+commit 79947760d7911593ffd889ae51747717312fe549
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:50:16 2021 +0800
+
+    Delete venv/Include/site/python3.9/greenlet directory
+
+commit ca728b933dcbc1b86aec04c66950db0356acc609
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:49:29 2021 +0800
+
+    Add files via upload
+
+commit cf7fd000bceb65cc0dca538361c0aff742d06b88
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:47:16 2021 +0800
+
+    Delete venv
+
+commit 03e268a5f54cc94c866cbed4a1ac4a3aea922771
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:47:02 2021 +0800
+
+    Create venv
+
+commit b3138dd12cbf9c06709ac275ca7a1104d61b5c7b
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:44:44 2021 +0800
+
+    Delete venv directory
+
+commit 26890cf9eafdaaacfa9091894f677335505a76a1
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:09:22 2021 +0800
+
+    Delete Start.py
+
+commit ef79add14ca525a69b287ff717b43a127253e6aa
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:08:53 2021 +0800
+
+    Delete __pycache__ directory
+
+commit c3ae7e811728a9384dd235f9a9891ae9f63ffd09
+Author: Liangbo Jin <71009703+WentworthJin@users.noreply.github.com>
+Date:   Fri May 7 12:08:40 2021 +0800
+
+    Delete app directory
+
+commit fde05869812951c5abac2cadd54ba88dddc507b6
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 11:32:07 2021 +0800
+
+    Add environment variable
+
+commit 105fb1dff809bc051171b8d9adf9aa3e9ddb1f33
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 11:15:57 2021 +0800
+
+    Adding sample template
+
+commit a61133fa0315efc3943ee2b3b3839e2f0bf3e215
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Fri May 7 10:25:55 2021 +0800
+
+    Add initial FLask
+
+commit 1d3f4e494e8ff78750e46ae9b7e8ba7316529b7b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Thu May 6 21:05:14 2021 +0800
+
+    Test git log
+
+commit 50e9844f32667243bb01a08ad043eaa62aa4388e
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 3 17:16:44 2021 +0800
+
+    New home page v-1
+
+commit f1ba90febb4d849416b5f4b6bfc7eecb738dde69
+Merge: 24e9a85 3ac53e1
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 3 16:22:43 2021 +0800
+
+    Condition.html v-2
+
+commit 24e9a85a3b701c364921bf8ffa506910d1f59606
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 3 16:20:28 2021 +0800
+
+    Condition html v-2
+
+commit 3ac53e1f8a4dffb64f8cddb5d4734b182aac3bd5
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Mon May 3 15:20:34 2021 +0800
+
+    frontend
+
+commit 59e1bc0440fc2bdcf6b936849c1b6f7b036caec3
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Mon May 3 15:20:24 2021 +0800
+
+    frontend
+
+commit 410985936e2d70dbd8fd9efa4597d2dff8bee930
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 3 13:16:39 2021 +0800
+
+    Condition.html v-1
+
+commit 2e21601fc98fdc0ce733917affd00990b60c0f3b
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon May 3 12:36:57 2021 +0800
+
+    Finished Generic.html v-2. Improved Class/Math.html
+
+commit de2ea2e25639514e66980fd3422c0fd46c7a57e2
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 2 17:14:55 2021 +0800
+
+    Gererics html v-1
+
+commit 20ba54e817eea075190495a8a4bfc38392b564fb
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 2 15:00:08 2021 +0800
+
+    Improved CSS and Main_Page layout
+
+commit 285298aad744130a70b20ce3bce54032661624cd
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 2 13:20:27 2021 +0800
+
+     Add main_page
+
+commit 612dea2df03a343a50d2189efe1a8e466bcf0cba
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 2 12:05:59 2021 +0800
+
+    Finish Class.html v-1
+
+commit 046b1a62216b992e5301fb2e224f8809d6f5e2ba
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sun May 2 07:38:23 2021 +0800
+
+     Improved Math.html v-2
+
+commit d77a7a8ba75616d55d1cb2d8fcd4980af96a27ed
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 1 23:07:41 2021 +0800
+
+    Improved Layout V-2
+
+commit d5f70fda33ffe2719d623c2da198216c3df732fd
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 1 23:00:13 2021 +0800
+
+    Nav bar base html Version-3
+
+commit 3fb4857606254c25624a9e4723cfa044b8d4fbda
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:48:21 2021 +0800
+
+    Flask
+
+commit 3ba7f95977b7f2e014cffbc0467c827c5ab699ff
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:48:12 2021 +0800
+
+    Flask
+
+commit e47e0485a7fa9a914b88d204d05b643e2621a6bc
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:48:04 2021 +0800
+
+    Flask
+
+commit d572c1110e807c227a30e315219f269a4ec23761
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:47:56 2021 +0800
+
+    Flask
+
+commit 032812bc40d47f3ddad42e492fca9cff40e29575
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:47:49 2021 +0800
+
+    Flask
+
+commit f3d8fcf524ac50ee67c89376b4d907362a9529f8
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sat May 1 22:47:40 2021 +0800
+
+    Flask
+
+commit 27dfc3d6c8a501d3b5397bfb978981eca5c415db
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 1 20:26:34 2021 +0800
+
+    minnor change
+
+commit a0750f8801cd9c2da6b412323e21220d79003bb2
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 1 20:18:28 2021 +0800
+
+     Test a new layout
+
+commit 5b6ce1591921aeca644024190b979efe4b7387f9
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Sat May 1 20:18:15 2021 +0800
+
+     Test a new layout
+
+commit cfa3ff6482d6e71d92227d749f6d1dafdd5813de
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 1 18:42:05 2021 +0800
+
+    flask backend
+
+commit 8658ec0a0c4b8548aba97eaafcf0783c4881921b
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 1 18:41:57 2021 +0800
+
+    flask backend
+
+commit 0dffbf8dd55248b05d7312cfddcb22b9ba4df34d
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 1 18:41:47 2021 +0800
+
+    flask backend
+
+commit 4b11d48e239bdce9302aef5cfde85ef644b48e78
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Sat May 1 18:41:03 2021 +0800
+
+    flask backend
+
+commit 35df0e746b5e064c443d3c9d8286df572a31f032
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 17:21:36 2021 +0800
+
+    Flask
+
+commit 11b20c9fb138dbb36e08b81177fa163d071f838e
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue Apr 27 11:56:39 2021 +0800
+
+    Improved link, and finish Math.html-v1
+
+commit f778216500892a7bf6801382944a6da38b13b048
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Tue Apr 27 07:46:50 2021 +0800
+
+     Add login button on nav.html
+
+commit 9251720205652c037c6f3b641d07b92d324553c8
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 03:09:44 2021 +0800
+
+    Flask
+
+commit 389839351f55a526404a8e022ce0f02e491339b0
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 03:07:11 2021 +0800
+
+    Flask
+
+commit f3478dfb64809da5cc2c7378c378f23ba2a87336
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:59:30 2021 +0800
+
+    Flask
+
+commit 6732719e1ef0175b17fff01db634842651b01753
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:59:14 2021 +0800
+
+    Flask
+
+commit 68b70d17c324409ec78371858d81751d6c32fa88
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:58:45 2021 +0800
+
+    Flask
+
+commit cc9871585579dda5ce73aae9ec6c13b551a4cca0
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:57:44 2021 +0800
+
+    Flask
+
+commit a248d53746eef8231de5ea6b4dbed6e96309558a
+Merge: e1250a5 feb7976
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:32:22 2021 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+commit e1250a5d35f648db309ede45952f1abbc7795928
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:32:08 2021 +0800
+
+    Flask
+
+commit a256ad688ad016b7614f48b1cf9641af20a25d46
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:30:21 2021 +0800
+
+    Flask
+
+commit 4fb2e8075e4ff1a579b0b12f29f336626cdd3087
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Tue Apr 27 02:28:15 2021 +0800
+
+    Flask
+
+commit feb7976618149e585cbbd02017f3fc07a24e1b92
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Mon Apr 26 19:15:14 2021 +0800
+
+    Add files via upload
+
+commit 9bf3d9ac686f89fa3d8af6aba79b493603470f45
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon Apr 26 19:13:33 2021 +0800
+
+     Navbar_Version-2
+
+commit 6ac68af2eb76f366aa63fe22e5562b0ebc64900f
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Mon Apr 26 19:03:20 2021 +0800
+
+    Flask
+
+commit 6f2769872df97e2876abc90ded785434791aab93
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Mon Apr 26 19:03:01 2021 +0800
+
+    Flask
+
+commit c1dced5aba584f354be29ca0923dfb494fdd7ccc
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Mon Apr 26 19:01:01 2021 +0800
+
+    Flask
+
+commit b28c3e4c4bfe89aa98e4d60fd8b8f8fd6ad3e14e
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Mon Apr 26 12:58:47 2021 +0800
+
+     Adding initial JS file
+
+commit 29ff69b4982157d783940ffcf34d30bd7a9e22eb
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Mon Apr 26 12:40:17 2021 +0800
+
+    Flask
+
+commit d441f3e5f5c6c77bc54f4998d643c21235a9d1d6
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Mon Apr 26 12:39:42 2021 +0800
+
+    Flask
+
+commit 7b7b19f34efcac0a65eca7643e017672ba24244d
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sun Apr 25 22:59:17 2021 +0800
+
+    Flask
+
+commit 800cf51127d2fd3f72afc4b67c95e14b2c51de12
+Author: KebingZ <zkbrichard@gmail.com>
+Date:   Sun Apr 25 22:52:57 2021 +0800
+
+    Flask
+
+commit 2db21e01258436335082141d8cfce4a8254a6124
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Thu Apr 22 11:41:19 2021 +0800
+
+    Adding nav bar HTML sample
+
+commit aad637fc8c84be29b1942c8590cc666bafc604ab
+Author: Liangbo Jin <23078811@student.uwa.edu.au>
+Date:   Thu Apr 22 11:35:22 2021 +0800
+
+    Adding requirement file
+
+commit 87065d9d1441020cdf67162ef1127e17abe0106c
+Author: KebingZ <71420444+KebingZ@users.noreply.github.com>
+Date:   Tue Apr 13 12:59:24 2021 +0800
+
+    Initial commit

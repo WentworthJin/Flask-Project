@@ -45,7 +45,7 @@ class myTest(unittest.TestCase):
             self.driver.find_element_by_class_name("next").click()
             time.sleep(0.8)
         text2 = self.driver.find_element_by_class_name("congrats").text
-        print(text2)
+        print(text2, "\nTest2 finished!")
 
     def testUser(self):
         user=User(username="Tom", password="123456")

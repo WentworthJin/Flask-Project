@@ -55,10 +55,10 @@ def inhert():
 @login_required
 def test():
     name = current_user.username
-
     currentid = current_user.id
     mark = Post.query.filter_by(user_id=current_user.id).first()
     today = datetime.now()
+    timed=today.strftime("%c")
     CurrentResult = 0
     if request.method == 'POST':
         First = request.form.getlist('question-1-answers')
@@ -122,7 +122,7 @@ def test():
         else:
             feedback += "Wrong Question10: Please refer the Swift Generics; "
 
-        Record = Post(Mark=CurrentResult, Finish_Time=today, Feedback=feedback, user_id=currentid)
+        Record = Post(Mark=CurrentResult, Finish_Time=timed, Feedback=feedback, user_id=currentid)
         db.session.add(Record)
         db.session.commit()
 
@@ -195,7 +195,9 @@ def user(username):
 @app.before_request
 def before_request():
     if current_user.is_authenticated:
-        current_user.last_seen = datetime.utcnow()
+        today = datetime.now()
+        timed=today.strftime("%c")
+        current_user.last_seen = timed
         db.session.commit()
 
 @app.route('/edit_profile', methods=['GET', 'POST'])
