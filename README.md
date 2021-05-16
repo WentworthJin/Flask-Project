@@ -18,7 +18,7 @@ feedback for the current question.
 ## How to Launch the Application
 1. Open the terminal under the file directory
 2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>' -- <pre>pip install -r requirements.txt</pre>
-3. Run the Application  --  <b> flask run </b>
+3. Run the Application  --  <pre> flask run </pre>
 
 
 ## How to run Unit Test
