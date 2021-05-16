@@ -273,15 +273,15 @@ Grammar-Tutorial
             <p><b>Caution: </b>Swift language does not completely ignore spaces like C/C++ and Java. Swift has
                 certain requirements
                 for the use of spaces, but it is not as strict as Python's requirements for indentation.</p>
-            <pre>let a= 1 + 2</pre>
+            <pre id="moveerror"  onmouseover="mouseerror()" >let a= 1 + 2</pre>
             <p>The error message is:</p>
-            <pre>error: prefix/postfix &#39;=&#39; is reserved</pre>
+            <pre class="redp" id="errorplace"></pre>
             <p>It probably means that the usage of the equal sign directly before or after it is reserved.
                 The following code will still report an error (continue to pay attention to spaces): 
             </p>
-            <pre>let a = 1+ 2</pre>
+            <pre id="mouseerror2" onmouseover="mouseerror2()">let a = 1+ 2</pre>
             <p>The error message is:</p>
-            <pre>error: consecutive statements on a line must be separated by &#39;;&#39;</pre>
+            <pre class="redp" id="place2"></pre>
             <p>This is because Swift thinks that the statement 1+ is over, and 2 is the next statement. 
                 Only by writing in this way will it not report an error:
             </p>
