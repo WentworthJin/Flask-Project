@@ -78,11 +78,14 @@ AgileWeb Project 2
 3. Once you see the test's status: Test # finished, the tests are finished. ( As show below)
 <pre>
 Process finished with exit code 0
-PASSED                                        [ 50%]Register Here ! 
+PASSED                                        [33%]Register Here ! 
 Test1 finished!
 
-PASSED                                        [100%]Congratulation!!! 
+PASSED                                        [66%]Congratulation!!! 
 Test2 finished!
+
+PASSED
+Test3 finished                                [100%]User password test is done!
 
 Ran 3 tests in 36.566s
 
