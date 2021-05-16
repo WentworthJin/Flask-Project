@@ -12,63 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <title>Swift- {% block titles %}{% endblock %}</title>
-    <style>
-      iframe.inarticle{
-    width: 80%; 
-    height: 600px;
-    border: 1px solid black;
-    text-align: center;
-  }
-  button{
-  background-color: white;
-  color: rgb(209,103,32);
-  border: 2px solid rgb(209,103,32);
-  font-size: 150%;
-  margin-right: 4%;
-  border-radius: 12px;
-  transition-duration: 0.4s;
-  width: 15%;
-}
-    </style>
-    <script>
-      function getvar(){
-  var va = document.getElementById("str1").value;
-  if (va == ""){
-    alert("You did not enter any word");
-  }
-  else{
-    document.getElementById('stringput').innerHTML = va;
-  }
-}
-function mouseerror(){
-  var de = document.getElementById("moveerror");
-  de.addEventListener("mouseover", showerror());
-}
-
-function showerror(){
-  var er = document.getElementById("errorplace");
-  er.innerHTML = "error: prefix/postfix &#39;=&#39; is reserved";
-}
-
-function mouseerror2(){
-  var de = document.getElementById("mouseerror2");
-  de.addEventListener("mouseover", showerror2());
-}
-
-function showerror2(){
-  var er = document.getElementById("place2");
-  er.innerHTML = "error: prefix/postfix &#39;=&#39; is reserved";
-}
-
-$(document).ready(function(){
-  $("#advance").click(function(){
-    alert("You are ready for the difficult part!");
-    $("#adn1").animate({
-      height: 'toggle'
-    });
-  });
-});
-    </script>
 </head>
 <body>
   {% if current_user.is_authenticated %}
