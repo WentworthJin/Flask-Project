@@ -48,8 +48,8 @@ class myTest(unittest.TestCase):
         print(text2, "\nTest2 finished!")
 
     def testUser(self):
-        user=User(username="Tom", password="123456")
-        user.set_password("123456")
+        user=User(username="Tom")
+        user.set_password(password="123456")
         self.assertFalse(user.check_password("111111"))
         self.assertTrue(user.check_password("123456"))
         print("User password test is done!")

@@ -6,12 +6,12 @@
 
 ## Purpose of the Web Application
 The purpose of this <b>Web Application</b> is to provide fundentmental concept and small test of the <b>Swift</b> programming 
-language, and offer feedback after for each test.  
+language, and offer feedback for each test.  
 
-## Assessment mechanism
-We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory 
-<b>int Mark</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string Feedback</b> will add the 
-feedback for the current question.
+## Context & Assessment mechanism
+- For the context, we created several tutorial pages for users ( login / non login) to visit and learn. In addition, a user cannot enter the 'Test' page unless he is registered, what's more, a registered user cannot view his profile page until he finished one test.
+- The admin account is used for adding and deleting user's data, including their account and test's result. Only the admin user can visit the admin page, and perform editing.
+- We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory <b>int Mark</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string Feedback</b> will add the feedback for the current question.
 
 ## Architecture of the Web Application
 
