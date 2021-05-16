@@ -56,7 +56,12 @@ class myTest(unittest.TestCase):
         print(text2, "\nTest2 finished!")
 
     def testUser(self):
+<<<<<<< HEAD
         for i in range(len(self.testCase()[0])):
+=======
+
+        for i in range(self.testCase()[0]):
+>>>>>>> f9d5bec580790daa36f51d2fb307bedeb418d90e
             user=User(username=self.testCase()[0][i])
             user.set_password(self.testCase()[1][i])
             self.assertFalse(user.check_password("111111"))
@@ -65,9 +70,9 @@ class myTest(unittest.TestCase):
         print("User password test is done!")
 
     def tearDown(self) -> None:
-        self.driver.close()
         db.session.remove()
         db.drop_all()
-
+        self.driver.close()
+        
     if __name__ == "__main__":
         unittest.main()
