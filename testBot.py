@@ -1,6 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import unittest, time, re
+from app.models import User
 
 
 class myTest(unittest.TestCase):
@@ -45,6 +46,13 @@ class myTest(unittest.TestCase):
             time.sleep(0.8)
         text2 = self.driver.find_element_by_class_name("congrats").text
         print(text2)
+
+    def testUser(self):
+        user=User(username="Tom", password="123456")
+        user.set_password("123456")
+        self.assertFalse(user.check_password("111111"))
+        self.assertTrue(user.check_password("123456"))
+        print("User password test is done!")
 
     def tearDown(self) -> None:
         self.driver.close()
