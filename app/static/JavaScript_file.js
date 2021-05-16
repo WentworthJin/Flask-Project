@@ -116,3 +116,50 @@ function resetStr(){
   document.getElementById('foin_string').value = "";
   document.getElementById('result_output').innerHTML = "";
 }
+
+function showUI(){
+  document.getElementById("importsample").innerHTML = "UIKit";
+}
+
+function showOX(){
+  document.getElementById("importsample").innerHTML = "Cocoa";
+}
+
+function getvar(){
+  var va = document.getElementById("str1").value;
+  if (va == ""){
+    alert("You did not enter any word");
+  }
+  else{
+    document.getElementById('stringput').innerHTML = va;
+  }
+}
+
+function mouseerror(){
+  var de = document.getElementById("moveerror");
+  de.addEventListener("mouseover", showerror());
+}
+
+function showerror(){
+  var er = document.getElementById("errorplace");
+  er.innerHTML = "error: prefix/postfix &#39;=&#39; is reserved";
+}
+
+function mouseerror2(){
+  var de = document.getElementById("mouseerror2");
+  de.addEventListener("mouseover", showerror2());
+}
+
+function showerror2(){
+  var er = document.getElementById("place2");
+  er.innerHTML = "error: prefix/postfix &#39;=&#39; is reserved";
+}
+
+$(document).ready(function(){
+  $("#advance").click(function(){
+    alert("You are ready for the difficult part!");
+    $("#adn1").animate({
+      height: 'toggle'
+    });
+  });
+});
