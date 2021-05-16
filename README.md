@@ -1,5 +1,6 @@
 # Agile Web Development Project-2
 
+![image info](./app/static/Image/swift_icon.png)
 ## Students:
 - Liangbo Jin  23078811
 - Kebing Zhao  22863702

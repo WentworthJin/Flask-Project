@@ -16,7 +16,7 @@ class myTest(unittest.TestCase):
     def testCase(self):
         u=["Arran", "Bob", "Sam", "Tim", "Tom", "Hacker", "Lam", "Zikkel"]
         p=["123456", "000000", "122222", "121212", "242424242", "353553535", "993993", "jijiefe"]
-        return list([u, p])
+        return u, p
 
     def test01(self):
         self.driver.maximize_window()
@@ -56,12 +56,8 @@ class myTest(unittest.TestCase):
         print(text2, "\nTest2 finished!")
 
     def testUser(self):
-<<<<<<< HEAD
-        for i in range(len(self.testCase()[0])):
-=======
 
-        for i in range(self.testCase()[0]):
->>>>>>> f9d5bec580790daa36f51d2fb307bedeb418d90e
+        for i in range(len(self.testCase()[0])):
             user=User(username=self.testCase()[0][i])
             user.set_password(self.testCase()[1][i])
             self.assertFalse(user.check_password("111111"))
