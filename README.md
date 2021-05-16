@@ -16,7 +16,7 @@ feedback for the current question.
 ## Architecture of the Web Application
 
 ## How to Launch the Application
-1. Open the terminal under the file directory
+1. Open the terminal under the file directorym, and run the following commands in terminal
 2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>
 <pre>pip install -r requirements.txt</pre>
 3. Run the Application
