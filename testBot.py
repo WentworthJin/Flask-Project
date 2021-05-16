@@ -2,13 +2,16 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import unittest, time, re
 from app.models import User
+from app import app, db
 
 
 class myTest(unittest.TestCase):
     def setUp(self) -> None:
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
-
         self.base_url = "http://127.0.0.1:5000/"
+        app.config["SQLALCHEMY_DATABASE_URI"]="sqlite://"
+        db.create_all()
+
 
     def testCase(self):
         u=["Arran", "Bob", "Sam", "Tim", "Tom", "Hacker", "Lam", "Zikkel"]
@@ -53,22 +56,23 @@ class myTest(unittest.TestCase):
         print(text2, "\nTest2 finished!")
 
     def testUser(self):
-<<<<<<< HEAD
         user=User(username="Tom")
         user.set_password(password="123456")
         self.assertFalse(user.check_password("111111"))
         self.assertTrue(user.check_password("123456"))
-=======
+
         for i in range(self.testCase()[0]):
             user=User(username=self.testCase()[0][i])
             user.set_password(self.testCase()[1][i])
             self.assertFalse(user.check_password("111111"))
             self.assertTrue(user.check_password(self.testCase()[1][i]))
->>>>>>> b7f5cbf5ad6f7eb489b0f697fec27c65c5c40f97
+
         print("User password test is done!")
 
     def tearDown(self) -> None:
         self.driver.close()
+        db.session.remove()
+        db.drop_all()
 
     if __name__ == "__main__":
         unittest.main()
