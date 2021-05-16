@@ -11,7 +11,7 @@ language, and offer feedback for each test.
 - This Web Application comes with <b>educational style</b>, and provides basic Swift concepts for learning, including: Syntax, Grammar, Function, and more.   
 
 ### Context & Assessment mechanism
-- For the context, we created several tutorial pages for users ( logined / annonymous) to visit and learn. In addition, a user cannot enter the 'Test' page unless he is logined, what's more, a registered user cannot view his profile page until he finished one test.
+- For the context, we created several tutorial pages and one test page for users ( logined / annonymous) to visit and learn. In addition, a user cannot enter the 'Test' page unless he is logined, what's more, a registered user cannot view his profile page until he finished one test.
 - The admin account is used for adding and deleting user's data, including their account and test's result. Only the admin user can visit the admin page, and perform editing. Other's will be redirected to the main page.
 - We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory <b>int CurrentResult</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string feedback</b> will add the feedback for the current question.
 - User can view their history attempts in the 'Profile' page, last visit time, as well as his average mark. What's more, this page also contains the aggregate results from all user's attempts. Also, the user can edit their personalized message in the 'Profile' page.
