@@ -18,14 +18,44 @@ language, and offer feedback for each test.
 ## Architecture of the Web Application
 <pre>
 AgileWeb Project 2
-|-- app
-    |-- static
-    |-- templates
-    |-- __init__.py
-    |-- errors.py
-    |-- forms.py
-    |-- models.py
-    |-- routes.py
+|--  README.md
+|--  app.db
+|--  log.txt
+|--  config.py
+|--  start.py
+|--  testBot.py
+|--  requirements.txt
+|--  app
+    |--  static
+        |--  Image
+            |--  images...
+        |--  Javascript_file.js
+        |--  nav_css.css
+    |--  templates
+        |--  404.html
+        |--  500.html
+        |--  base.html
+        |--  class.html
+        |--  condition.html
+        |--  edit_profile.html
+        |--  function.html
+        |--  generic.html
+        |--  grammar.html
+        |--  home.html
+        |--  login.html
+        |--  inher.html
+        |--  login.html
+        |--  loginbase.html
+        |--  math.html
+        |--  register.html
+        |--  Set_Up.html
+        |--  Testbase.html
+        |--  user.html
+    |--  __init__.py
+    |--  errors.py
+    |--  forms.py
+    |--  models.py
+    |--  routes.py
 </pre>
 ## How to Launch the Application
 1. Open the terminal under the file directorym, and run the following commands in terminal
