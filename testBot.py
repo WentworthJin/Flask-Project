@@ -10,6 +10,11 @@ class myTest(unittest.TestCase):
 
         self.base_url = "http://127.0.0.1:5000/"
 
+    def testCase(self):
+        u=["Arran", "Bob", "Sam", "Tim", "Tom", "Hacker", "Lam", "Zikkel"]
+        p=["123456", "000000", "122222", "121212", "242424242", "353553535", "993993", "jijiefe"]
+        return u, p
+
     def test01(self):
         self.driver.maximize_window()
         self.driver.get(self.base_url)
@@ -48,10 +53,11 @@ class myTest(unittest.TestCase):
         print(text2, "\nTest2 finished!")
 
     def testUser(self):
-        user=User(username="Tom", password="123456")
-        user.set_password("123456")
-        self.assertFalse(user.check_password("111111"))
-        self.assertTrue(user.check_password("123456"))
+        for i in range(self.testCase()[0]):
+            user=User(username=self.testCase()[0][i])
+            user.set_password(self.testCase()[1][i])
+            self.assertFalse(user.check_password("111111"))
+            self.assertTrue(user.check_password(self.testCase()[1][i]))
         print("User password test is done!")
 
     def tearDown(self) -> None:
