@@ -16,7 +16,6 @@ feedback for the current question.
 ## Architecture of the Web Application
 
 ## How to Launch the Application
-1. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>' -- <b>pip install -r requirements.txt</b>
-
-
-3. flask db init     flask db migrate -m "users table"   flask db migrate -m "posts table"    flask db upgrade
+1. Open the terminal under the file directory
+2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>' -- <b>pip install -r requirements.txt</b>
+3. Run the Application  --  <b> flask run </b>
