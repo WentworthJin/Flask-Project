@@ -158,8 +158,13 @@ function showerror2(){
 $(document).ready(function(){
   $("#advance").click(function(){
     alert("You are ready for the difficult part!");
-    $("#adn1").animate({
-      height: 'toggle'
-    });
+    $("#adn1").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#advance1").click(function(){
+    alert("You are ready for the difficult part!");
+    $("#adn2").show();
   });
 });
