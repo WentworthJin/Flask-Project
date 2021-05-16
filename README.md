@@ -84,7 +84,7 @@ Test1 finished!
 PASSED                                        [100%]Congratulation!!! 
 Test2 finished!
 
-Ran 4 tests in 56.566s
+Ran 3 tests in 36.566s
 
 OK
 
