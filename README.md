@@ -83,7 +83,14 @@ Test1 finished!
 
 PASSED                                        [100%]Congratulation!!! 
 Test2 finished!
+
+Ran 4 tests in 56.566s
+
+OK
+
+Process finished with exit code 0
 </pre>
+
 
 ## 5.Commit log
 The log file is named as  '<b> log.txt</b>', and all commit logs are stored inside the file.
