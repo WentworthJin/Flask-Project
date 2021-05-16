@@ -66,9 +66,9 @@ class myTest(unittest.TestCase):
         print("User password test is done!")
 
     def tearDown(self) -> None:
-        self.driver.close()
         db.session.remove()
         db.drop_all()
-
+        self.driver.close()
+        
     if __name__ == "__main__":
         unittest.main()
