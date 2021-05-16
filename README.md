@@ -74,7 +74,7 @@ AgileWeb Project 2
 1. Open the terminal, Run the command and keep the local server on.
 <pre>flask run</pre>
 2. Open another terminal, Run the python file and wait for the test finish.
-<pre>python testBot.py</pre>
+<pre>python testBot.py / python3 testBot.py</pre>
 3. Once you see the test's status: Test # finished, the tests are finished. ( As show below)
 <pre>
 Process finished with exit code 0
