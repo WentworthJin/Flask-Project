@@ -17,18 +17,21 @@ feedback for the current question.
 
 ## How to Launch the Application
 1. Open the terminal under the file directory
-2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>' -- <b>pip install -r requirements.txt</b>
+2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>' -- <pre>pip install -r requirements.txt</pre>
 3. Run the Application  --  <b> flask run </b>
 
 
 ## How to run Unit Test
 1. Run the command  <b>flask run</b>, and keep the local server on.
 2. Run the python file  '<b>testBot.py</b>', and wait for the test finish.
-3. Once you see the test's status: Test # finished, the tests are finished,
+3. Once you see the test's status: Test # finished, the tests are finished. ( As show below)
 <pre>
 Process finished with exit code 0
 PASSED                                        [ 50%]Register Here ! 
 Test1 finished!
+
+PASSED                                        [100%]Congratulation!!! 
+Test2 finished!
 </pre>
 
 ## Commit log
