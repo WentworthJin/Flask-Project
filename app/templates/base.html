@@ -12,6 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <title>Swift- {% block titles %}{% endblock %}</title>
+    <script>
+      $(document).ready(function(){
+  $("#advance").click(function(){
+    alert("You are ready for the difficult part!");
+    $("#adn1").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#advance1").click(function(){
+    alert("You are ready for the difficult part!");
+    $("#adn2").show();
+  });
+});
+
+function deleteItem() {
+  localStorage.removeItem("option");
+  localStorage.removeItem("option2");
+  localStorage.removeItem("option3");
+  localStorage.removeItem("option4");
+  localStorage.removeItem("option5");
+  localStorage.removeItem("option6");
+  localStorage.removeItem("option7");
+  localStorage.removeItem("option8");
+  localStorage.removeItem("option9");
+  localStorage.removeItem("option0");
+}
+    </script>
 </head>
 <body>
   {% if current_user.is_authenticated %}
@@ -44,7 +72,7 @@
             </li>
             {% else %}
             <li class="loginbutton">
-              <a href="{{ url_for('logout') }}">Logout</a>
+              <a href="{{ url_for('logout') }}" onclick="deleteItem()">Logout</a>
             </li>
             {% endif %}
         </ul>
