@@ -31,20 +31,20 @@ Grammar-Tutorial
             <h2>Basic Syntax</h2>
             <p>In the previous chapter, we have talked about how to create a "Hello, World!" program in Swift
                 language. Now let’s review it.</p>
-            <p>If you are creating an OS X playground, you need to introduce Cocoa:</p>
+            <p>If you are creating an OS X playground, you need to introduce Cocoa. In addition, If we want 
+                to create an iOS playground, we need to introduce UIKit
+            </p>
+            <p>Try the buttons below !</p><br>
+            <div class="imgcontainer">
+                <button type="button" class="button" onclick="showOX()">Cocoa</button>
+                <button type="button" class="button" onclick="showUI()">UIKit</button>
+            </div>
             <pre>
-            import Cocoa
+            import <span id="importsample" class="redp"></span>
             
             /* My first Swift program */
             var myString = "Hello, World!"
             
-            print(myString)
-            </pre>
-      
-            <p>If we want to create an iOS playground, we need to introduce UIKit:</p>
-            <pre>
-            import UIKit
-            var myString = "Hello, World!"
             print(myString)
             </pre>
             <p>The output:</p>
@@ -70,10 +70,10 @@ Grammar-Tutorial
                 strings or symbols. For example, the following Swift program consists of three types of tags:
             </p>
             <pre>
-            print("test!")
+            print("<input type="text" id="str1" style="width: 15%;" class="yewp">")
             /*Mark as words, symbols*/
-            print
-            ("test!")
+            <button type="button" class="button" style="font-size: 10px;" onclick="getvar()">print</button>
+            <span id="stringput" class="yewp"></span>
             </pre>
             <hr/>
             <h2>Annotation</h2>
