@@ -169,18 +169,130 @@ $(document).ready(function(){
   });
 });
 
+function reloadpage(){
+  window.location.reload();
+}
+
 function varifycode() {
-  var attmpt = document.forms["TestForm"]["varifycode"].value;
-  var varifyco = document.getElementById("vericode").value
+  var attmpt = document.getElementById('verifycode').value
+  var varifyco = '{{ randomnum }}'
   if (attmpt == "") {
-    alert("Name must be filled out");
-    return false;
+    alert("Code must be filled out");
+    reloadpage()
   }
   if (varifyco != attmpt) {
     alert("Wrong verify code, please try again")
-    return false
+    reloadpage()
   }
   if (varifyco == attmpt) {
-    return true
+    alert("Good job, please submit your work now")
+    document.getElementById('showsub').style.display = "inline-block";
   }
+}
+
+
+$(function() {
+  $('input[name="question-1-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option", value);
+    });
+  var itemValue = localStorage.getItem("option");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-2-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option2", value);
+    });
+  var itemValue = localStorage.getItem("option2");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-3-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option3", value);
+    });
+  var itemValue = localStorage.getItem("option3");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-4-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option4", value);
+    });
+  var itemValue = localStorage.getItem("option4");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-5-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option5", value);
+    });
+  var itemValue = localStorage.getItem("option5");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-6-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option6", value);
+    });
+  var itemValue = localStorage.getItem("option6");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-7-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option7", value);
+    });
+  var itemValue = localStorage.getItem("option7");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-8-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option8", value);
+    });
+  var itemValue = localStorage.getItem("option8");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-9-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option9", value);
+    });
+  var itemValue = localStorage.getItem("option9");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+  $('input[name="question-0-answers').click(function(){
+      var thisElem = $(this);
+      var value = thisElem.val();
+      localStorage.setItem("option0", value);
+    });
+  var itemValue = localStorage.getItem("option0");
+  if (itemValue !== null) {
+      $("input[value=\""+itemValue+"\"]").click();
+  }
+});
+
+function deleteItem() {
+  localStorage.removeItem("option");
+  localStorage.removeItem("option2");
+  localStorage.removeItem("option3");
+  localStorage.removeItem("option4");
+  localStorage.removeItem("option5");
+  localStorage.removeItem("option6");
+  localStorage.removeItem("option7");
+  localStorage.removeItem("option8");
+  localStorage.removeItem("option9");
+  localStorage.removeItem("option0");
 }
