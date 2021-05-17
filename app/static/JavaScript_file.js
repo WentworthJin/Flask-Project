@@ -19,14 +19,13 @@ function create_class(){
 
   else{
     document.getElementById('class_sample').style.display = "block";
-    document.getElementById('class_value').innerHTML = class_name;
+    document.getElementById('class_output').innerHTML = class_name;
     document.getElementById('var1_value').innerHTML = var1;
     document.getElementById('property1_value').innerHTML = property1;
-    document.getElementById('var2_value').innerHTML = var1;
-    document.getElementById('property2_value').innerHTML = property1;
-    document.getElementById('var3_value').innerHTML = var1;
-    document.getElementById('property3_value').innerHTML = property1;
-    document.getElementById('class_output').innerHTML = class_name;
+    document.getElementById('var2_value').innerHTML = var2;
+    document.getElementById('property2_value').innerHTML = property2;
+    document.getElementById('var3_value').innerHTML = var3;
+    document.getElementById('property3_value').innerHTML = property3;
   }
 }
 
