@@ -168,3 +168,19 @@ $(document).ready(function(){
     $("#adn2").show();
   });
 });
+
+function varifycode() {
+  var attmpt = document.forms["TestForm"]["varifycode"].value;
+  var varifyco = document.getElementById("vericode").value
+  if (attmpt == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (varifyco != attmpt) {
+    alert("Wrong verify code, please try again")
+    return false
+  }
+  if (varifyco == attmpt) {
+    return true
+  }
+}
