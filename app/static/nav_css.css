@@ -269,6 +269,10 @@ div ul li a:hover:not(.active) {
     color: rgb(0, 0, 0);
 }
 
+.themec{
+    color: rgb(241, 112, 25);;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -631,6 +635,10 @@ input[type="password"]{
 .inlinep{
     display: inline-block;
   }
+
+.hide{
+    display: none;
+}
   
 /* Animation */
 
