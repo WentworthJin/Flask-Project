@@ -12,6 +12,139 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
     <title>Test-page</title>
+    <style>
+      .themec{
+    color: rgb(241, 112, 25);;
+}
+    </style>
+    <script>
+      function reloadpage(){
+  window.location.reload();
+}
+
+$(function() {
+    $('input[name="question-1-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option", value);
+      });
+    var itemValue = localStorage.getItem("option");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-2-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option2", value);
+      });
+    var itemValue = localStorage.getItem("option2");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-3-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option3", value);
+      });
+    var itemValue = localStorage.getItem("option3");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-4-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option4", value);
+      });
+    var itemValue = localStorage.getItem("option4");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-5-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option5", value);
+      });
+    var itemValue = localStorage.getItem("option5");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-6-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option6", value);
+      });
+    var itemValue = localStorage.getItem("option6");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-7-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option7", value);
+      });
+    var itemValue = localStorage.getItem("option7");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-8-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option8", value);
+      });
+    var itemValue = localStorage.getItem("option8");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-9-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option9", value);
+      });
+    var itemValue = localStorage.getItem("option9");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+    $('input[name="question-0-answers').click(function(){
+        var thisElem = $(this);
+        var value = thisElem.val();
+        localStorage.setItem("option0", value);
+      });
+    var itemValue = localStorage.getItem("option0");
+    if (itemValue !== null) {
+        $("input[value=\""+itemValue+"\"]").click();
+    }
+});
+
+function varifycode() {
+  var attmpt = document.getElementById('verifycode').value
+  var varifyco = '{{ randomnum }}'
+  if (attmpt == "") {
+    alert("Code must be filled out");
+    reloadpage()
+  }
+  if (varifyco != attmpt) {
+    alert("Wrong verify code, please try again")
+    reloadpage()
+  }
+  if (varifyco == attmpt) {
+    alert("Good job, please submit your work now")
+    document.getElementById('showsub').style.display = "inline-block";
+  }
+}
+
+function deleteItem() {
+  localStorage.removeItem("option");
+  localStorage.removeItem("option2");
+  localStorage.removeItem("option3");
+  localStorage.removeItem("option4");
+  localStorage.removeItem("option5");
+  localStorage.removeItem("option6");
+  localStorage.removeItem("option7");
+  localStorage.removeItem("option8");
+  localStorage.removeItem("option9");
+  localStorage.removeItem("option0");
+}
+    </script>
 </head>
 <body>
   <div class="sticky">
@@ -31,114 +164,124 @@
       <form name="TestForm" action="" method="post" onsubmit="">
         <h3 class="inlinep">On Which platform can Swift run?</h3><br>
         <div style="font-size: 120%;">
-          <input type="radio" id = "A11" name="question-1-answers" value="A">
+          <input type="radio" id = "A11" name="question-1-answers" value="A1">
           <label for="A11">A) <b>Mac</b></label><br>
-          <input type="radio" id = "A12" name="question-1-answers" value="B">
+          <input type="radio" id = "A12" name="question-1-answers" value="B1">
           <label for="A12">B) <b>Windows</b></label><br>
-          <input type="radio" id = "A13" name="question-1-answers" value="C">
+          <input type="radio" id = "A13" name="question-1-answers" value="C1">
           <label for="A13">C) <b>Linux</b></label><br>
-          <input type="radio" id = "A14" name="question-1-answers" value="D">
+          <input type="radio" id = "A14" name="question-1-answers" value="D1">
           <label for="A14">D) <b>Switch</b></label><br>
         </div>
         <hr>
         <h3 class="inlinep">Which of the following styles are not 'Comment' in Swift</h3><br>
         <div style="font-size: 120%;">
-          <input type="radio" id = "A21" name="question-2-answers" value="A">
+          <input type="radio" id = "A21" name="question-2-answers" value="A2">
           <label for="A21">A) <b>// .....</b></label><br>
-          <input type="radio" id = "A22" name="question-2-answers" value="B">
+          <input type="radio" id = "A22" name="question-2-answers" value="B2">
           <label for="A22">B) <b>/* ... */</b></label><br>
-          <input type="radio" id = "A23" name="question-2-answers" value="C">
+          <input type="radio" id = "A23" name="question-2-answers" value="C2">
           <label for="A23">C) <b>&lt;!-- ... --&gt;</b></label><br>
-          <input type="radio" id = "A24" name="question-2-answers" value="D">
+          <input type="radio" id = "A24" name="question-2-answers" value="D2">
           <label for="A24">D) <b>/* .., /* ... */</b></label><br>
         </div>
         <hr>
         <h3 class="inlinep">Which of the following statements are correct</h3><br>
         <div style="font-size: 120%;">
-          <input type="radio" id = "A31" name="question-3-answers" value="A">
+          <input type="radio" id = "A31" name="question-3-answers" value="A3">
           <label for="A31">A) <b>typealias Feet = Int</b></label><br>
-          <input type="radio" id = "A32" name="question-3-answers" value="B">
+          <input type="radio" id = "A32" name="question-3-answers" value="B3">
           <label for="A32">B) <b>var myString = "Hello, world!</b></label><br>
-          <input type="radio" id = "A33" name="question-3-answers" value="C">
+          <input type="radio" id = "A33" name="question-3-answers" value="C3">
           <label for="A33">C) <b>let a= 1+ 2</b></label><br>
-          <input type="radio" id = "A34" name="question-3-answers" value="D">
+          <input type="radio" id = "A34" name="question-3-answers" value="D3">
           <label for="A34">D) <b>Alias Sheet = String</b></label><br>
         </div>
         <hr>
         <h3 class="inlinep">Which one is the result of ' -9 % 4 '</h3><br>
         <div style="font-size: 120%;">
-          <input type="radio" id = "A41" name="question-4-answers" value="A">
+          <input type="radio" id = "A41" name="question-4-answers" value="A4">
           <label for="A41">A) <b>1</b></label><br>
-          <input type="radio" id = "A42" name="question-4-answers" value="B">
+          <input type="radio" id = "A42" name="question-4-answers" value="B4">
           <label for="A42">B) <b>0</b></label><br>
-          <input type="radio" id = "A43" name="question-4-answers" value="C">
+          <input type="radio" id = "A43" name="question-4-answers" value="C4">
           <label for="A43">C) <b>-2</b></label><br>
-          <input type="radio" id = "A44" name="question-4-answers" value="D">
+          <input type="radio" id = "A44" name="question-4-answers" value="D4">
           <label for="A44">D) <b>-1</b></label><br>
         </div>
         <hr>
         <h3 class="inlinep">Not belong to the 'Logical Operator' ?</h3><br>
-        <input type="radio" id = "A51" name="question-5-answers" value="A">
+        <input type="radio" id = "A51" name="question-5-answers" value="A5">
         <label for="A51">A) <b>&&</b></label><br>
-        <input type="radio" id = "A52" name="question-5-answers" value="B">
+        <input type="radio" id = "A52" name="question-5-answers" value="B5">
         <label for="A52">B) <b>&|</b></label><br>
-        <input type="radio" id = "A53" name="question-5-answers" value="C">
+        <input type="radio" id = "A53" name="question-5-answers" value="C5">
         <label for="A53">C) <b>||</b></label><br>
-        <input type="radio" id = "A54" name="question-5-answers" value="D">
+        <input type="radio" id = "A54" name="question-5-answers" value="D5">
         <label for="A54">D) <b>!</b></label><br>
         <hr>
         <h3 class="inlinep">Setting a string "GoodFriend". By using the For-In loops, how many characteres can we get?</h3><br>
-        <input type="radio" id = "A61" name="question-6-answers" value="A">
+        <input type="radio" id = "A61" name="question-6-answers" value="A6">
         <label for="A61">A) <b>1</b></label><br>
-        <input type="radio" id = "A62" name="question-6-answers" value="B">
+        <input type="radio" id = "A62" name="question-6-answers" value="B6">
         <label for="A62">B) <b>10</b></label><br>
-        <input type="radio" id = "A63" name="question-6-answers" value="C">
+        <input type="radio" id = "A63" name="question-6-answers" value="C6">
         <label for="A63">C) <b>2</b></label><br>
-        <input type="radio" id = "A64" name="question-6-answers" value="D">
+        <input type="radio" id = "A64" name="question-6-answers" value="D6">
         <label for="A64">D) <b>0</b></label><br>
         <hr>
         <h3 class="inlinep">What is the basic function structure in Swift?</h3><br>
-        <input type="radio" id = "A71" name="question-7-answers" value="A">
+        <input type="radio" id = "A71" name="question-7-answers" value="A7">
         <label for="A71">A) <b>def Function:  return ( );</b></label><br>
-        <input type="radio" id = "A72" name="question-7-answers" value="B">
+        <input type="radio" id = "A72" name="question-7-answers" value="B7">
         <label for="A72">B) <b>newfunction = function( );</b></label><br>
-        <input type="radio" id = "A73" name="question-7-answers" value="C">
+        <input type="radio" id = "A73" name="question-7-answers" value="C7">
         <label for="A73">C) <b>class Test = { }</b></label><br>
-        <input type="radio" id = "A74" name="question-7-answers" value="D">
+        <input type="radio" id = "A74" name="question-7-answers" value="D7">
         <label for="A74">D) <b>func Function ( site : String ) -> String</b></label><br>
         <hr>
         <h3 class="inlinep">Which of the following statement is mostly correct</h3><br>
-        <input type="radio" id = "A81" name="question-8-answers" value="A">
+        <input type="radio" id = "A81" name="question-8-answers" value="A8">
         <label for="A81">A) <b>The Object is created from one Class</b></label><br>
-        <input type="radio" id = "A82" name="question-8-answers" value="B">
+        <input type="radio" id = "A82" name="question-8-answers" value="B8">
         <label for="A82">B) <b>A Object can created many Classes</b></label><br>
-        <input type="radio" id = "A83" name="question-8-answers" value="C">
+        <input type="radio" id = "A83" name="question-8-answers" value="C8">
         <label for="A83">C) <b>A Class cannot has infinite Objects</b></label><br>
-        <input type="radio" id = "A84" name="question-8-answers" value="D">
+        <input type="radio" id = "A84" name="question-8-answers" value="D8">
         <label for="A84">D) <b>An Instance is not belong to Class in Swift</b></label><br>
         <hr>
         <h3 class="inlinep">What of the following statement is TRUE about Swift inheritance</h3><br>
-        <input type="radio" id = "A91" name="question-9-answers" value="A">
+        <input type="radio" id = "A91" name="question-9-answers" value="A9">
         <label for="A91">A) <b>subclass can <b class="redp">ONLY</b> acquires the methods of another superclass</b></label><br>
-        <input type="radio" id = "A92" name="question-9-answers" value="B">
+        <input type="radio" id = "A92" name="question-9-answers" value="B9">
         <label for="A92">B) <b>The superclass cannot prevent overwriting from the subclass</b></label><br>
-        <input type="radio" id = "A93" name="question-9-answers" value="C">
+        <input type="radio" id = "A93" name="question-9-answers" value="C9">
         <label for="A93">C) <b>subclass can call and access superclass methods</b></label><br>
-        <input type="radio" id = "A94" name="question-9-answers" value="D">
+        <input type="radio" id = "A94" name="question-9-answers" value="D9">
         <label for="A94">D) <b>subclass is <b class="redp">NOT</b> allowed to access the properties of the superclass</b></label><br>
         <hr>
         <h3 class="inlinep">What can Swift 'Generics' do?</h3><br>
-        <input type="radio" id = "A01" name="question-0-answers" value="A">
+        <input type="radio" id = "A01" name="question-0-answers" value="A0">
         <label for="A01">A) <b>Can <b class="redp">Limit the type of data in a function</b></b></label><br>
-        <input type="radio" id = "A02" name="question-0-answers" value="B">
+        <input type="radio" id = "A02" name="question-0-answers" value="B0">
         <label for="A02">B) <b>Generics cannot apply on the Swift Array & Dictionary</b></label><br>
-        <input type="radio" id = "A03" name="question-0-answers" value="C">
+        <input type="radio" id = "A03" name="question-0-answers" value="C0">
         <label for="A03">C) <b>Enable function to process different data types</b></label><br>
-        <input type="radio" id = "A04" name="question-0-answers" value="D">
+        <input type="radio" id = "A04" name="question-0-answers" value="D0">
         <label for="A04">D) <b>Can let Class store different data types</b></label><br>
         <hr>
-        <input type="submit">
-      </form>
+        <h3 class="themec">Good job! Please etner the verify code, and submit your work!</h3>
+        <hr>
+        <input type="submit" id="showsub" class="button" style="display: none;" onclick="deleteItem()">
+      </form><hr>
+      <div class="imgcontainer">
+        <b class="redp" id="vericod">{{ randomnum }}</b>
+        <button type="button" class="button" onclick="reloadpage()">Refresh</button>
+        <form action="" name="VerifyForm"><hr>
+          <input type="text" style="width: 10%; text-align: center;" id="verifycode"><hr>
+          <button type="button" class="button" onclick="varifycode()">Verify</button>
+        </form><br>
+        </div>
     </div><br>
   </div>
   <hr><br>
