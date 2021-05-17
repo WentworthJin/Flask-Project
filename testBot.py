@@ -27,7 +27,7 @@ class myTest(unittest.TestCase):
             time.sleep(2)
             self.driver.find_element_by_class_name("loginbutton").click()
             time.sleep(1)
-            self.driver.find_element_by_class_name("register_button").click()
+            self.driver.find_element_by_class_name("inarticleline button").click()
         except common.exceptions.ElementClickInterceptedException as e:
             raise Exception(e, "\nPlease change the webpage or window size.")
             return
