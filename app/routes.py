@@ -11,6 +11,7 @@ from app import db
 from app.forms import RegistrationForm
 from datetime import datetime
 from app.forms import EditProfileForm
+import random
 
 
 
@@ -60,6 +61,12 @@ def test():
     today = datetime.now()
     timed=today.strftime("%c")
     CurrentResult = 0
+
+    randomnum = ""
+    for i in range(0,5):
+        n = random.randint(1,9)
+        randomnum+=str(n)
+    
     if request.method == 'POST':
         First = request.form.getlist('question-1-answers')
         Second = request.form.getlist('question-2-answers')
@@ -72,52 +79,52 @@ def test():
         Nine = request.form.getlist('question-9-answers')
         Ten = request.form.getlist('question-0-answers')
         feedback="Need to review: "
-        if 'A' in First:
+        if 'A1' in First:
            CurrentResult+=10
         else:
             feedback += "Wrong Question1: We suggest you to review the Swift introduction section;  "
 
-        if 'C' in Second:
+        if 'C2' in Second:
            CurrentResult+=10
         else:
             feedback += "Wrong Question2: Maybe have a look at the Grammar tutorial?;  "
 
-        if 'A' in Third:
+        if 'A3' in Third:
            CurrentResult+=10
         else:
             feedback += "Wrong Question3: Please have a look at the Structure; "
 
-        if 'D' in Fourth:
+        if 'D4' in Fourth:
            CurrentResult+=10
         else:
             feedback += "Wrong Question4: Please refer the Math Operator; "
 
-        if 'B' in Fifth:
+        if 'B5' in Fifth:
            CurrentResult+=10
         else:
             feedback += "Wrong Question5: You need to checkout the For-In loop again; "
 
-        if 'B' in Six:
+        if 'B6' in Six:
            CurrentResult+=10
         else:
             feedback += "Wrong Question6: Confused on function?; "
 
-        if 'D' in Seven:
+        if 'D7' in Seven:
            CurrentResult+=10
         else:
             feedback += "Wrong Question7: Hint: Revied the Class section; "
 
-        if 'A' in Eight:
+        if 'A8' in Eight:
            CurrentResult+=10
         else:
             feedback += "Wrong Question8: Please refer the Object section "
 
-        if 'C' in Nine:
+        if 'C9' in Nine:
            CurrentResult+=10
         else:
             feedback += "Wrong Question9: Read one more time on the Swift inheritance; "
 
-        if 'C' in Ten:
+        if 'C0' in Ten:
            CurrentResult+=10
         else:
             feedback += "Wrong Question10: Please refer the Swift Generics; "
@@ -128,7 +135,7 @@ def test():
 
         flash("Congraulations, You have finished the test. Check your result in your Profile!")
         return render_template('home.html')
-    return render_template('Testbase.html')
+    return render_template('Testbase.html', randomnum=randomnum)
 
 
 @app.route('/login', methods=['GET', 'POST'])
