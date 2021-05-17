@@ -112,7 +112,20 @@ Process finished with exit code 0
 
 <hr>
 
-## 5.Commit log
+## 5. About the Database
+The Web Application comes with a existing database named '<b>app.db</b>, it contains several user accounts and one <b>admin</b> account
+
+However, if you want to <b>delete</b> the existing database, and create it on your own, please apply the following commands:
+1. delete the file '<b>app.db</b>
+2. <pre>flask db init</pre>
+3. <pre>flask db migrate -m "users table"</pre>
+4. <pre>flask db upgrade</pre>
+5. <pre>flask db migrate -m "posts table"</pre>
+6. <pre>flask db upgrade</pre>
+<b style="color: red">Important</b>, once you create a new database, to access the admin features, you need to create an account named <b style="color: red">admin</b>. The Web application only recoginze the Admin account with name <b style="color: red">admin</b>
+<hr>
+
+## 6.Commit log
 The log file is named as  '<b> log.txt</b>', and all commit logs are stored inside the file.
 
 ### Contributions
