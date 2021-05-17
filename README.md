@@ -98,7 +98,7 @@ And store it as environmental variable
 <hr>
 
 ## 4.About Test
-About the test, we use the selenium package to set up a webbot, which includes two tests (registration test and tutorial coverage test), so that we can test most of contents on our webpage and app without human effort. Additionally, we also made a unit test for the login function.
+About the test, we use the selenium package to set up a webbot, which includes two tests (registration test and tutorial coverage test), so that we can test most of contents on our webpage and app without human effort. Additionally, we also made a unit test for the login & Registration function.
 
 For the running process of the test:
 1. Open the terminal, Run the command and keep the local server on.
