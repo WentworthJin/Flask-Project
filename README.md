@@ -140,7 +140,7 @@ However, if you want to <b>delete</b> the existing database, and create it on yo
 <hr>
 
 ## 6.Commit log
-The log file is named as  ['<b> log.txt</b>'](./log.txt), and all commit logs are stored inside the file.
+The log file is named as  [<b> log.txt</b>](./log.txt), and all commit logs are stored inside the file.
 
 ### Contributions
 We divided our work equally, and the evidences can be found in the log.txt
