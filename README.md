@@ -1,4 +1,4 @@
-# Agile Web Development CITS 5505 Project-2
+# Agile Web Development - CITS 5505 Project-2
 
 ![image info](./app/static/Image/swift_icoon.png)
 ## Students:
