@@ -122,7 +122,7 @@ However, if you want to <b>delete</b> the existing database, and create it on yo
 4. <pre>flask db upgrade</pre>
 5. <pre>flask db migrate -m "posts table"</pre>
 6. <pre>flask db upgrade</pre>
-<span style="color: red">Important</span>, once you create a new database, to access the admin features, you need to create an account named <span style="color: red">admin</span>. The Web application only recoginze the Admin account with name <span style="color: red">admin</span>
+<b style="color:red">Important</b>, once you create a new database, to access the admin features, you need to create an account named '<b style="color:red">admin</b>'. The Web application only recoginze the Admin account with name <b style="color:red">admin</b>
 <hr>
 
 ## 6.Commit log
