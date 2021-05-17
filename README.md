@@ -127,7 +127,7 @@ Process finished with exit code 0
 The Web Application comes with a existing database named '<b>app.db</b>, it contains several user accounts and one <b>admin</b> account
 
 However, if you want to <b>delete</b> the existing database, and create it on your own, please apply the following commands:
-1. delete the file '<b>app.db</b>
+1. delete the file '<b>app.db</b>'
 2. <pre>flask db init</pre>
 3. <pre>flask db migrate -m "users table"</pre>
 4. <pre>flask db upgrade</pre>
