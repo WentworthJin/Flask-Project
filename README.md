@@ -24,7 +24,7 @@ language, and offer feedback for each test.
 
 4. Assessment mechanism
    - We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory <b>int CurrentResult</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string feedback</b> will add the feedback for the current question.
-   - The user's choice will be stored during the whole session, for example, if they refreash the page, their answer is preserved. 
+   - The user's choice will be stored during the whole session, for example, if they refreash the page or leave the current Test page, their answer is preserved. 
    - Once they submit their assessment or logout, their answer will be removed
    - User must enter a verification code to make the submittion. If the verification code is not correct, they cannot make submission
    - User can view their history attempts in the 'Profile' page, last visit time, as well as his average mark. What's more, this page also contains the aggregate results from all user's attempts. Also, the user can edit their personalized message in the 'Profile' page.
