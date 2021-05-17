@@ -11,13 +11,25 @@ language, and offer feedback for each test.
 - This Web Application comes with <b>educational style</b>, and provides basic Swift concepts for learning, including: Syntax, Grammar, Function, and more.   
 
 ### Context & Assessment mechanism
-- For the context, we created several tutorial pages and one test page for users ( logined / annonymous) to visit and learn. In addition, a user cannot enter the 'Test' page unless he is logined, what's more, a registered user cannot view his profile page until he finished one test.
-- The admin account is used for adding and deleting user's data, including their account and test's result. Only the admin user can visit the admin page, and perform editing. Other's will be redirected to the main page.
-- We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory <b>int CurrentResult</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string feedback</b> will add the feedback for the current question.
-- User can view their history attempts in the 'Profile' page, last visit time, as well as his average mark. What's more, this page also contains the aggregate results from all user's attempts. Also, the user can edit their personalized message in the 'Profile' page.
+1. Context mechanism
+   - The first page that all visiters can see is the home page, they can choose which articles they want to learn
+   - For the context, we created several tutorial pages for users ( logined / annonymous) to visit and learn. However, only the logined user can visit the 'Test' page and attempt the test. 
+   - The logined user can visit his profile once he finished at least one test. In the profile page, he can see his history attempts ( Finish time, Mark, and personalized feedback), as well as other user's results. What's more, he can also see his average mark.
 
+2. Login mechanism
+   - The user can login at any time, and can register an account at any time. 
+   - The 'Test' , 'Profile' & 'Admin' page requires login to visit, and only the admin account can visit the 'Admin' page
+3. Admin account mechanism
+   - The admin account is used for adding and deleting user's data, including their account and test's result. Only the admin user can visit the admin page, and perform editing. Other's will be redirected to the main page.
 
+4. Assessment mechanism
+   - We provide 10 questions that related to the tutorial materials. For each question, if user gives the right answer, the temperory <b>int CurrentResult</b> will add 10 mark. Otherwise, if user gives the wrong answer, the temperory <b>string feedback</b> will add the feedback for the current question.
+   - The user's choice will be stored during the whole session, for example, if they refreash the page, their answer is preserved. 
+   - Once they submit their assessment or logout, their answer will be removed
+   - User must enter a verification code to make the submittion. If the verification code is not correct, they cannot make submission
+   - User can view their history attempts in the 'Profile' page, last visit time, as well as his average mark. What's more, this page also contains the aggregate results from all user's attempts. Also, the user can edit their personalized message in the 'Profile' page.
 
+<hr>
 
 ## 2.Architecture of the Web Application
 The whole Architecture of this Web Application is represented below
@@ -63,12 +75,16 @@ AgileWeb Project 2
     |--  routes.py
 </pre>
 
+<hr>
+
 ## 3.How to Launch the Application
 1. Open the terminal under the file directorym, and run the following commands in terminal
 2. Using the <b>pip</b> to install all the packages in the '<b>requirements.txt</b>
 <pre>pip install -r requirements.txt</pre>
 3. Run the Application
 <pre> flask run </pre>
+
+<hr>
 
 ## 4.How to run Unit Test
 1. Open the terminal, Run the command and keep the local server on.
@@ -94,6 +110,7 @@ OK
 Process finished with exit code 0
 </pre>
 
+<hr>
 
 ## 5.Commit log
 The log file is named as  '<b> log.txt</b>', and all commit logs are stored inside the file.
