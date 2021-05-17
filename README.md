@@ -97,7 +97,10 @@ And store it as environmental variable
 
 <hr>
 
-## 4.How to run Unit Test
+## 4.About Test
+About the test, we use the selenium package to set up a webbot, which includes two tests (registration test and tutorial coverage test), so that we can test most of contents on our webpage and app without human effort. Additionally, we also made a unit test for the login function.
+
+For the running process of the test:
 1. Open the terminal, Run the command and keep the local server on.
 <pre>flask run</pre>
 2. Open another terminal, Run the python file and wait for the test finish.
