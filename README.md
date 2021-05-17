@@ -17,7 +17,7 @@ language, and offer feedback for each test.
    - The logined user can visit his profile once he finished at least one test. In the profile page, he can see his history attempts ( Finish time, Mark, and personalized feedback), as well as other user's results. What's more, he can also see his average mark.
 
 2. Login mechanism
-   - The user can login at any time, and can register an account at any time. 
+   - The user can login at any time, and can register an account at any time in the login page. 
    - The 'Test' , 'Profile' & 'Admin' page requires login to visit, and only the admin account can visit the 'Admin' page
 3. Admin account mechanism
    - The admin account is used for adding and deleting user's data, including their account and test's result. Only the admin user can visit the admin page, and perform editing. Other's will be redirected to the main page.
